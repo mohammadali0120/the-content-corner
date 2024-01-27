@@ -1,0 +1,25 @@
+@font-face {
+  src: url(/fonts/Vazir/Vazirmatn-FD-Regular.ttf);
+  font-family: vazir;
+}
+@font-face {
+  src: url(/fonts/Vazir/Vazirmatn-FD-ExtraBold.ttf);
+  font-family: vazir-extrabold;
+}
+@font-face {
+  src: url(/fonts/Vazir/Vazirmatn-FD-Regular.ttf);
+  font-family: vazir-light;
+}
+
+@font-face {
+  src: url(/fonts/Inter/Inter-Regular.ttf);
+  font-family: inter;
+}
+@font-face {
+  src: url(/fonts/Inter/Inter-ExtraBold.ttf);
+  font-family: inter-extrabold;
+}
+@font-face {
+  src: url(/fonts/Inter/Inter-Light.ttf);
+  font-family: inter-light;
+}

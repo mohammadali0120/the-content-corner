@@ -1,0 +1,32 @@
+{
+  "messages": {
+    "brand": { "value": "محتوای فارسی", "link": "/" },
+    "validation": {
+      "min": "{{_field_}} باید حداقل {{_length_}} کاراکتر باشد",
+      "max": "{{_field_}} باید حداکثر {{_length_}} کاراکتر باشد",
+      "required": "{{_field_}} الزامی است",
+      "numeric": "{{_field_}} باید عدد باشد",
+      "integer": "{{_field_}} باید عدد باشد",
+      "slug": "{{_field_}} فقط می تواند شامل حروف انگلیسی و اعداد و خط تیره باشد",
+      "string": "{{_field_}} باید حروف الفبا باشد",
+      "alpha_spaces": "{{_field_}} باید حروف الفبا باشد",
+      "alpha_num": "{{_field_}} فقط می تواند عدد یا حروف الفبا باشد",
+      "special_char_not_allowed": "{{_field_}} معتبر نیست",
+      "alpha": "{_.field_} فقط می تواند حروف الفبا باشد",
+      "confirmed": "{{_field_}} مطابقت ندارد",
+      "email": "{{_field_}} معتبر نیست",
+      "password": "{{_field_}} باید حداقل 8 کاراکتر و شامل حروف بزرگ و کوچک انگلیسی باشد",
+      "mobile": "{{_field_}} معتبر نیست"
+    },
+    "labels": {
+      "inputLabel": "عنوان فیلد"
+    },
+    "toasts": {},
+    "components": {
+      "layouts": {},
+      "pages": {},
+      "default": {}
+    },
+    "other": {}
+  }
+}

@@ -1,0 +1,32 @@
+{
+  "messages": {
+    "brand": { "value": "The Content Corner", "link": "/" },
+    "validation": {
+      "min": "{{_field_}} must be at least {{_length_}} characters",
+      "max": "{{_field_}} must be a maximum of {{_length_}} characters",
+      "required": "{{_field_}} is required",
+      "numeric": "{{_field_}} must be a number",
+      "integer": "{{_field_}} must be a number",
+      "slug": "{{_field_}} can only contain English letters, numbers and hyphens",
+      "string": "{{_field_}} must be alphabetic",
+      "alpha_spaces": "{{_field_}} must be alphanumeric",
+      "alpha_num": "{{_field_}} can only be numbers or letters",
+      "special_char_not_allowed": "{{_field_}} is not valid",
+      "alpha": "{{_field_}} can only be alphabetic",
+      "confirmed": "{{_field_}} does not match",
+      "email": "{{_field_}} is not valid",
+      "password": "{{_field_}} must be at least 8 characters and contain upper and lower case English letters",
+      "mobile": "{{_field_}} is not valid"
+    },
+    "labels": {
+      "inputLabel": "Input Label"
+    },
+    "toasts": {},
+    "components": {
+      "layouts": {},
+      "pages": {},
+      "default": {}
+    },
+    "other": {}
+  }
+}
