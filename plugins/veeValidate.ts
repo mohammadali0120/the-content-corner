@@ -31,14 +31,14 @@ export default defineNuxtPlugin((nuxtApp: any) => {
       });
 
       const message = foundedValidation[1].replace(
-        "{{_field_}}",
+        "{_field_}",
         context.field
       );
 
       if (context.rule.params.length > 1) {
         return message;
       }
-      return message.replace("{{_length_}}", context.rule.params[0]);
+      return message.replace("{_length_}", context.rule.params[0]);
     },
   });
 

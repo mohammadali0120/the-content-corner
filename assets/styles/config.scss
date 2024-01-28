@@ -12,13 +12,15 @@ body {
   scroll-behavior: smooth;
   height: 100%;
   width: 100%;
-  direction: var(--direction);
 }
 body {
-  width: 100%;
   height: 100%;
+  width: 100%;
+  @apply text-lightBlack lg:text-sm text-xs;
 }
 #__nuxt {
+  direction: var(--direction);
+  height: 100%;
 }
 input,
 textarea,

@@ -4,7 +4,7 @@ export default defineNuxtConfig({
     pageTransition: { name: "page", mode: "out-in" },
     head: {
       charset: "utf-8",
-      viewport: "width=500, initial-scale=1.0",
+      viewport: "width=device-width, initial-scale=1, shrink-to-fit=no",
       title: process.env.WEBSITE_NAME_EN,
       meta: [{ name: "description", content: process.env.WEBSITE_NAME_EN }],
       // script: [
@@ -25,7 +25,6 @@ export default defineNuxtConfig({
     "@vueuse/nuxt",
     "@nuxtjs/i18n",
     "@nuxt/image",
-    "nuxt-icon",
   ],
 
   runtimeConfig: {
@@ -50,9 +49,11 @@ export default defineNuxtConfig({
   i18n: {
     vueI18n: "./utilities/i18n.config.ts",
     defaultLocale: "en",
+    detectBrowserLanguage: false,
+    strategy: "prefix_except_default",
     locales: [
-      { code: "en", name: "English", dir: "ltr" },
-      { code: "fa", name: "Farsi", dir: "rtl" },
+      { code: "en", iso: "en-US", name: "English", dir: "ltr" },
+      { code: "fa", iso: "fa-IR", name: "Farsi", dir: "rtl" },
     ],
   },
 
