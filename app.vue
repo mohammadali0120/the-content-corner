@@ -2,11 +2,14 @@
   <Html :lang="htmlAttrs.lang" :dir="htmlAttrs.dir">
     <Body>
       <div>
-        <div class="bg-white">
+        <div class="bg-white dark:bg-gray-900">
           <LayoutsHeader />
         </div>
         <div>
           <NuxtPage />
+        </div>
+        <div class="">
+          <LayoutsFooter />
         </div>
       </div>
     </Body>

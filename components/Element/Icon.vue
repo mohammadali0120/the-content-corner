@@ -1,21 +1,21 @@
 <template>
   <ClientOnly>
-    <div class="w-full h-full text-lightBlack" :style="{ color: props.color }">
-      <i
-        class="block w-full h-full"
-        :class="[icon.prefix, icon.value, classes]"
-      ></i>
+    <div
+      class="w-full h-full text-lightBlack"
+      :class="props.variant ? props.variant : 'default:'"
+    >
+      <i class="block w-full h-full" :class="[icon.prefix, icon.value]"></i>
     </div>
   </ClientOnly>
 </template>
 <script setup lang="ts">
 import "@fortawesome/fontawesome-free/js/all";
+import type { Icon } from "~/utilities/types";
 
 // interfaces & types & enums
 interface Props {
-  icon: { prefix: string; value: string };
-  color?: string;
-  classes?: string;
+  icon: Icon;
+  variant?: "default" | "white";
 }
 
 // props
@@ -34,4 +34,11 @@ const props = defineProps<Props>();
 // hooks
 </script>
 
-<style scoped lang="scss"></style>
+<style scoped lang="scss">
+.default {
+  @apply text-lightBlack;
+}
+.white {
+  @apply text-white;
+}
+</style>

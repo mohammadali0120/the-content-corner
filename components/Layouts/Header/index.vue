@@ -2,14 +2,14 @@
   <div class="lg:py-4 dir-ltr">
     <div
       ref="headerRef"
-      class="lg:flex hidden bg-white w-full lg:h-[70px] items-center transition-all duration-500 transform"
+      class="lg:flex hidden bg-white dark:bg-gray-900 w-full lg:h-[70px] items-center transition-all duration-500 transform"
     >
       <div class="container lg:px-4 px-2">
         <div class="flex items-center justify-between">
           <div>
             <NuxtLink :to="$tm('brand.link')">
               <h3
-                class="font-extrabold font-[inter-extrabold] uppercase lg:text-xl text-black"
+                class="font-extrabold font-[inter-extrabold] uppercase lg:text-xl text-black dark:text-white"
               >
                 {{ $tm("brand.value") }}
               </h3>
@@ -22,7 +22,7 @@
               >
                 <li
                   v-for="(item, index) in $tm(
-                    'components.layouts.navbar.items'
+                    'components.layouts.header.items'
                   )"
                   :key="index"
                 >
@@ -45,18 +45,35 @@
             >
               <NuxtLink
                 class="w-full h-full flex justify-center items-center uppercase font-bold"
-                :to="$tm('components.layouts.navbar.getStarted.link')"
+                :to="$tm('components.layouts.header.getStarted.link')"
                 >{{
-                  $tm("components.layouts.navbar.getStarted.text")
+                  $tm("components.layouts.header.getStarted.text")
                 }}</NuxtLink
               >
             </li>
             <li class="lg:mx-4 mx-2">
-              <ElementDropdownMenu
-                :selected="getCurrentLanguageFromI18n"
-                :items="$tm('other.languages') as Language[]"
-                @on-change-selected-item="onChangeSelectedLanguage"
-              />
+              <div class="w-[120px] h-10">
+                <ClientOnly>
+                  <ElementDropdownMenu
+                    :selected="getCurrentLanguageFromI18n"
+                    :items="$tm('other.languages') as Language[]"
+                    @on-change-selected-item="onChangeSelectedLanguage"
+                  />
+                </ClientOnly>
+              </div>
+            </li>
+            <li class="lg:mx-4 mx-2">
+              <div class="w-[140px] h-10">
+                <ClientOnly>
+                  <ElementDropdownMenu
+                    :selected="getCurrentTheme"
+                    :items="$tm('other.themes') as Theme[]"
+                    @on-change-selected-item="
+                      onChangeSelectedTheme($event as Theme)
+                    "
+                  />
+                </ClientOnly>
+              </div>
             </li>
           </ul>
         </div>
@@ -79,7 +96,7 @@
               <div class="w-5 h-5 cursor-pointer" @click="onToggleHeaderItems">
                 <ElementIcon
                   :icon="{ prefix: 'fa-solid', value: 'fa-bars' }"
-                  color="#ffffff"
+                  variant="white"
                 />
               </div>
             </div>
@@ -88,14 +105,14 @@
             :style="{ height: dynamicResponsiveHeaderItemsHeight + 'px' }"
             :class="[
               isResponsiveHeaderOpen
-                ? 'overflow-y-visible mt-4'
-                : 'overflow-y-hidden mt-0',
+                ? 'opacity-1 overflow-y-visible mt-4'
+                : 'opacity-0 overflow-y-hidden mt-0',
             ]"
             ref="responsiveHeaderItemsRef"
-            class="transition-all duration-500"
+            class="transition-all duration-500 ltr:dir-ltr rtl:dir-rtl"
           >
             <li
-              v-for="(item, index) in $tm('components.layouts.navbar.items')"
+              v-for="(item, index) in $tm('components.layouts.header.items')"
               :key="index"
               class="mb-4"
             >
@@ -110,14 +127,46 @@
                 >{{ item.text }}</NuxtLink
               >
             </li>
+            <li class="mb-4">
+              <div class="flex -mx-1">
+                <div class="w-1/2 h-10">
+                  <div class="w-full h-full p-1">
+                    <ClientOnly>
+                      <ElementDropdownMenu
+                        :selected="getCurrentLanguageFromI18n"
+                        :items="$tm('other.languages') as Language[]"
+                        variant="black"
+                        @on-change-selected-item="
+                          onChangeSelectedLanguage($event as Language)
+                        "
+                      />
+                    </ClientOnly>
+                  </div>
+                </div>
+                <div class="w-1/2 h-10">
+                  <div class="w-full h-full p-1">
+                    <ClientOnly>
+                      <ElementDropdownMenu
+                        :selected="getCurrentTheme"
+                        :items="$tm('other.themes') as Theme[]"
+                        variant="black"
+                        @on-change-selected-item="
+                          onChangeSelectedTheme($event as Theme)
+                        "
+                      />
+                    </ClientOnly>
+                  </div>
+                </div>
+              </div>
+            </li>
             <li
               class="w-full h-10 block rounded-md bg-baseYellow-500 hover:bg-baseYellow-700 duration-300 text-white"
             >
               <NuxtLink
                 class="w-full h-full flex justify-center items-center uppercase font-bold"
-                :to="$tm('components.layouts.navbar.getStarted.link')"
+                :to="$tm('components.layouts.header.getStarted.link')"
                 >{{
-                  $tm("components.layouts.navbar.getStarted.text")
+                  $tm("components.layouts.header.getStarted.text")
                 }}</NuxtLink
               >
             </li>
@@ -129,7 +178,12 @@
 </template>
 
 <script setup lang="ts">
-import type { Link, Language, AvailableLanguageCodes } from "@/utilities/types";
+import type {
+  Link,
+  Language,
+  AvailableLanguageCodes,
+  Theme,
+} from "@/utilities/types";
 // interfaces & types & enums
 
 // props
@@ -138,7 +192,8 @@ import type { Link, Language, AvailableLanguageCodes } from "@/utilities/types";
 // variables
 const route = useRoute();
 const { $i18n } = useNuxtApp();
-const { onChangeLanguage } = useLanguage();
+const { onChangeLanguage, getCurrentLanguageFromI18n } = useLanguage();
+const { onChangeTheme, getCurrentTheme } = useTheme();
 
 const currentAcitveRoute = ref<Link | null>(null);
 const isResponsiveHeaderOpen = ref<boolean>(false);
@@ -147,24 +202,13 @@ const dynamicResponsiveHeaderItemsHeight = ref<number>(0);
 const responsiveHeaderItemsRef = ref<HTMLDivElement | null>(null);
 
 // computed properties
-const getCurrentLanguageFromI18n = computed((): Language => {
-  const languages = $i18n.tm("other.languages") as Language[];
-  const currentLanguage = $i18n.localeProperties.value.code;
-
-  if (currentLanguage === "en") {
-    return languages[0];
-  } else if (currentLanguage === "fa") {
-    return languages[1];
-  }
-  return languages[0];
-});
 
 // watches
 watch(
   () => route.path,
   () => {
     // Get current route and set its element active
-    const i18nRouteItems: Link[] = $i18n.tm("components.layouts.navbar.items");
+    const i18nRouteItems: Link[] = $i18n.tm("components.layouts.header.items");
     const foundedI18nRoute = i18nRouteItems.find((item: Link) => {
       return item.link === route.path;
     });
@@ -190,17 +234,20 @@ const onVerticalScrollbar = (element: any, amount: number) => {
 
   if (scrollPosition > amount) {
     element.classList.add(
-      ...["fixed", "z-100", "top-0", "bg-white", "drop-shadow-md"]
+      ...["fixed", "z-100", "top-0", "bg-white",'dark:bg-black', "drop-shadow-md"]
     );
   } else {
     element.classList.remove(
-      ...["fixed", "z-100", "top-0", "bg-white", "drop-shadow-md"]
+      ...["fixed", "z-100", "top-0", "bg-white",'dark:bg-black', "drop-shadow-md"]
     );
   }
 };
 const onChangeSelectedLanguage = (language: Language) => {
   onChangeLanguage(language.value as AvailableLanguageCodes);
   onChangeFontFamily(language.value as AvailableLanguageCodes);
+};
+const onChangeSelectedTheme = (theme: Theme) => {
+  onChangeTheme(theme.value);
 };
 
 // hooks

@@ -7,11 +7,11 @@ export default defineNuxtConfig({
       viewport: "width=device-width, initial-scale=1, shrink-to-fit=no",
       title: process.env.WEBSITE_NAME_EN,
       meta: [{ name: "description", content: process.env.WEBSITE_NAME_EN }],
-      // script: [
-      //   {
-      //     src: "/setTheme.js",
-      //   },
-      // ],
+      script: [
+        {
+          src: "/styleConfig.js",
+        },
+      ],
     },
   },
 

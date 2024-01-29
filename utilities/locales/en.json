@@ -24,7 +24,7 @@
     "toasts": {},
     "components": {
       "layouts": {
-        "navbar": {
+        "header": {
           "items": [
             { "text": "Home", "link": "/" },
             { "text": "About Us", "link": "/about-us" },
@@ -64,6 +64,23 @@
           "link": "/fa",
           "imgSrc": "/icons/iran-flag-96.png",
           "dir": "rtl"
+        }
+      ],
+      "themes": [
+        {
+          "text": "System Mode",
+          "value": "auto",
+          "icon": { "prefix": "fa-solid", "value": "fa-desktop" }
+        },
+        {
+          "text": "Dark Mode",
+          "value": "dark",
+          "icon": { "prefix": "fa-solid", "value": "fa-moon" }
+        },
+        {
+          "text": "Light Mode",
+          "value": "light",
+          "icon": { "prefix": "fa-solid", "value": "fa-sun" }
         }
       ]
     }

@@ -24,7 +24,7 @@
     "toasts": {},
     "components": {
       "layouts": {
-        "navbar": {
+        "header": {
           "items": [
             { "text": "خانه", "link": "/fa" },
             { "text": "درباره ما", "link": "/fa/about-us" },
@@ -52,6 +52,23 @@
           "link": "/fa",
           "imgSrc": "/icons/iran-flag-96.png",
           "dir": "rtl"
+        }
+      ],
+      "themes": [
+        {
+          "text": "حالت سیستم",
+          "value": "auto",
+          "icon": { "prefix": "fa-solid", "value": "fa-desktop" }
+        },
+        {
+          "text": "حالت تاریک",
+          "value": "dark",
+          "icon": { "prefix": "fa-solid", "value": "fa-moon" }
+        },
+        {
+          "text": "حالت روشن",
+          "value": "light",
+          "icon": { "prefix": "fa-solid", "value": "fa-sun" }
         }
       ]
     }

@@ -15,7 +15,7 @@ body {
 body {
   height: 100%;
   width: 100%;
-  @apply text-lightBlack lg:text-sm text-xs bg-[#FaFaFa];
+  @apply text-lightBlack dark:text-gray-300 lg:text-sm text-xs bg-[#FaFaFa] dark:bg-gray-800;
 }
 #__nuxt {
   height: 100%;

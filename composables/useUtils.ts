@@ -1,7 +1,7 @@
 import type { AvailableLanguageCodes } from "~/utilities/types";
 
 export const onChangeFontFamily = (language: AvailableLanguageCodes) => {
-  const root = document.querySelector(":root") as HTMLElement;
+  const root = document.documentElement;
 
   switch (language) {
     case "en":
