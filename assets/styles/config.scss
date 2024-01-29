@@ -2,7 +2,6 @@
 
 :root {
   --font-family: inter;
-  --direction: ltr;
 }
 * {
   font-family: var(--font-family);
@@ -16,10 +15,9 @@ body {
 body {
   height: 100%;
   width: 100%;
-  @apply text-lightBlack lg:text-sm text-xs;
+  @apply text-lightBlack lg:text-sm text-xs bg-[#FaFaFa];
 }
 #__nuxt {
-  direction: var(--direction);
   height: 100%;
 }
 input,

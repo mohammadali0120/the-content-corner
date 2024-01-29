@@ -35,9 +35,37 @@
           "getStarted": { "text": "Get Started", "link": "/contact-us" }
         }
       },
-      "pages": {},
+      "pages": {
+        "home": {
+          "title": "Landing",
+          "subtitles": {
+            "first": "Posts,",
+            "second": "Podcasts,",
+            "third": "Videos"
+          },
+          "text": " Lorem ipsum, dolor sit amet consectetur adipisicing elit. voluptatibus possimus aspernatur vero ea mollitia officia provident ab eum laudantium hic quos?",
+          "link": { "text": "Get in touch", "link": "/" }
+        }
+      },
       "default": {}
     },
-    "other": {}
+    "other": {
+      "languages": [
+        {
+          "text": "English",
+          "value": "en",
+          "link": "/en",
+          "imgSrc": "/icons/usa-flag-96.png",
+          "dir": "ltr"
+        },
+        {
+          "text": "Farsi",
+          "value": "fa",
+          "link": "/fa",
+          "imgSrc": "/icons/iran-flag-96.png",
+          "dir": "rtl"
+        }
+      ]
+    }
   }
 }

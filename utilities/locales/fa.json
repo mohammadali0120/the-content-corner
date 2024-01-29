@@ -1,6 +1,6 @@
 {
   "messages": {
-    "brand": { "value": "محتوای فارسی", "link": "/fa" },
+    "brand": { "value": "The Content Corner", "link": "/fa" },
     "validation": {
       "min": "{_field_} باید حداقل {_length_} کاراکتر باشد",
       "max": "{_field_} باید حداکثر {_length_} کاراکتر باشد",
@@ -37,6 +37,23 @@
       "pages": {},
       "default": {}
     },
-    "other": {}
+    "other": {
+      "languages": [
+        {
+          "text": "انگلیسی",
+          "value": "en",
+          "link": "/en",
+          "imgSrc": "/icons/usa-flag-96.png",
+          "dir": "ltr"
+        },
+        {
+          "text": "فارسی",
+          "value": "fa",
+          "link": "/fa",
+          "imgSrc": "/icons/iran-flag-96.png",
+          "dir": "rtl"
+        }
+      ]
+    }
   }
 }

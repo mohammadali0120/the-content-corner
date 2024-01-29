@@ -27,6 +27,9 @@ export default {
         },
         lightBlack: "#666666",
       },
+      zIndex: {
+        100: "999999",
+      },
     },
   },
   plugins: [],

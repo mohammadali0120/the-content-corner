@@ -1,5 +1,5 @@
 <template>
-  <div>
+  <div class="lg:py-4 dir-ltr">
     <div
       ref="headerRef"
       class="lg:flex hidden bg-white w-full lg:h-[70px] items-center transition-all duration-500 transform"
@@ -16,23 +16,32 @@
             </NuxtLink>
           </div>
           <ul class="flex items-center lg:-mx-4 -mx-2">
-            <li
-              v-for="(item, index) in $tm('components.layouts.navbar.items')"
-              :key="index"
-            >
-              <NuxtLink
-                :to="item.link"
-                :class="[
-                  'lg:mx-4 mx-2 hover:text-baseYellow-600 duration-300 uppercase',
-                  currentAcitveRoute && currentAcitveRoute.link === item.link
-                    ? 'text-baseYellow-600'
-                    : '',
-                ]"
-                >{{ item.text }}</NuxtLink
+            <li class="lg:mx-4 mx-2">
+              <ul
+                class="flex ltr:dir-ltr rtl:dir-rtl items-center lg:-mx-4 -mx-2"
               >
+                <li
+                  v-for="(item, index) in $tm(
+                    'components.layouts.navbar.items'
+                  )"
+                  :key="index"
+                >
+                  <NuxtLink
+                    :to="item.link"
+                    :class="[
+                      'lg:mx-4 mx-2 hover:text-baseYellow-500 duration-300 uppercase',
+                      currentAcitveRoute &&
+                      currentAcitveRoute.link === item.link
+                        ? 'text-baseYellow-500'
+                        : '',
+                    ]"
+                    >{{ item.text }}</NuxtLink
+                  >
+                </li>
+              </ul>
             </li>
             <li
-              class="lg:w-[142px] h-10 block rounded-md bg-baseYellow-400 hover:bg-baseYellow-600 duration-300 text-white"
+              class="lg:w-[142px] h-10 block rounded-md bg-baseYellow-500 hover:bg-baseYellow-700 duration-300 text-white"
             >
               <NuxtLink
                 class="w-full h-full flex justify-center items-center uppercase font-bold"
@@ -42,12 +51,19 @@
                 }}</NuxtLink
               >
             </li>
+            <li class="lg:mx-4 mx-2">
+              <ElementDropdownMenu
+                :selected="getCurrentLanguageFromI18n"
+                :items="$tm('other.languages') as Language[]"
+                @on-change-selected-item="onChangeSelectedLanguage"
+              />
+            </li>
           </ul>
         </div>
       </div>
     </div>
     <div class="lg:hidden block bg-black text-white">
-      <div class="w-full flex items-center py-1">
+      <div class="w-full flex items-center">
         <div class="p-4 w-full">
           <div class="w-full flex items-center justify-between">
             <div>
@@ -86,16 +102,16 @@
               <NuxtLink
                 :to="item.link"
                 :class="[
-                  ' hover:text-baseYellow-600 duration-300 uppercase',
+                  ' hover:text-baseYellow-500 duration-300 uppercase',
                   currentAcitveRoute && currentAcitveRoute.link === item.link
-                    ? 'text-baseYellow-600'
+                    ? 'text-baseYellow-500'
                     : '',
                 ]"
                 >{{ item.text }}</NuxtLink
               >
             </li>
             <li
-              class="w-full h-10 block rounded-md bg-baseYellow-400 hover:bg-baseYellow-600 duration-300 text-white"
+              class="w-full h-10 block rounded-md bg-baseYellow-500 hover:bg-baseYellow-700 duration-300 text-white"
             >
               <NuxtLink
                 class="w-full h-full flex justify-center items-center uppercase font-bold"
@@ -113,8 +129,7 @@
 </template>
 
 <script setup lang="ts">
-import type { Link } from "@/utilities/types";
-import useVerticalScrollbar from "@/composables/useVerticalScrollbar";
+import type { Link, Language, AvailableLanguageCodes } from "@/utilities/types";
 // interfaces & types & enums
 
 // props
@@ -123,13 +138,26 @@ import useVerticalScrollbar from "@/composables/useVerticalScrollbar";
 // variables
 const route = useRoute();
 const { $i18n } = useNuxtApp();
+const { onChangeLanguage } = useLanguage();
 
 const currentAcitveRoute = ref<Link | null>(null);
 const isResponsiveHeaderOpen = ref<boolean>(false);
 const headerRef = ref<HTMLDivElement | null>(null);
 const dynamicResponsiveHeaderItemsHeight = ref<number>(0);
 const responsiveHeaderItemsRef = ref<HTMLDivElement | null>(null);
+
 // computed properties
+const getCurrentLanguageFromI18n = computed((): Language => {
+  const languages = $i18n.tm("other.languages") as Language[];
+  const currentLanguage = $i18n.localeProperties.value.code;
+
+  if (currentLanguage === "en") {
+    return languages[0];
+  } else if (currentLanguage === "fa") {
+    return languages[1];
+  }
+  return languages[0];
+});
 
 // watches
 watch(
@@ -157,8 +185,36 @@ const onToggleHeaderItems = () => {
       : (dynamicResponsiveHeaderItemsHeight.value = 0);
   }
 };
+const onVerticalScrollbar = (element: any, amount: number) => {
+  const scrollPosition = window.scrollY || window.pageYOffset;
+
+  if (scrollPosition > amount) {
+    element.classList.add(
+      ...["fixed", "z-100", "top-0", "bg-white", "drop-shadow-md"]
+    );
+  } else {
+    element.classList.remove(
+      ...["fixed", "z-100", "top-0", "bg-white", "drop-shadow-md"]
+    );
+  }
+};
+const onChangeSelectedLanguage = (language: Language) => {
+  onChangeLanguage(language.value as AvailableLanguageCodes);
+  onChangeFontFamily(language.value as AvailableLanguageCodes);
+};
 
 // hooks
-useVerticalScrollbar(headerRef as Ref, 50);
+onMounted(() => {
+  window.addEventListener("scroll", () => {
+    onVerticalScrollbar(headerRef.value, 50);
+  });
+});
+onUnmounted(() => {
+  window.removeEventListener("scroll", () => {
+    onVerticalScrollbar(headerRef.value, 50);
+  });
+});
+
+// hooks
 </script>
 <style scoped lang="scss"></style>
