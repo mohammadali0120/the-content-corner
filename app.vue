@@ -21,6 +21,6 @@ const head = useLocaleHead({
   addDirAttribute: true,
   addSeoAttributes: true,
 });
-const htmlAttrs = computed(() => head.value.htmlAttrs!);
+const htmlAttrs = computed((): any => head.value.htmlAttrs);
 </script>
 <style scoped lang="scss"></style>

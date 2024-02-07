@@ -1,6 +1,6 @@
 {
   "messages": {
-    "brand": { "value": "The Content Corner", "link": "/" },
+    "brand": { "value": "CoHost", "link": "/" },
     "validation": {
       "min": "{_field_} must be at least {_length_} characters",
       "max": "{_field_} must be a maximum of {_length_} characters",
@@ -35,19 +35,73 @@
           "getStarted": { "text": "Get Started", "link": "/contact-us" }
         }
       },
-      "pages": {
+      "pages": {},
+      "default": {
         "home": {
-          "title": "Landing",
-          "subtitles": {
-            "first": "Posts,",
-            "second": "Podcasts,",
-            "third": "Videos"
+          "information": {
+            "title": "Landing",
+            "subtitles": {
+              "first": "Posts,",
+              "second": "Podcasts,",
+              "third": "Videos"
+            },
+            "text": " Lorem ipsum, dolor sit amet consectetur adipisicing elit. voluptatibus possimus aspernatur vero ea mollitia officia provident ab eum laudantium hic quos?",
+            "link": { "text": "Get in touch", "link": "/" },
+            "searchDomain": {
+              "firstSection": {
+                "title": "Search Your Domain Name",
+                "subtitle": "A small river named Duden flows by their place"
+              },
+              "secondSection": {
+                "inputPlaceholder": "Enter your domain name...",
+                "selectbox": [
+                  { "text": ".com", "price": "9.9", "priceType": "$" },
+                  { "text": ".net", "price": "8.9", "priceType": "$" },
+                  { "text": ".org", "price": "7.9", "priceType": "$" },
+                  { "text": ".shop", "price": "6.9", "priceType": "$" }
+                ],
+                "btn": "Search"
+              }
+            }
           },
-          "text": " Lorem ipsum, dolor sit amet consectetur adipisicing elit. voluptatibus possimus aspernatur vero ea mollitia officia provident ab eum laudantium hic quos?",
-          "link": { "text": "Get in touch", "link": "/" }
+          "whyChooseUs": {
+            "title": "Why Choose Us",
+            "subtitle": "Even the all-powerful Pointing has no control about the blind texts it is an almost unorthographic.",
+            "cards": [
+              {
+                "title": "Super Fast Server",
+                "icon": "cloud",
+                "body": "Even the all-powerful Pointing has no control about the blind texts it is an almost unorthographic."
+              },
+              {
+                "title": "Daily Backups",
+                "icon": "server",
+                "body": "Even the all-powerful Pointing has no control about the blind texts it is an almost unorthographic."
+              },
+              {
+                "title": "Technical Services",
+                "icon": "customer-service",
+                "body": "Even the all-powerful Pointing has no control about the blind texts it is an almost unorthographic."
+              },
+              {
+                "title": "Secure and Reliable",
+                "icon": "life-insurance",
+                "body": "Even the all-powerful Pointing has no control about the blind texts it is an almost unorthographic."
+              },
+              {
+                "title": "DNS Control",
+                "icon": "cloud-service",
+                "body": "Even the all-powerful Pointing has no control about the blind texts it is an almost unorthographic."
+              },
+              {
+                "title": "24/7 Support",
+                "icon": "cogwheel",
+                "body": "Even the all-powerful Pointing has no control about the blind texts it is an almost unorthographic."
+              }
+            ]
+          }
         }
-      },
-      "default": {}
+      }
     },
     "other": {
       "languages": [

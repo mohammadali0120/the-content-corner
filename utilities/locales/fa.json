@@ -1,6 +1,6 @@
 {
   "messages": {
-    "brand": { "value": "The Content Corner", "link": "/fa" },
+    "brand": { "value": "CoHost", "link": "/fa" },
     "validation": {
       "min": "{_field_} باید حداقل {_length_} کاراکتر باشد",
       "max": "{_field_} باید حداکثر {_length_} کاراکتر باشد",

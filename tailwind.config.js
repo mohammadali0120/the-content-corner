@@ -11,7 +11,16 @@ export default {
   ],
   theme: {
     extend: {
-      container: { center: true },
+      container: {
+        center: true,
+        screens: {
+          sm: "500px",
+          md: "678px",
+          lg: "1024px",
+          xl: "1240px",
+          "2xl": "1536px",
+        },
+      },
       colors: {
         baseYellow: {
           900: "#FF7B00",

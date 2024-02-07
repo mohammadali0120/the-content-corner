@@ -2,14 +2,14 @@
   <div class="lg:py-4 dir-ltr">
     <div
       ref="headerRef"
-      class="lg:flex hidden bg-white dark:bg-gray-900 w-full lg:h-[70px] items-center transition-all duration-500 transform"
+      class="lg:flex hidden bg-white dark:bg-gray-900 w-full lg:h-[70px] items-center transition-all duration-300 transform"
     >
       <div class="container lg:px-4 px-2">
         <div class="flex items-center justify-between">
           <div>
             <NuxtLink :to="$tm('brand.link')">
               <h3
-                class="font-extrabold font-[inter-extrabold] uppercase lg:text-xl text-black dark:text-white"
+                class="font-extrabold font-[inter-extrabold] capitalize lg:text-xl text-black dark:text-white"
               >
                 {{ $tm("brand.value") }}
               </h3>
@@ -86,7 +86,7 @@
             <div>
               <NuxtLink :to="$tm('brand.link')">
                 <h3
-                  class="font-extrabold text-white font-[inter-extrabold] uppercase text-base"
+                  class="font-extrabold text-white font-[inter-extrabold] capitalize text-base"
                 >
                   {{ $tm("brand.value") }}
                 </h3>
@@ -109,7 +109,7 @@
                 : 'opacity-0 overflow-y-hidden mt-0',
             ]"
             ref="responsiveHeaderItemsRef"
-            class="transition-all duration-500 ltr:dir-ltr rtl:dir-rtl"
+            class="transition-all duration-300 ltr:dir-ltr rtl:dir-rtl"
           >
             <li
               v-for="(item, index) in $tm('components.layouts.header.items')"
