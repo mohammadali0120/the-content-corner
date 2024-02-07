@@ -35,7 +35,44 @@
           "getStarted": { "text": "Get Started", "link": "/contact-us" }
         }
       },
-      "pages": {},
+      "pages": {
+        "home": {
+          "title": "Home",
+          "name": "description",
+          "content": "Home Page",
+          "description": "Home page description"
+        },
+        "contactUs": {
+          "title": "Contact Us",
+          "name": "description",
+          "content": "Contact Us Page",
+          "description": "Contact Us page description"
+        },
+        "aboutUs": {
+          "title": "About Us",
+          "name": "description",
+          "content": "About Us Page",
+          "description": "About Us description"
+        },
+        "posts": {
+          "title": "Posts",
+          "name": "description",
+          "content": "Posts Page",
+          "description": "Posts description"
+        },
+        "videos": {
+          "title": "Videos",
+          "name": "description",
+          "content": "Videos Page",
+          "description": "Videos description"
+        },
+        "podcasts": {
+          "title": "Podcasts",
+          "name": "description",
+          "content": "Podcasts Page",
+          "description": "Podcasts description"
+        }
+      },
       "default": {
         "home": {
           "information": {

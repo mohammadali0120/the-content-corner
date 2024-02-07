@@ -10,6 +10,7 @@
 // emits
 
 // variables
+const { tm } = useI18n();
 
 // computed properties
 
@@ -18,5 +19,14 @@
 // methods
 
 // hooks
+useHead({
+  title: tm("components.pages.podcasts.title"),
+  meta: [
+    {
+      name: tm("components.pages.podcasts.name"),
+      content: tm("components.pages.podcasts.content"),
+    },
+  ],
+});
 </script>
 <style scoped lang="scss"></style>

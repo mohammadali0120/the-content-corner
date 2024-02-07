@@ -65,6 +65,7 @@ import useIntersectionObserver from "@/composables/useIntersectionObserver";
 // emits
 
 // variables
+const { tm } = useI18n();
 const isCounterStarted = ref<boolean>(false);
 const { isIntersected, isIntersectionEnteredIntoView } =
   useIntersectionObserver();
@@ -85,6 +86,16 @@ watch(
 // methods
 
 // hooks
+
+useHead({
+  title: tm("components.pages.home.title"),
+  meta: [
+    {
+      name: tm("components.pages.home.name"),
+      content: tm("components.pages.home.content"),
+    },
+  ],
+});
 
 onMounted(() => {
   const animateBoxes = document.querySelectorAll(

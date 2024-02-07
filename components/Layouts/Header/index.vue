@@ -234,11 +234,25 @@ const onVerticalScrollbar = (element: any, amount: number) => {
 
   if (scrollPosition > amount) {
     element.classList.add(
-      ...["fixed", "z-100", "top-0", "bg-white",'dark:bg-black', "drop-shadow-md"]
+      ...[
+        "fixed",
+        "z-100",
+        "top-0",
+        "bg-white",
+        "dark:bg-black",
+        "drop-shadow-md",
+      ]
     );
   } else {
     element.classList.remove(
-      ...["fixed", "z-100", "top-0", "bg-white",'dark:bg-black', "drop-shadow-md"]
+      ...[
+        "fixed",
+        "z-100",
+        "top-0",
+        "bg-white",
+        "dark:bg-black",
+        "drop-shadow-md",
+      ]
     );
   }
 };
