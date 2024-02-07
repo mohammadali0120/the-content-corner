@@ -8,9 +8,9 @@
         <div>
           <NuxtPage />
         </div>
-        <div class="">
+        <!-- <div>
           <LayoutsFooter />
-        </div>
+        </div> -->
       </div>
     </Body>
   </Html>

@@ -38,7 +38,9 @@
 </template>
 
 <script setup lang="ts">
-import { addIntersectionClasses, isEven } from "@/composables/useUtils";
+import { isEven } from "@/composables/useUtils";
+import useIntersectionObserver from "@/composables/useIntersectionObserver";
+
 // interfaces & types & enums
 
 // props
@@ -46,6 +48,8 @@ import { addIntersectionClasses, isEven } from "@/composables/useUtils";
 // emits
 
 // variables
+const { isIntersected, isIntersectionEnteredIntoView } =
+  useIntersectionObserver();
 
 // computed properties
 
@@ -63,13 +67,13 @@ onMounted(() => {
     ".why-choose-us-animate-box-item"
   ) as any;
 
-  addIntersectionClasses(animateBoxes[0], ["animate__fadeInDown"]);
-  
+  isIntersectionEnteredIntoView(animateBoxes[0], ["animate__fadeInDown"]);
+
   animateBoxItems.forEach((item: HTMLLIElement, index: number) => {
     if (isEven(index)) {
-      addIntersectionClasses(item, ["animate__fadeInLeft"]);
+      isIntersectionEnteredIntoView(item, ["animate__fadeInLeft"]);
     } else {
-      addIntersectionClasses(item, ["animate__fadeInRight"]);
+      isIntersectionEnteredIntoView(item, ["animate__fadeInRight"]);
     }
   });
 });

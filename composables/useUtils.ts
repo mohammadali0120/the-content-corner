@@ -29,25 +29,6 @@ export const changeColorScheme = (theme: ThemeVariants) => {
   }
 };
 
-export const addIntersectionClasses = (
-  element: HTMLElement,
-  classes: string[]
-) => {
-  const observer = new IntersectionObserver((entries: any) => {
-    entries.forEach((entry: any) => {
-      if (entry.isIntersecting) {
-        // CSS classes are added when the scroll reaches the view
-        entry.target.classList.add(...classes);
-
-        // Preventing intersection observer from calling more than once
-        observer.unobserve(entry.target);
-      }
-    });
-  });
-
-  observer.observe(element);
-};
-
 export const isEven = (value: number) => {
   return value % 2 === 0;
 };

@@ -1,6 +1,8 @@
 <template>
   <div class="flex flex-wrap items-center justify-between">
-    <div class="lg:w-6/12 w-full lg:mb-0 mb-4 search-domain-animate-box animate__animated">
+    <div
+      class="lg:w-6/12 w-full lg:mb-0 mb-4 search-domain-animate-box animate__animated"
+    >
       <div class="lg:mb-3 mb-1.5">
         <h3 class="font-bold lg:text-2xl text-base text-black dark:text-white">
           {{
@@ -94,7 +96,7 @@
 </template>
 
 <script setup lang="ts">
-import { addIntersectionClasses } from "@/composables/useUtils";
+import useIntersectionObserver from "@/composables/useIntersectionObserver";
 // interfaces & types & enums
 
 // props
@@ -102,7 +104,8 @@ import { addIntersectionClasses } from "@/composables/useUtils";
 // emits
 
 // variables
-
+const { isIntersected, isIntersectionEnteredIntoView } =
+  useIntersectionObserver();
 // computed properties
 
 // watches
@@ -112,10 +115,12 @@ import { addIntersectionClasses } from "@/composables/useUtils";
 // hooks
 
 onMounted(() => {
-  const animateBoxes = document.querySelectorAll(".search-domain-animate-box") as any;
+  const animateBoxes = document.querySelectorAll(
+    ".search-domain-animate-box"
+  ) as any;
 
-  addIntersectionClasses(animateBoxes[0], ["animate__fadeInDown"]);
-  addIntersectionClasses(animateBoxes[1], ["animate__fadeInUp"]);
+  isIntersectionEnteredIntoView(animateBoxes[0], ["animate__fadeInDown"]);
+  isIntersectionEnteredIntoView(animateBoxes[1], ["animate__fadeInUp"]);
 });
 </script>
 <style scoped lang="scss"></style>

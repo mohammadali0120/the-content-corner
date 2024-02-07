@@ -16,7 +16,7 @@
     </div>
     <div class="lg:mb-0 mb-4">
       <div
-        class="lg:w-[80px] lg:h-[80px] w-1/4 bg-baseYellow-500 group-hover:bg-white group-hover:dark:bg-gray-800 rounded-full flex items-center justify-center mx-auto"
+        class="lg:w-[80px] lg:h-[80px] w-1/4 bg-baseYellow-500 group-hover:bg-white duration-300 group-hover:dark:bg-gray-800 rounded-full flex items-center justify-center mx-auto"
       >
         <div class="lg:w-[44px] lg:h-[45px] lg:p-0 p-4">
           <ElementSvgIcon :name="props.icon" :color="props.color" />
