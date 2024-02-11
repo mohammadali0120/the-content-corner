@@ -171,6 +171,75 @@
                 "body": "Even the all-powerful Pointing has no control about the blind texts it is an almost unorthographic."
               }
             ]
+          },
+          "ourBestPricing": {
+            "title": "Our Best Pricing",
+            "cards": [
+              {
+                "type": "FREE",
+                "priceType": "$",
+                "price": "0",
+                "duration": "mo",
+                "featureText1": "100% free. Forever",
+                "featureText2": "Enjoy All The Features",
+                "featureText3": "All features",
+                "features": [
+                  { "text": "150", "volumeType": "GB", "type": "Bandwidth" },
+                  { "text": "100", "volumeType": "GB", "type": "Storage" },
+                  { "text": "$1.00 / ", "volumeType": "GB", "type": "Overages" }
+                ],
+                "btn": { "text": "Choose Plan", "link": "/" }
+              },
+              {
+                "type": "STARTUP",
+                "priceType": "$",
+                "price": "19",
+                "duration": "mo",
+                "featureText1": "All features are included",
+                "featureText2": "Enjoy All The Features",
+                "featureText3": "All features",
+                "features": [
+                  { "text": "450", "volumeType": "GB", "type": "Bandwidth" },
+                  { "text": "400", "volumeType": "GB", "type": "Storage" },
+                  { "text": "$2.00 / ", "volumeType": "GB", "type": "Overages" }
+                ],
+                "btn": { "text": "Choose Plan", "link": "/" }
+              },
+              {
+                "type": "PREMIUM",
+                "priceType": "$",
+                "price": "49",
+                "duration": "mo",
+                "featureText1": "All features are included",
+                "featureText2": "Enjoy All The Features",
+                "featureText3": "All features",
+                "features": [
+                  { "text": "250", "volumeType": "GB", "type": "Bandwidth" },
+                  { "text": "200", "volumeType": "GB", "type": "Storage" },
+                  { "text": "$5.00 / ", "volumeType": "GB", "type": "Overages" }
+                ],
+                "btn": { "text": "Choose Plan", "link": "/" }
+              },
+              {
+                "type": "PRO",
+                "priceType": "$",
+                "price": "99",
+                "duration": "mo",
+                "featureText1": "All features are included",
+                "featureText2": "Enjoy All The Features",
+                "featureText3": "All features",
+                "features": [
+                  { "text": "450", "volumeType": "GB", "type": "Bandwidth" },
+                  { "text": "400", "volumeType": "GB", "type": "Storage" },
+                  {
+                    "text": "$20.00 / ",
+                    "volumeType": "GB",
+                    "type": "Overages"
+                  }
+                ],
+                "btn": { "text": "Choose Plan", "link": "/" }
+              }
+            ]
           }
         }
       }

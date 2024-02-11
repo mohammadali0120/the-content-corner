@@ -17,9 +17,14 @@
         </div>
       </div>
     </div>
-    <div class="lg:py-10 py-4">
+    <div class="bg-white dark:bg-gray-900 lg:py-20 py-4">
       <div class="container lg:px-4 px-2">
         <MainHomeOurMainServices />
+      </div>
+    </div>
+    <div class="lg:py-20 py-4">
+      <div class="container lg:px-4 px-2">
+        <MainHomeOurBestPricing />
       </div>
     </div>
   </div>
