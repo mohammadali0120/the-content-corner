@@ -145,6 +145,32 @@
               { "text": "Registered Domains", "value": "10000" },
               { "text": "Satisfied Customers", "value": "9000" }
             ]
+          },
+          "ourMainServices": {
+            "title": "Our Main Services",
+            "description": "Even the all-powerful Pointing has no control about the blind texts it is an almost unorthographic. A small river named Duden flows by their place and supplies it with the necessary regelialia. It is a paradisematic country.",
+            "cards": [
+              {
+                "title": "Super Fast Server",
+                "icon": "cloud-service",
+                "body": "Even the all-powerful Pointing has no control about the blind texts it is an almost unorthographic."
+              },
+              {
+                "title": "Daily Backups",
+                "icon": "cloud",
+                "body": "Even the all-powerful Pointing has no control about the blind texts it is an almost unorthographic."
+              },
+              {
+                "title": "Technical Services",
+                "icon": "server",
+                "body": "Even the all-powerful Pointing has no control about the blind texts it is an almost unorthographic."
+              },
+              {
+                "title": "Secure and Reliable",
+                "icon": "life-insurance",
+                "body": "Even the all-powerful Pointing has no control about the blind texts it is an almost unorthographic."
+              }
+            ]
           }
         }
       }

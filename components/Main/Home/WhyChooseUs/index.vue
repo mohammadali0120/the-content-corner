@@ -25,7 +25,7 @@
         :key="index"
       >
         <div class="lg:m-4 mb-4">
-          <MainHomeWhyChooseUsOfferingCard
+          <MainHomeOfferingCard
             :title="card.title"
             :subtitle="card.body"
             :icon="card.icon"
