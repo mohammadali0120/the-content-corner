@@ -1,12 +1,40 @@
 <template>
   <div
-    class="bg-[#263038] z-100 fixed top-0 left-0 w-full h-full text-center flex items-center justify-center"
+    v-show="loading"
+    class="bg-[#1F2937] z-100 fixed top-0 left-0 w-full h-full text-center flex items-center justify-center"
   >
     <div class="loader"></div>
   </div>
 </template>
 
-<script setup lang="ts"></script>
+<script setup lang="ts">
+// interfaces & types & enums
+
+// props
+
+// emits
+
+// variables
+const nuxtApp = useNuxtApp();
+const loading = ref<boolean>(false);
+
+// computed properties
+
+// watches
+
+// methods
+
+// hooks
+nuxtApp.hook("page:start", () => {
+  loading.value = true;
+});
+nuxtApp.hook("page:transition:finish", () => {
+  loading.value = false;
+});
+nuxtApp.hook("page:finish", () => {
+  loading.value = false;
+});
+</script>
 <style scoped lang="scss">
 .loader {
   position: relative;
@@ -29,7 +57,7 @@
   left: 0;
   width: 10px;
   height: 10px;
-  background: #de3500;
+  background: #ffaa00;
   border-radius: 50%;
   animation: ballStepUp 3s linear infinite;
 }
