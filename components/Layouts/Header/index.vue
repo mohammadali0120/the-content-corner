@@ -2,7 +2,7 @@
   <div class="lg:py-4 dir-ltr">
     <div
       ref="headerRef"
-      class="lg:flex hidden bg-white dark:bg-gray-900 w-full lg:h-[70px] items-center transition-all duration-300 transform"
+      class="lg:flex hidden bg-white dark:bg-gray-900 w-full lg:h-[70px] items-center transition-all duration-500 transform"
     >
       <div class="container lg:px-4 px-2">
         <div class="flex items-center justify-between">
@@ -29,7 +29,7 @@
                   <NuxtLink
                     :to="item.link"
                     :class="[
-                      'lg:mx-4 mx-2 hover:text-baseYellow-500 duration-300 uppercase',
+                      'lg:mx-4 mx-2 hover:text-baseYellow-500 duration-500 uppercase',
                       currentAcitveRoute &&
                       currentAcitveRoute.link === item.link
                         ? 'text-baseYellow-500'
@@ -41,7 +41,7 @@
               </ul>
             </li>
             <li
-              class="lg:w-[142px] h-10 block rounded-md bg-baseYellow-500 hover:bg-baseYellow-700 duration-300 text-white"
+              class="lg:w-[142px] h-10 block rounded-md bg-baseYellow-500 hover:bg-baseYellow-700 duration-500 text-white"
             >
               <NuxtLink
                 class="w-full h-full flex justify-center items-center uppercase font-bold"
@@ -109,7 +109,7 @@
                 : 'opacity-0 overflow-y-hidden mt-0',
             ]"
             ref="responsiveHeaderItemsRef"
-            class="transition-all duration-300 ltr:dir-ltr rtl:dir-rtl"
+            class="transition-all duration-500 ltr:dir-ltr rtl:dir-rtl"
           >
             <li
               v-for="(item, index) in $tm('components.layouts.header.items')"
@@ -119,7 +119,7 @@
               <NuxtLink
                 :to="item.link"
                 :class="[
-                  ' hover:text-baseYellow-500 duration-300 uppercase',
+                  ' hover:text-baseYellow-500 duration-500 uppercase',
                   currentAcitveRoute && currentAcitveRoute.link === item.link
                     ? 'text-baseYellow-500'
                     : '',
@@ -160,7 +160,7 @@
               </div>
             </li>
             <li
-              class="w-full h-10 block rounded-md bg-baseYellow-500 hover:bg-baseYellow-700 duration-300 text-white"
+              class="w-full h-10 block rounded-md bg-baseYellow-500 hover:bg-baseYellow-700 duration-500 text-white"
             >
               <NuxtLink
                 class="w-full h-full flex justify-center items-center uppercase font-bold"
@@ -183,8 +183,8 @@ import type {
   Language,
   AvailableLanguageCodes,
   Theme,
-} from "@/utilities/types";
-import { useIndex } from "@/store";
+} from "~/utilities/types";
+import { useIndex } from "~/store";
 // interfaces & types & enums
 
 // props
@@ -238,7 +238,7 @@ const onVerticalScrollbar = (element: any, amount: number) => {
     element.classList.add(
       ...[
         "fixed",
-        "z-100",
+        "z-10",
         "top-0",
         "bg-white",
         "dark:bg-black",
@@ -249,7 +249,7 @@ const onVerticalScrollbar = (element: any, amount: number) => {
     element.classList.remove(
       ...[
         "fixed",
-        "z-100",
+        "z-10",
         "top-0",
         "bg-white",
         "dark:bg-black",
@@ -266,7 +266,7 @@ const onChangeSelectedLanguage = (language: Language) => {
 
   setTimeout(() => {
     useIndexStore.changeLoading(false);
-  }, 2000);
+  }, 1000);
 };
 const onChangeSelectedTheme = (theme: Theme) => {
   useIndexStore.changeLoading(true);
@@ -275,7 +275,7 @@ const onChangeSelectedTheme = (theme: Theme) => {
 
   setTimeout(() => {
     useIndexStore.changeLoading(false);
-  }, 2000);
+  }, 1000);
 };
 
 // hooks

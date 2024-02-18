@@ -8,7 +8,7 @@
 // interfaces & types & enums
 interface Props {
   name: string;
-  color: { default: string; hover: string };
+  color?: { default: string; hover: string };
 }
 
 // props
@@ -31,13 +31,13 @@ const icon = defineAsyncComponent(
 </script>
 <style scoped lang="scss">
 svg {
-  fill: v-bind("props.color.default");
+  fill: v-bind("props.color?.default");
 }
 
 .offering-card {
   &:hover {
     svg {
-      fill: v-bind("props.color.hover");
+      fill: v-bind("props.color?.hover");
     }
   }
 }

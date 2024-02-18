@@ -6,9 +6,9 @@
           <LayoutsHeader />
         </div>
         <div>
-          <ClientOnly>
-            <ElementCustomLoading v-show="useIndexStore.getLoading" />
-          </ClientOnly>
+          <Teleport to="body">
+            <ElementCustomLoading v-if="useIndexStore.getLoading" />
+          </Teleport>
           <ElementLoading />
           <NuxtPage />
         </div>
@@ -21,7 +21,7 @@
 </template>
 
 <script setup lang="ts">
-import { useIndex } from "@/store";
+import { useIndex } from "~/store";
 
 // interfaces & types & enums
 
@@ -44,5 +44,8 @@ const htmlAttrs = computed((): any => head.value.htmlAttrs);
 // methods
 
 // hooks
+onMounted(() => {
+  useIndexStore.changeLoading(false);
+});
 </script>
 <style scoped lang="scss"></style>

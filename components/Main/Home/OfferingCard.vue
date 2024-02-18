@@ -1,6 +1,6 @@
 <template>
   <div
-    class="offering-card bg-white dark:bg-gray-900 lg:p-8 p-4 border border-gray-200 dark:border-gray-700 rounded-md group hover:bg-baseYellow-500 hover:dark:bg-gray-950 duration-300 hover:text-white"
+    class="offering-card bg-white dark:bg-gray-900 lg:p-8 p-4 border border-gray-200 dark:border-gray-700 rounded-md group hover:bg-baseYellow-500 hover:dark:bg-gray-950 duration-500 hover:text-white"
     :class="
       props.mode && props.mode === 'vertical'
         ? 'flex flex-col-reverse'
@@ -13,7 +13,7 @@
     >
       <div class="lg:mb-4 mb-2">
         <h2
-          class="lg:text-xl text-sm text-black dark:text-white group-hover:text-white group-hover:duration-300 font-bold"
+          class="lg:text-xl text-sm text-black dark:text-white group-hover:text-white group-hover:duration-500 font-bold"
           :class="
             props.mode && props.mode === 'vertical'
               ? 'text-center'
@@ -39,7 +39,7 @@
       "
     >
       <div
-        class="lg:w-[80px] lg:h-[80px] w-1/4 bg-baseYellow-500 group-hover:bg-white duration-300 group-hover:dark:bg-gray-800 rounded-full flex items-center justify-center mx-auto"
+        class="lg:w-[80px] lg:h-[80px] w-1/4 bg-baseYellow-500 group-hover:bg-white duration-500 group-hover:dark:bg-gray-800 rounded-full flex items-center justify-center mx-auto"
       >
         <div class="lg:w-[44px] lg:h-[45px] lg:p-0 p-4">
           <ElementSvgIcon :name="props.icon" :color="props.color" />

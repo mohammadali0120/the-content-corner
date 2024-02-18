@@ -14,7 +14,7 @@ export default () => {
       return theme.value === localStorageColorScheme;
     });
 
-    return foundedTheme as Theme;
+    return foundedTheme!;
   });
 
   const onChangeTheme = (theme: ThemeVariants) => {

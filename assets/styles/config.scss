@@ -23,7 +23,10 @@ body {
 input,
 textarea,
 select {
-  @apply focus:outline-none;
+  @apply focus:outline-none bg-white placeholder:text-gray-400 placeholder:dark:text-gray-300 dark:bg-gray-900 border-gray-200 dark:border-gray-700;
+}
+textarea {
+  resize: none;
 }
 
 /* Chrome, Safari, Edge, Opera */

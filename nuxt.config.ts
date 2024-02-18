@@ -34,7 +34,6 @@ export default defineNuxtConfig({
       WEBSITE_NAME_EN: process.env.WEBSITE_NAME_EN,
       WEBSITE_NAME_FA: process.env.WEBSITE_NAME_FA,
       WEBSITE_ADDRESS: process.env.WEBSITE_ADDRESS,
-      API_BASE_URL: process.env.API_BASE_URL,
     },
   },
 

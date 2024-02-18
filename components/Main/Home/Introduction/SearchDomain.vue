@@ -96,7 +96,7 @@
 </template>
 
 <script setup lang="ts">
-import useIntersectionObserver from "@/composables/useIntersectionObserver";
+import useIntersectionObserver from "~/composables/useIntersectionObserver";
 // interfaces & types & enums
 
 // props

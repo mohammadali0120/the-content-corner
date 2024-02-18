@@ -39,7 +39,7 @@
 </template>
 
 <script setup lang="ts">
-import useIntersectionObserver from "@/composables/useIntersectionObserver";
+import useIntersectionObserver from "~/composables/useIntersectionObserver";
 
 // interfaces & types & enums
 
@@ -57,7 +57,7 @@ const { isIntersected, isIntersectionEnteredIntoView } =
 // watches
 watch(
   isIntersected,
-  () => {
+  (): any => {
     if (isIntersected.value) {
       isCounterStarted.value = true;
     }

@@ -30,7 +30,7 @@
         :class="[props.variant ? 'menu-' + props.variant : 'menu-default']"
       >
         <li
-          class="flex items-center duration-300 cursor-pointer rounded-md py-1 ps-2"
+          class="flex items-center duration-500 cursor-pointer rounded-md py-1 ps-2"
           :class="[
             props.items.length - 1 !== index ? 'lg:mb-2 mb-1' : '',
             props.variant ? 'menu-item-' + props.variant : 'menu-item-default',

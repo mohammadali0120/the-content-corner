@@ -6,6 +6,7 @@
           name="inputName"
           label="inputLabel"
           rules="required|min:3"
+          placeholder="Enter your name"
         />
       </div>
       <div class="text-center w-1/3 h-10 mx-auto">

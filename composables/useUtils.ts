@@ -1,4 +1,5 @@
-import type { AvailableLanguageCodes, ThemeVariants } from "~/utilities/types";
+import { useIndex } from "~/store";
+import type { AvailableLanguageCodes, ThemeVariants, ToastPosition } from "~/utilities/types";
 
 export const onChangeFontFamily = (language: AvailableLanguageCodes) => {
   const root = document.documentElement;
@@ -21,14 +22,41 @@ export const changeColorScheme = (theme: ThemeVariants) => {
     } else if (window.matchMedia("(prefers-color-scheme: light)").matches) {
       document.documentElement.style.setProperty("color-scheme", "light");
     }
-    return;
   } else if (theme === "dark") {
     document.documentElement.style.setProperty("color-scheme", "dark");
   } else {
     document.documentElement.style.setProperty("color-scheme", "light");
   }
 };
+export const getHtmlRootTheme = (): "dark" | "light" => {
+  const useIndexStore = useIndex();
+  let rootTheme: "dark" | "light" = "light";
+  let theme = document.documentElement.style.getPropertyValue("color-scheme");
 
+  if (useIndexStore.getTheme === "auto") {
+    if (theme === "dark") {
+      rootTheme = "dark";
+    } else if (theme === "light") {
+      rootTheme = "light";
+    }
+  } else if (useIndexStore.getTheme === "dark") {
+    rootTheme = "dark";
+  } else {
+    rootTheme = "light";
+  }
+
+  return rootTheme;
+};
 export const isEven = (value: number) => {
   return value % 2 === 0;
+};
+
+export const makeNuxtElementOverflowHidden = (loading: boolean) => {
+  const nuxtElement = document.querySelector("#__nuxt");
+
+  if (loading) {
+    nuxtElement?.classList.add(...["overflow-hidden"]);
+  } else {
+    nuxtElement?.classList.remove(...["overflow-hidden"]);
+  }
 };

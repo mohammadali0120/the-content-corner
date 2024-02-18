@@ -8,6 +8,8 @@
 </template>
 
 <script setup lang="ts">
+import { makeNuxtElementOverflowHidden } from '~/composables/useUtils';
+
 // interfaces & types & enums
 
 // props
@@ -21,6 +23,9 @@ const loading = ref<boolean>(false);
 // computed properties
 
 // watches
+watch(loading, () => {
+  makeNuxtElementOverflowHidden(loading.value)
+});
 
 // methods
 

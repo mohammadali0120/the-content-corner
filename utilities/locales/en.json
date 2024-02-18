@@ -19,7 +19,11 @@
       "mobile": "{_field_} is not valid"
     },
     "labels": {
-      "inputLabel": "Input Label"
+      "inputLabel": "Input Label",
+      "fullName": "Fullname",
+      "email": "Email",
+      "description": "Description",
+      "number": "Number"
     },
     "toasts": {},
     "components": {
@@ -40,13 +44,34 @@
           "title": "Home",
           "name": "description",
           "content": "Home Page",
-          "description": "Home page description"
+          "description": "Home page description",
+
+          "latestContent": {
+            "title": "Our Latest Content",
+            "tabs": [
+              { "text": "Podcasts", "value": "podcasts" },
+              { "text": "Videos", "value": "videos" },
+              { "text": "Posts", "value": "posts" }
+            ]
+          }
         },
         "contactUs": {
           "title": "Contact Us",
           "name": "description",
           "content": "Contact Us Page",
-          "description": "Contact Us page description"
+          "description": "Contact Us page description",
+          "formTitle": "Please fill out the form below to send us a ticket",
+          "inputs": {
+            "fullName": {
+              "rules": "required|min:3"
+            },
+            "email": {
+              "rules": "required|email"
+            },
+            "description": {
+              "rules": "required|min:8"
+            }
+          }
         },
         "aboutUs": {
           "title": "About Us",
@@ -240,7 +265,12 @@
                 "btn": { "text": "Choose Plan", "link": "/" }
               }
             ]
-          }
+          },
+          "latestPodcasts": {
+            "listenToPodcast": "Listen to the podcast"
+          },
+          "latestPosts": {},
+          "latestVideos": {}
         }
       }
     },
@@ -277,7 +307,15 @@
           "value": "light",
           "icon": { "prefix": "fa-solid", "value": "fa-sun" }
         }
-      ]
+      ],
+      "links": {
+        "home": "/",
+        "aboutUs": "/about-us",
+        "contactUs": "/contact-us",
+        "videos": "/videos",
+        "podcasts": "/podcasts",
+        "posts": "/posts"
+      }
     }
   }
 }

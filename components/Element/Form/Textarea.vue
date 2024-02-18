@@ -1,24 +1,24 @@
 <template>
-  <div ref="inputElementRef">
+  <div ref="textareaElementRef">
     <div
-      class="w-full h-10 border-2 border-gray-200 dark:border-gray-700 rounded-md relative"
+      class="w-full lg:h-44 h-36 border-2 border-gray-200 dark:border-gray-700 rounded-md relative"
     >
-      <input
+      <textarea
         :id="props.name"
         ref="inputRef"
-        class="w-full h-full px-2 rounded-md"
+        class="w-full h-full p-2 rounded-md"
         type="text"
         v-model="input"
         @input="onInput"
         @focus="onFocusInput"
-      />
+      ></textarea>
       <div
         @click="onFocusInput"
-        class="w-fit lg:px-4 px-2 text-black dark:text-white absolute transform font-bold transition-all duration-500"
+        class="w-fit lg:px-4 px-2 text-black dark:text-white absolute font-bold transition-all duration-500"
         :class="
           inputIsFocused
-            ? 'bg-transparent -translate-y-full top-0'
-            : 'bg-white dark:bg-gray-900 top-1/2 -translate-y-1/2'
+            ? 'bg-transparent -top-5'
+            : 'bg-white dark:bg-gray-900 top-2'
         "
       >
         <label :for="props.name" class="relative px-2"
@@ -62,8 +62,8 @@ const {
   errorMessage,
   meta,
 }: any = useField(props.name, props.rules, { label: props.label });
-const inputRef = ref<HTMLInputElement | null>(null);
-const inputElementRef = ref<HTMLDivElement | null>(null);
+const inputRef = ref<HTMLTextAreaElement | null>(null);
+const textareaElementRef = ref<HTMLDivElement | null>(null);
 const inputIsFocused = ref<boolean>(false);
 
 // computed properties
@@ -86,7 +86,7 @@ const onInput = () => {
   emit("onInput", input.value);
 };
 // hooks
-onClickOutside(inputElementRef, () => {
+onClickOutside(textareaElementRef, () => {
   onUnFocusInput();
 });
 </script>

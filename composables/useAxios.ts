@@ -1,13 +1,18 @@
 import axios from "axios";
 
-export default defineNuxtPlugin(async (nuxtApp: any) => {
+export default (
+  baseUrl: string,
+  headers: any,
+  credentials: boolean = false
+) => {
   const clientSideError = useError();
 
   const router = useRouter();
 
   const $axios = axios.create({
-    baseURL: "http://localhost:8000",
-    withCredentials: true,
+    baseURL: baseUrl,
+    withCredentials: credentials,
+    headers,
   });
 
   $axios.interceptors.response.use(
@@ -42,8 +47,6 @@ export default defineNuxtPlugin(async (nuxtApp: any) => {
   );
 
   return {
-    provide: {
-      axios: $axios,
-    },
+    axios: $axios,
   };
-});
+};

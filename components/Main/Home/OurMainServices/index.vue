@@ -50,8 +50,8 @@
 </template>
 
 <script setup lang="ts">
-import { isEven } from "@/composables/useUtils";
-import useIntersectionObserver from "@/composables/useIntersectionObserver";
+import { isEven } from "~/composables/useUtils";
+import useIntersectionObserver from "~/composables/useIntersectionObserver";
 
 // interfaces & types & enums
 

@@ -9,7 +9,7 @@ interface State {
 export const useIndex = defineStore("index", {
   state: (): State => ({
     theme: "auto",
-    loading: false,
+    loading: true,
   }),
   getters: {
     // sidebarMenu: (state: State) => state.sidebarMenu,

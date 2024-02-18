@@ -40,7 +40,7 @@
 
 <script setup lang="ts">
 // interfaces & types & enums
-import useIntersectionObserver from "@/composables/useIntersectionObserver";
+import useIntersectionObserver from "~/composables/useIntersectionObserver";
 
 // props
 
