@@ -1,5 +1,11 @@
 import { useIndex } from "~/store";
-import type { AvailableLanguageCodes, ThemeVariants, ToastPosition } from "~/utilities/types";
+import type {
+  AvailableLanguageCodes,
+  ThemeVariants,
+  ToastPosition,
+} from "~/utilities/types";
+
+export const LoadingDuration = 1000;
 
 export const onChangeFontFamily = (language: AvailableLanguageCodes) => {
   const root = document.documentElement;
@@ -51,12 +57,13 @@ export const isEven = (value: number) => {
   return value % 2 === 0;
 };
 
-export const makeNuxtElementOverflowHidden = (loading: boolean) => {
+export const makeNuxtElementOverflowHidden = () => {
   const nuxtElement = document.querySelector("#__nuxt");
 
-  if (loading) {
-    nuxtElement?.classList.add(...["overflow-hidden"]);
-  } else {
-    nuxtElement?.classList.remove(...["overflow-hidden"]);
-  }
+  nuxtElement?.classList.remove(...["overflow-hidden"]);
+};
+export const makeNuxtElementOverflowVisible = () => {
+  const nuxtElement = document.querySelector("#__nuxt");
+
+  nuxtElement?.classList.add(...["overflow-hidden"]);
 };

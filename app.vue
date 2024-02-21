@@ -12,9 +12,9 @@
           <ElementLoading />
           <NuxtPage />
         </div>
-        <!-- <div>
+        <div>
           <LayoutsFooter />
-        </div> -->
+        </div>
       </div>
     </Body>
   </Html>
@@ -22,6 +22,10 @@
 
 <script setup lang="ts">
 import { useIndex } from "~/store";
+import {
+  makeNuxtElementOverflowHidden,
+  makeNuxtElementOverflowVisible,
+} from "~/composables/useUtils";
 
 // interfaces & types & enums
 
@@ -40,6 +44,16 @@ const useIndexStore = useIndex();
 const htmlAttrs = computed((): any => head.value.htmlAttrs);
 
 // watches
+watch(
+  () => useIndexStore.getLoading,
+  () => {
+    if (!useIndexStore.getLoading) {
+      makeNuxtElementOverflowHidden();
+    } else {
+      makeNuxtElementOverflowVisible();
+    }
+  }
+);
 
 // methods
 

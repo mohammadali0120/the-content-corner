@@ -64,7 +64,6 @@ const audioRef = ref<any | null>(null);
 
 // methods
 const onLoadAudio = () => {
-  console.log("onLoadAudio");
   isAudioLoaded.value = true;
 };
 // hooks

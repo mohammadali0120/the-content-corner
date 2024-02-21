@@ -7,9 +7,6 @@
 </template>
 
 <script setup lang="ts">
-import { makeNuxtElementOverflowHidden } from "~/composables/useUtils";
-import { useIndex } from "~/store";
-
 // interfaces & types & enums
 
 // props
@@ -17,16 +14,10 @@ import { useIndex } from "~/store";
 // emits
 
 // variables
-const useIndexStore = useIndex();
+
 // computed properties
 
 // watches
-watch(
-  () => useIndexStore.getLoading,
-  () => {
-    makeNuxtElementOverflowHidden(useIndexStore.getLoading);
-  }
-);
 
 // methods
 

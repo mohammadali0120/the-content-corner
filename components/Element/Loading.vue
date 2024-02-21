@@ -8,7 +8,10 @@
 </template>
 
 <script setup lang="ts">
-import { makeNuxtElementOverflowHidden } from '~/composables/useUtils';
+import {
+  makeNuxtElementOverflowHidden,
+  makeNuxtElementOverflowVisible,
+} from "~/composables/useUtils";
 
 // interfaces & types & enums
 
@@ -24,7 +27,11 @@ const loading = ref<boolean>(false);
 
 // watches
 watch(loading, () => {
-  makeNuxtElementOverflowHidden(loading.value)
+  if (!loading) {
+    makeNuxtElementOverflowHidden();
+  } else {
+    makeNuxtElementOverflowVisible();
+  }
 });
 
 // methods

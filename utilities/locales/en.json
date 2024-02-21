@@ -37,6 +37,19 @@
             { "text": "Videos", "link": "/videos" }
           ],
           "getStarted": { "text": "Get Started", "link": "/contact-us" }
+        },
+        "footer": {
+          "header": {
+            "firstSection": {
+              "title": "GET AN EASY QUOTE",
+              "subtitle": "Sign Up For Web Hosting Today!"
+            },
+            "secondSection": {
+              "title": "Starting at Only",
+              "subtitle": { "text": "$4.50", "duration": "/mo" }
+            },
+            "link": { "text": "Get started now", "link": "#" }
+          }
         }
       },
       "pages": {

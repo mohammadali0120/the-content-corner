@@ -185,6 +185,7 @@ import type {
   Theme,
 } from "~/utilities/types";
 import { useIndex } from "~/store";
+import { LoadingDuration } from "~/composables/useUtils";
 // interfaces & types & enums
 
 // props
@@ -266,16 +267,15 @@ const onChangeSelectedLanguage = (language: Language) => {
 
   setTimeout(() => {
     useIndexStore.changeLoading(false);
-  }, 1000);
+  }, LoadingDuration);
 };
 const onChangeSelectedTheme = (theme: Theme) => {
   useIndexStore.changeLoading(true);
-
   onChangeTheme(theme.value);
 
   setTimeout(() => {
     useIndexStore.changeLoading(false);
-  }, 1000);
+  }, LoadingDuration);
 };
 
 // hooks

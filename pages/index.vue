@@ -93,6 +93,11 @@
         <MainHomeOurBestPricing />
       </div>
     </div>
+    <div class="lg:py-20 py-4 dark:bg-[#fda]">
+      <div class="container lg:px-4 px-2">
+        <MainHomeOurPartners />
+      </div>
+    </div>
   </div>
 </template>
 
@@ -107,11 +112,7 @@ interface Tab {
 // emits
 
 // variables
-const runtimeConfig = useRuntimeConfig();
 const { tm, locale } = useI18n();
-// const { axios } = useAxios(runtimeConfig.public.LISTENNOTES_API, {
-//   "X-ListenAPI-Key": runtimeConfig.LISTENNOTES_API_KYE,
-// });
 const route = useRoute();
 const latestContentTab: Tab[] = tm("components.pages.home.latestContent.tabs");
 const selectedLatestContentTab = ref<Tab | null>(null);
