@@ -2,4 +2,5 @@ import type { Theme } from "~/utilities/types";
 
 export const LoadingDuration = 1000;
 
-export const useCurrentThemeState = () => useState<Theme | null>("currentTheme", () => null);
+export const useThemeState = () => useState<Theme | null>("theme", () => null);
+export const useLoadingState = () => useState<boolean>("loading", () => true);

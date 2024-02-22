@@ -23,7 +23,6 @@ export default defineNuxtConfig({
 
   modules: [
     "@nuxtjs/tailwindcss",
-    "@pinia/nuxt",
     "@vueuse/nuxt",
     "@nuxtjs/i18n",
     "@nuxt/image",

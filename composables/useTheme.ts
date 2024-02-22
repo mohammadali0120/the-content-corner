@@ -1,4 +1,3 @@
-import { useIndex } from "~/store";
 import type { Theme, ThemeVariants } from "~/utilities/types";
 
 export default () => {
@@ -10,13 +9,13 @@ export default () => {
 
     onSetCurrentThemeState(localStorageColorScheme as ThemeVariants);
 
-    return useCurrentThemeState().value!;
+    return useThemeState().value!;
   });
 
   const onSetCurrentThemeState = (theme: ThemeVariants) => {
     const themes = tm("other.themes") as Theme[];
 
-    useCurrentThemeState().value = themes.find((i18nTheme: Theme) => {
+    useThemeState().value = themes.find((i18nTheme: Theme) => {
       return i18nTheme.value === theme;
     })!;
   };
@@ -28,8 +27,6 @@ export default () => {
   };
 
   return {
-    // variables
-    useCurrentThemeState,
     // computed properties
     getCurrentTheme,
     // methods

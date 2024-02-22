@@ -7,7 +7,7 @@
         </div>
         <div>
           <Teleport to="body">
-            <ElementCustomLoading v-if="useIndexStore.getLoading" />
+            <ElementCustomLoading v-if="useLoadingState().value" />
           </Teleport>
           <ElementLoading />
           <NuxtPage />
@@ -21,7 +21,6 @@
 </template>
 
 <script setup lang="ts">
-import { useIndex } from "~/store";
 import {
   makeNuxtElementOverflowHidden,
   makeNuxtElementOverflowVisible,
@@ -38,16 +37,15 @@ const head = useLocaleHead({
   addDirAttribute: true,
   addSeoAttributes: true,
 });
-const useIndexStore = useIndex();
 
 // computed properties
 const htmlAttrs = computed((): any => head.value.htmlAttrs);
 
 // watches
 watch(
-  () => useIndexStore.getLoading,
+  () => useLoadingState().value,
   () => {
-    if (!useIndexStore.getLoading) {
+    if (!useLoadingState().value) {
       makeNuxtElementOverflowHidden();
     } else {
       makeNuxtElementOverflowVisible();
@@ -59,7 +57,7 @@ watch(
 
 // hooks
 onMounted(() => {
-  useIndexStore.changeLoading(false);
+  useLoadingState().value = false;
 });
 </script>
 <style scoped lang="scss"></style>

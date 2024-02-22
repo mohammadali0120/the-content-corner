@@ -184,7 +184,6 @@ import type {
   AvailableLanguageCodes,
   Theme,
 } from "~/utilities/types";
-import { useIndex } from "~/store";
 import { LoadingDuration } from "~/composables/states";
 // interfaces & types & enums
 
@@ -194,7 +193,6 @@ import { LoadingDuration } from "~/composables/states";
 // variables
 const route = useRoute();
 const { $i18n } = useNuxtApp();
-const useIndexStore = useIndex();
 const { onChangeLanguage, getCurrentLanguageFromI18n } = useLanguage();
 const { onChangeTheme, getCurrentTheme } = useTheme();
 
@@ -260,21 +258,21 @@ const onVerticalScrollbar = (element: any, amount: number) => {
   }
 };
 const onChangeSelectedLanguage = (language: Language) => {
-  useIndexStore.changeLoading(true);
+  useLoadingState().value = true;
 
   onChangeLanguage(language.value as AvailableLanguageCodes);
   onChangeFontFamily(language.value as AvailableLanguageCodes);
 
   setTimeout(() => {
-    useIndexStore.changeLoading(false);
+    useLoadingState().value = false;
   }, LoadingDuration);
 };
 const onChangeSelectedTheme = (theme: Theme) => {
-  useIndexStore.changeLoading(true);
+  useLoadingState().value = true;
   onChangeTheme(theme.value);
 
   setTimeout(() => {
-    useIndexStore.changeLoading(false);
+    useLoadingState().value = false;
   }, LoadingDuration);
 };
 

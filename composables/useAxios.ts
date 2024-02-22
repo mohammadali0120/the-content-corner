@@ -28,7 +28,6 @@ export default (
         //     description: "Page Not Found",
         //     message: "Page Not Found",
         //   };
-        // useIndexStore.changeLoading(false);
       } else if (error.response.status === 401) {
         // router.push("/login");
       } else if (error.response.status === 403) {
@@ -39,7 +38,6 @@ export default (
         //   description: "Internal Server Error",
         //   message: "Internal Server Error",
         // };
-        // useIndexStore.changeLoading(false);
       }
 
       return Promise.reject(error);
