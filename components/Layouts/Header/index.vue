@@ -185,7 +185,7 @@ import type {
   Theme,
 } from "~/utilities/types";
 import { useIndex } from "~/store";
-import { LoadingDuration } from "~/composables/useUtils";
+import { LoadingDuration } from "~/composables/states";
 // interfaces & types & enums
 
 // props

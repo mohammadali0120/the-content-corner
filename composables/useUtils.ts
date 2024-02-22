@@ -1,11 +1,4 @@
-import { useIndex } from "~/store";
-import type {
-  AvailableLanguageCodes,
-  ThemeVariants,
-  ToastPosition,
-} from "~/utilities/types";
-
-export const LoadingDuration = 1000;
+import type { AvailableLanguageCodes, ThemeVariants } from "~/utilities/types";
 
 export const onChangeFontFamily = (language: AvailableLanguageCodes) => {
   const root = document.documentElement;
@@ -20,7 +13,6 @@ export const onChangeFontFamily = (language: AvailableLanguageCodes) => {
       break;
   }
 };
-
 export const changeColorScheme = (theme: ThemeVariants) => {
   if (theme === "auto") {
     if (window.matchMedia("(prefers-color-scheme: dark)").matches) {
@@ -55,7 +47,6 @@ export const getHtmlRootTheme = (): "dark" | "light" => {
 export const isEven = (value: number) => {
   return value % 2 === 0;
 };
-
 export const makeNuxtElementOverflowHidden = () => {
   const nuxtElement = document.querySelector("#__nuxt");
 

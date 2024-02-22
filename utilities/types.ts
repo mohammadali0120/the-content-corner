@@ -1,12 +1,6 @@
 // Types
 export type AvailableLanguageCodes = "en" | "fa";
 export type ThemeVariants = "dark" | "light" | "auto";
-export type ToastPosition =
-  | "topRight"
-  | "topLeft"
-  | "center"
-  | "bottomRight"
-  | "bottomLeft";
 export type ToastType = "danger" | "success" | "warning";
 // Enums
 

@@ -9,7 +9,6 @@ export const useIndex = defineStore("index", {
     loading: true,
   }),
   getters: {
-    // sidebarMenu: (state: State) => state.sidebarMenu,
     getLoading: (state: State) => state.loading,
   },
   actions: {
