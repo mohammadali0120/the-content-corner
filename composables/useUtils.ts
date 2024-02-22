@@ -35,17 +35,16 @@ export const changeColorScheme = (theme: ThemeVariants) => {
   }
 };
 export const getHtmlRootTheme = (): "dark" | "light" => {
-  const useIndexStore = useIndex();
   let rootTheme: "dark" | "light" = "light";
   let theme = document.documentElement.style.getPropertyValue("color-scheme");
 
-  if (useIndexStore.getTheme === "auto") {
+  if (useCurrentThemeState().value?.value === "auto") {
     if (theme === "dark") {
       rootTheme = "dark";
     } else if (theme === "light") {
       rootTheme = "light";
     }
-  } else if (useIndexStore.getTheme === "dark") {
+  } else if (useCurrentThemeState().value?.value === "dark") {
     rootTheme = "dark";
   } else {
     rootTheme = "light";
