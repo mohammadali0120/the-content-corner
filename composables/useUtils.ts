@@ -50,10 +50,10 @@ export const isEven = (value: number) => {
 export const makeNuxtElementOverflowHidden = () => {
   const nuxtElement = document.querySelector("#__nuxt");
 
-  nuxtElement?.classList.remove(...["overflow-hidden"]);
+  nuxtElement?.classList.add(...["overflow-hidden"]);
 };
 export const makeNuxtElementOverflowVisible = () => {
   const nuxtElement = document.querySelector("#__nuxt");
 
-  nuxtElement?.classList.add(...["overflow-hidden"]);
+  nuxtElement?.classList.remove(...["overflow-hidden"]);
 };

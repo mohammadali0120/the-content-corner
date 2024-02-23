@@ -45,7 +45,7 @@ const htmlAttrs = computed((): any => head.value.htmlAttrs);
 watch(
   () => useLoadingState().value,
   () => {
-    if (!useLoadingState().value) {
+    if (useLoadingState().value) {
       makeNuxtElementOverflowHidden();
     } else {
       makeNuxtElementOverflowVisible();

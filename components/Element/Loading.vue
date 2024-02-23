@@ -27,7 +27,7 @@ const loading = ref<boolean>(false);
 
 // watches
 watch(loading, () => {
-  if (!loading) {
+  if (loading.value) {
     makeNuxtElementOverflowHidden();
   } else {
     makeNuxtElementOverflowVisible();
