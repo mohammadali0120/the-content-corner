@@ -1,6 +1,6 @@
 {
   "messages": {
-    "brand": { "value": "CoHost", "link": "/" },
+    "brand": { "value": "The Content Corner", "link": "/" },
     "validation": {
       "min": "{_field_} must be at least {_length_} characters",
       "max": "{_field_} must be a maximum of {_length_} characters",
@@ -31,10 +31,10 @@
         "header": {
           "items": [
             { "text": "Home", "link": "/" },
-            { "text": "About Us", "link": "/about-us" },
             { "text": "Posts", "link": "/posts" },
             { "text": "Podcasts", "link": "/podcasts" },
-            { "text": "Videos", "link": "/videos" }
+            { "text": "Videos", "link": "/videos" },
+            { "text": "About Us", "link": "/about-us" }
           ],
           "getStarted": { "text": "Get Started", "link": "/contact-us" }
         },
@@ -51,7 +51,7 @@
             "link": { "text": "Get started now", "link": "#" }
           },
           "siteInfo": {
-            "title": "CoHost",
+            "title": "The Content Corner",
             "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Sint debitis doloremque similique ut rem eos libero veritatis nisi, repellat, in tempore, totam distinctio atque dolor aut voluptate? Voluptatibus, eius? Consequatur.",
             "links": [
               {

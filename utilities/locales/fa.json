@@ -1,6 +1,6 @@
 {
   "messages": {
-    "brand": { "value": "CoHost", "link": "/fa" },
+    "brand": { "value": "The Content Corner", "link": "/fa" },
     "validation": {
       "min": "{_field_} باید حداقل {_length_} کاراکتر باشد",
       "max": "{_field_} باید حداکثر {_length_} کاراکتر باشد",
@@ -27,10 +27,10 @@
         "header": {
           "items": [
             { "text": "خانه", "link": "/fa" },
-            { "text": "درباره ما", "link": "/fa/about-us" },
             { "text": "پست ها", "link": "/fa/posts" },
             { "text": "پادکست ها", "link": "/fa/podcasts" },
-            { "text": "ویدیو ها", "link": "/fa/videos" }
+            { "text": "ویدیو ها", "link": "/fa/videos" },
+            { "text": "درباره ما", "link": "/fa/about-us" }
           ]
         }
       },
