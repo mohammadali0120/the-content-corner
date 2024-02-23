@@ -198,7 +198,7 @@
                 variant="black"
                 position="bottom"
                 @on-change-selected-item="
-                  onChangeSelectedTheme($event as Theme)
+                  onChangeTheme($event.value as ThemeVariants)
                 "
               />
             </ClientOnly>
@@ -220,7 +220,7 @@
 </template>
 
 <script setup lang="ts">
-import type { Theme } from "~/utilities/types";
+import type { Theme, ThemeVariants } from "~/utilities/types";
 
 // interfaces & types & enums
 
@@ -236,14 +236,6 @@ const { onChangeTheme, getCurrentTheme } = useTheme();
 // watches
 
 // methods
-const onChangeSelectedTheme = (theme: Theme) => {
-  useLoadingState().value = true;
-  onChangeTheme(theme.value);
-
-  setTimeout(() => {
-    useLoadingState().value = false;
-  }, LoadingDuration);
-};
 
 // hooks
 </script>

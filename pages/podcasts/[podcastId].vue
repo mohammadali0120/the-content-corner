@@ -1,5 +1,5 @@
 <template>
-  <div class="lg:pt-8 lg:pb-0 py-2">
+  <div class="lg:py-8 py-2">
     <div class="container lg:px-4 px-2">
       <div class="flex flex-wrap">
         <div class="lg:w-1/4 w-full lg:h-[300px] lg:mb-8 mb-4">

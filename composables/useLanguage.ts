@@ -17,10 +17,21 @@ export default () => {
     return languages[0];
   });
 
-  const onChangeLanguage = (language: AvailableLanguageCodes) => {
+  const onChangeLanguage = (
+    language: AvailableLanguageCodes,
+    loading: boolean = true
+  ) => {
     setLocale(language);
     setLocaleCookie(language);
     switchLocalePath(language);
+
+    if (loading) {
+      useLoadingState().value = true;
+      setTimeout(() => {
+        useLoadingState().value = false;
+      }, LoadingDuration);
+    }
+
     router.push({ path: switchLocalePath(language) });
   };
 

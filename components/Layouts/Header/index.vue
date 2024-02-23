@@ -138,7 +138,7 @@
                         :items="$tm('other.themes') as Theme[]"
                         variant="black"
                         @on-change-selected-item="
-                          onChangeSelectedTheme($event as Theme)
+                          onChangeTheme($event.value as ThemeVariants)
                         "
                       />
                     </ClientOnly>
@@ -170,8 +170,8 @@ import type {
   Language,
   AvailableLanguageCodes,
   Theme,
+  ThemeVariants,
 } from "~/utilities/types";
-import { LoadingDuration } from "~/composables/states";
 // interfaces & types & enums
 
 // props
@@ -202,6 +202,8 @@ watch(
     });
     if (foundedI18nRoute) {
       currentAcitveRoute.value = foundedI18nRoute;
+    } else {
+      currentAcitveRoute.value = null;
     }
   },
   { immediate: true }
@@ -245,22 +247,8 @@ const onVerticalScrollbar = (element: any, amount: number) => {
   }
 };
 const onChangeSelectedLanguage = (language: Language) => {
-  useLoadingState().value = true;
-
   onChangeLanguage(language.value as AvailableLanguageCodes);
   onChangeFontFamily(language.value as AvailableLanguageCodes);
-
-  setTimeout(() => {
-    useLoadingState().value = false;
-  }, LoadingDuration);
-};
-const onChangeSelectedTheme = (theme: Theme) => {
-  useLoadingState().value = true;
-  onChangeTheme(theme.value);
-
-  setTimeout(() => {
-    useLoadingState().value = false;
-  }, LoadingDuration);
 };
 
 // hooks

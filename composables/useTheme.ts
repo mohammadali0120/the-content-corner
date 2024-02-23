@@ -19,11 +19,22 @@ export default () => {
       return i18nTheme.value === theme;
     })!;
   };
-  const onChangeTheme = (theme: ThemeVariants) => {
+  const onChangeTheme = (theme: ThemeVariants, loading: boolean = true) => {
+    if (getCurrentTheme.value.value === theme) {
+      return;
+    }
+
     selectedTheme.value = theme;
     changeColorScheme(theme);
 
     onSetCurrentThemeState(theme);
+
+    if (loading) {
+      useLoadingState().value = true;
+      setTimeout(() => {
+        useLoadingState().value = false;
+      }, LoadingDuration);
+    }
   };
 
   return {
