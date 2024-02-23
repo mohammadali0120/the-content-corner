@@ -49,6 +49,66 @@
               "subtitle": { "text": "$4.50", "duration": "/mo" }
             },
             "link": { "text": "Get started now", "link": "#" }
+          },
+          "siteInfo": {
+            "title": "CoHost",
+            "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Sint debitis doloremque similique ut rem eos libero veritatis nisi, repellat, in tempore, totam distinctio atque dolor aut voluptate? Voluptatibus, eius? Consequatur.",
+            "links": [
+              {
+                "icon": { "prefix": "fa-brands", "value": "fa-facebook-f" },
+                "link": "#"
+              },
+              {
+                "icon": { "prefix": "fa-brands", "value": "fa-x-twitter" },
+                "link": "#"
+              },
+              {
+                "icon": { "prefix": "fa-brands", "value": "fa-instagram" },
+                "link": "#"
+              }
+            ]
+          },
+          "usefullLinks": {
+            "title": "Unseful Links",
+            "links": [
+              { "text": "Servers", "link": "#" },
+              { "text": "Windows Hosting", "link": "#" },
+              { "text": "Cloud Hosting", "link": "#" },
+              { "text": "Linux Servers", "link": "#" },
+              { "text": "Windows Servers", "link": "#" },
+              { "text": "OS Servers", "link": "#" }
+            ]
+          },
+          "navigational": {
+            "title": "Navigational",
+            "links": [
+              { "text": "Home", "link": "/" },
+              { "text": "Posts", "link": "/posts" },
+              { "text": "Podcasts", "link": "/podcasts" },
+              { "text": "Vidoes", "link": "/videos" },
+              { "text": "About Us", "link": "/about-us" },
+              { "text": "Contact Us", "link": "/contact-us" }
+            ]
+          },
+          "office": {
+            "title": "Office",
+            "items": [
+              {
+                "text": "203 Fake St. Mountain View, San Francisco, California, USA",
+                "icon": { "prefix": "fa-solid", "value": "fa-location-dot" }
+              },
+              {
+                "text": "+2 392 3929 210",
+                "icon": { "prefix": "fa-solid", "value": "fa-phone" }
+              },
+              {
+                "text": "info@yourdomain.com",
+                "icon": { "prefix": "fa-solid", "value": "fa-envelope" }
+              }
+            ]
+          },
+          "copyright": {
+            "text": "Copyright ©{_date_} All rights reserved"
           }
         }
       },

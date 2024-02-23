@@ -23,11 +23,22 @@
         <span>{{ selectedItem.text }}</span>
       </div>
     </div>
-    <Transition name="slide">
+    <Transition
+      :name="
+        props.position && props.position === 'bottom'
+          ? 'slide-down'
+          : 'slide-up'
+      "
+    >
       <ul
         v-show="isMenuVisibele"
-        class="w-full absolute z-10 left-0 mt-1 lg:border-2 border rounded-md p-1"
-        :class="[props.variant ? 'menu-' + props.variant : 'menu-default']"
+        class="w-full absolute z-10 left-0 lg:border-2 border rounded-md p-1"
+        :class="[
+          props.variant ? 'menu-' + props.variant : 'menu-default',
+          props.position && props.position === 'bottom'
+            ? `bottom-[100%] mb-1`
+            : `top-[100%] mt-1`,
+        ]"
       >
         <li
           class="flex items-center duration-500 cursor-pointer rounded-md py-1 ps-2"
@@ -71,6 +82,7 @@ interface Props {
   selected: Item;
   items: Item[];
   variant?: "default" | "black" | "dark";
+  position?: "top" | "bottom";
 }
 interface Emit {
   (e: "onChangeSelectedItem", payload: Item): void;
@@ -123,5 +135,39 @@ onClickOutside(dropdownMenuRef, () => {
 }
 .menu-item-black {
   @apply hover:bg-gray-800;
+}
+
+.slide-up-enter-active,
+.slide-up-leave-active {
+  transition: all 0.5s ease-in-out;
+  visibility: visible;
+  opacity: 1;
+  z-index: 1;
+  transform: translateY(0%);
+  transition-delay: 0s, 0s, 0.3s;
+}
+.slide-up-enter-from,
+.slide-up-leave-to {
+  visibility: hidden;
+  opacity: 0;
+  transform: translateY(-2em);
+  z-index: -1;
+}
+
+.slide-down-enter-active,
+.slide-down-leave-active {
+  transition: all 0.5s ease-in-out;
+  visibility: visible;
+  opacity: 1;
+  z-index: 1;
+  transform: translateY(0%);
+  transition-delay: 0s, 0s, 0.3s;
+}
+.slide-down-enter-from,
+.slide-down-leave-to {
+  visibility: hidden;
+  opacity: 0;
+  transform: translateY(2em);
+  z-index: -1;
 }
 </style>

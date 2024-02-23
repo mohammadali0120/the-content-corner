@@ -62,19 +62,6 @@
                 </ClientOnly>
               </div>
             </li>
-            <li class="lg:mx-4 mx-2">
-              <div class="w-[140px] h-10">
-                <ClientOnly>
-                  <ElementDropdownMenu
-                    :selected="getCurrentTheme"
-                    :items="$tm('other.themes') as Theme[]"
-                    @on-change-selected-item="
-                      onChangeSelectedTheme($event as Theme)
-                    "
-                  />
-                </ClientOnly>
-              </div>
-            </li>
           </ul>
         </div>
       </div>
