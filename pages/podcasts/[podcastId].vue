@@ -53,6 +53,7 @@
 // emits
 
 // variables
+definePageMeta({ middleware: "auth" });
 const { locale } = useI18n();
 const route = useRoute();
 const isAudioLoaded = ref<boolean>(false);

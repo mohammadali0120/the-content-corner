@@ -45,3 +45,11 @@ export interface Post {
   title: string;
   description: string;
 }
+export interface User {
+  id: number;
+  fullNameEn: string;
+  fullNameFa: string;
+  email: string;
+  password: string;
+  token: string;
+}

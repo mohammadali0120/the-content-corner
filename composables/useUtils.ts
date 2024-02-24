@@ -1,3 +1,4 @@
+import { useToast } from "vue-toastification";
 import type { AvailableLanguageCodes, ThemeVariants } from "~/utilities/types";
 
 export const onChangeFontFamily = (language: AvailableLanguageCodes) => {
@@ -56,4 +57,11 @@ export const makeNuxtElementOverflowVisible = () => {
   const nuxtElement = document.querySelector("#__nuxt");
 
   nuxtElement?.classList.remove(...["overflow-hidden"]);
+};
+export const useToastMsg = (
+  message: string,
+  type: "error" | "success" | "info" | "warning"
+): any => {
+  const toast = useToast();
+  return toast[type](message);
 };

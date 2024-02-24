@@ -60,6 +60,10 @@ export default defineNuxtConfig({
   // Image options
   image: {},
 
+  build: {
+    transpile: ["vue-toastification"],
+  },
+
   // Vite config
 
   vite: {

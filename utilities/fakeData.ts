@@ -1,4 +1,4 @@
-import type { Podcast, Video } from "~/utilities/types";
+import type { Podcast, Video, User } from "~/utilities/types";
 
 // English locale Data
 export const podcastsEn: Podcast[] = [
@@ -180,5 +180,43 @@ export const videosFa: Video[] = [
     image: null,
     link: "https://persian15.asset.aparat.com/aparat-video/3c185919f80662daab3f443f5c91e4a457371881-720p.mp4?wmsAuthSign=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ0b2tlbiI6IjY2OWY0OWE5YzkzOTgxNTgxYTBkNmZjYTM3MzVlZTNlIiwiZXhwIjoxNzA4NDMzNTU4LCJpc3MiOiJTYWJhIElkZWEgR1NJRyJ9.p-JU7izrw_gCHO1bI5E7vcTzEqBH8kNt_b_DlU9QvTE",
     description: "ویدیو طبیعت 6، توضیحات",
+  },
+];
+
+// Other
+
+// Typical Password property should be encrypted but we don't need to do this because this is a dummy app and we don't have a proper DB!
+export const users: User[] = [
+  {
+    id: 1,
+    fullNameEn: "Mohammadali Khaksar",
+    fullNameFa: "محمدعلی خاکسار",
+    email: "mohammadali.khaksar.79@gmail.com",
+    password: "A123456789b",
+    token: "1Z3ZZdoe2voAFOjMfuvsrAdIU6jUmEiL",
+  },
+  {
+    id: 2,
+    fullNameEn: "Mohammadali Khaksar",
+    fullNameFa: "علی محمدی",
+    email: "ali.mohammadi@gmail.com",
+    password: "A123456789b",
+    token: "U0ZS2lxZrZcRik1k06eTLUIMS6V0PZJl",
+  },
+  {
+    id: 3,
+    fullNameEn: "Mohammadali Khaksar",
+    fullNameFa: "رضا جوادی",
+    email: "reza.javadi@gmail.com",
+    password: "A123456789b",
+    token: "pLilPR38lbzS5HF0afl2uJNDM4PvuMpu",
+  },
+  {
+    id: 4,
+    fullNameEn: "Mohammadali Khaksar",
+    fullNameFa: "سعید امیدی",
+    email: "saeed.omidi@gmail.com",
+    password: "A123456789b",
+    token: "NLDWMWXmLKvF55IMSPfNhhdBhlnRXvTv",
   },
 ];

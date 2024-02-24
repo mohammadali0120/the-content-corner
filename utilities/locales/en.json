@@ -23,7 +23,8 @@
       "fullName": "Fullname",
       "email": "Email",
       "description": "Description",
-      "number": "Number"
+      "number": "Number",
+      "password": "Password"
     },
     "toasts": {},
     "components": {
@@ -34,9 +35,10 @@
             { "text": "Posts", "link": "/posts" },
             { "text": "Podcasts", "link": "/podcasts" },
             { "text": "Videos", "link": "/videos" },
-            { "text": "About Us", "link": "/about-us" }
+            { "text": "About Us", "link": "/about-us" },
+            { "text": "Contact Us", "link": "/contact-us" }
           ],
-          "getStarted": { "text": "Get Started", "link": "/contact-us" }
+          "getStarted": { "text": "Get Started", "link": "/login" }
         },
         "footer": {
           "header": {
@@ -169,6 +171,21 @@
           "name": "description",
           "content": "Podcasts Page",
           "description": "Podcasts description"
+        },
+        "login": {
+          "title": "Login",
+          "name": "description",
+          "content": "Login Page",
+          "description": "Login page description",
+          "formTitle": "Please fill out the form below to login",
+          "inputs": {
+            "email": {
+              "rules": "required|email"
+            },
+            "password": {
+              "rules": "required|password"
+            }
+          }
         }
       },
       "default": {
@@ -388,6 +405,11 @@
         "videos": "/videos",
         "podcasts": "/podcasts",
         "posts": "/posts"
+      },
+      "toasts": {
+        "loggedInSuccessfuly": "You Logged In Successfuly",
+        "credentialsDoesNotMatch": "Credentials does not match",
+        "unauthorized": "You don't have access to this page, please login first"
       }
     }
   }

@@ -1,8 +1,8 @@
 import { videosEn, videosFa } from "~/utilities/fakeData";
 import { Video } from "~/utilities/types";
 
-export default defineEventHandler((event) => {
-  const { locale } = getQuery(event);
+export default defineEventHandler(async (event) => {
+  const { locale } = await getQuery(event);
   const videos = locale && locale === "fa" ? videosFa : videosEn;
   const videoId = getRouterParam(event, "videoId");
 
