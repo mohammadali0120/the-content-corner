@@ -197,7 +197,7 @@ export const users: User[] = [
   },
   {
     id: 2,
-    fullNameEn: "Mohammadali Khaksar",
+    fullNameEn: "Ali Mohammadi",
     fullNameFa: "علی محمدی",
     email: "ali.mohammadi@gmail.com",
     password: "A123456789b",
@@ -205,7 +205,7 @@ export const users: User[] = [
   },
   {
     id: 3,
-    fullNameEn: "Mohammadali Khaksar",
+    fullNameEn: "Reza Javadi",
     fullNameFa: "رضا جوادی",
     email: "reza.javadi@gmail.com",
     password: "A123456789b",
@@ -213,9 +213,9 @@ export const users: User[] = [
   },
   {
     id: 4,
-    fullNameEn: "Mohammadali Khaksar",
-    fullNameFa: "سعید امیدی",
-    email: "saeed.omidi@gmail.com",
+    fullNameEn: "John Doe",
+    fullNameFa: "جان دو",
+    email: "john.doe@gmail.com",
     password: "A123456789b",
     token: "NLDWMWXmLKvF55IMSPfNhhdBhlnRXvTv",
   },
