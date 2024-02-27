@@ -38,7 +38,7 @@
             { "text": "About Us", "link": "/about-us" },
             { "text": "Contact Us", "link": "/contact-us" }
           ],
-          "getStarted": { "text": "Get Started", "link": "/login" }
+          "login": { "text": "Login", "link": "/login" }
         },
         "footer": {
           "header": {

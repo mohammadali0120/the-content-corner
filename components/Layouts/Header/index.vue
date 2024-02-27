@@ -40,15 +40,15 @@
                 </li>
               </ul>
             </li>
+
             <li
+              v-if="!useAuthState().value"
               class="lg:w-[142px] h-10 block rounded-md bg-baseYellow-500 hover:bg-baseYellow-700 duration-500 text-white"
             >
               <NuxtLink
                 class="w-full h-full flex justify-center items-center uppercase font-bold"
-                :to="$tm('components.layouts.header.getStarted.link')"
-                >{{
-                  $tm("components.layouts.header.getStarted.text")
-                }}</NuxtLink
+                :to="$tm('components.layouts.header.login.link')"
+                >{{ $tm("components.layouts.header.login.text") }}</NuxtLink
               >
             </li>
             <li class="lg:mx-4 mx-2">
@@ -60,6 +60,21 @@
                     @on-change-selected-item="onChangeSelectedLanguage"
                   />
                 </ClientOnly>
+              </div>
+            </li>
+            <li v-if="useAuthState().value" class="lg:mx-1 mx-0.5">
+              <div class="flex items-center">
+                <div
+                  class="mx-auto w-10 h-10 border-2 border-gray-200 dark:border-gray-700 rounded-full flex items-center justify-center"
+                  :title="useAuthState().value?.email"
+                >
+                  <div class="w-5 h-5">
+                    <ElementIcon
+                      :icon="{ prefix: 'fa-regular', value: 'fa-user' }"
+                      variant="default"
+                    />
+                  </div>
+                </div>
               </div>
             </li>
           </ul>
@@ -147,15 +162,27 @@
               </div>
             </li>
             <li
+              v-if="!useAuthState().value"
               class="w-full h-10 block rounded-md bg-baseYellow-500 hover:bg-baseYellow-700 duration-500 text-white"
             >
               <NuxtLink
                 class="w-full h-full flex justify-center items-center uppercase font-bold"
-                :to="$tm('components.layouts.header.getStarted.link')"
-                >{{
-                  $tm("components.layouts.header.getStarted.text")
-                }}</NuxtLink
+                :to="$tm('components.layouts.header.login.link')"
+                >{{ $tm("components.layouts.header.login.text") }}</NuxtLink
               >
+            </li>
+
+            <li v-if="useAuthState().value">
+              <div
+                class="mx-auto w-10 h-10 border border-gray-700 rounded-full flex items-center justify-center"
+              >
+                <div class="w-5 h-5 cursor-pointer">
+                  <ElementIcon
+                    :icon="{ prefix: 'fa-regular', value: 'fa-user' }"
+                    variant="white"
+                  />
+                </div>
+              </div>
             </li>
           </ul>
         </div>

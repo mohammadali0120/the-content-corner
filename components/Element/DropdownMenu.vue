@@ -9,10 +9,17 @@
       @click="isMenuVisibele = !isMenuVisibele"
     >
       <div class="ps-2 flex items-center">
-        <div class="lg:w-5 lg:h-5 w-4 h-4 lg:me-2 me-1">
+        <div
+          v-if="selectedItem.imgSrc"
+          class="lg:w-5 lg:h-5 w-4 h-4 lg:me-2 me-1"
+        >
           <NuxtImg v-if="selectedItem.imgSrc" :src="selectedItem.imgSrc" />
+        </div>
+        <div
+          v-else-if="selectedItem.icon"
+          class="lg:w-5 lg:h-5 w-4 h-4 lg:me-2 me-1"
+        >
           <ElementIcon
-            v-else-if="selectedItem.icon"
             :key="selectedItem.icon.value"
             :icon="selectedItem.icon"
             :variant="
@@ -20,7 +27,8 @@
             "
           />
         </div>
-        <span>{{ selectedItem.text }}</span>
+
+        <span :title="selectedItem.text">{{ selectedItem.text }}</span>
       </div>
     </div>
     <Transition

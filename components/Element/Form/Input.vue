@@ -7,7 +7,7 @@
         :id="props.name"
         ref="inputRef"
         class="w-full h-full px-2 rounded-md"
-        type="text"
+        :type="props.type ? props.type : 'text'"
         v-model="input"
         @input="onInput"
         @focus="onFocusInput"
@@ -27,7 +27,9 @@
           <span
             v-show="inputIsFocused"
             class="block w-full h-2 absolute -bottom-2"
-            :class="inputIsFocused ? 'bg-white dark:bg-gray-900' : 'bg-transparent'"
+            :class="
+              inputIsFocused ? 'bg-white dark:bg-gray-900' : 'bg-transparent'
+            "
           ></span>
         </label>
       </div>
@@ -44,6 +46,7 @@ import { useField } from "vee-validate";
 // interfaces & types & enums
 interface Props {
   name: string;
+  type?: string;
   label: string;
   rules: string;
 }

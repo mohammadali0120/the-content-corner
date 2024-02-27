@@ -22,6 +22,7 @@
             <ElementFormInput
               name="password"
               label="password"
+              type="password"
               :rules="$tm('components.pages.login.inputs.password.rules')"
               @on-input="form.password = $event"
             />
