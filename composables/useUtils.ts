@@ -65,3 +65,10 @@ export const useToastMsg = (
   const toast = useToast();
   return toast[type](message);
 };
+
+export function reduceString(text: string, length: number): string {
+  if (text.length < length) {
+    return text;
+  }
+  return text.substring(0, length) + "...";
+}

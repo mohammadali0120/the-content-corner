@@ -1,4 +1,4 @@
-import type { Podcast, Video, User } from "~/utilities/types";
+import type { Podcast, Video, User, Post } from "~/utilities/types";
 
 // English locale Data
 export const podcastsEn: Podcast[] = [
@@ -8,6 +8,7 @@ export const podcastsEn: Podcast[] = [
     image: null,
     link: "https://dl.melomusic.ir/1401/11/18/Ebi%20-%201001%20shab.mp3",
     description: "Hezar O Yek Shab, Ebi",
+    date: "2024-01-01",
   },
   {
     id: 2,
@@ -15,6 +16,7 @@ export const podcastsEn: Podcast[] = [
     image: null,
     link: "https://dl.melomusic.ir/1401/06/20/Ebi%20-%20Mano%20Bebakhsh.mp3",
     description: "Mano Bebakhsh, Ebi",
+    date: "2024-01-01",
   },
   {
     id: 3,
@@ -22,6 +24,7 @@ export const podcastsEn: Podcast[] = [
     image: null,
     link: "https://ts2.tarafdari.com/contents/user330550/content-sound/mohsen_chavoshi_-_maleka_128.mp3",
     description: "Maleka, Mohsen Chavoshi",
+    date: "2024-01-01",
   },
   {
     id: 4,
@@ -29,6 +32,7 @@ export const podcastsEn: Podcast[] = [
     image: null,
     link: "https://files.musicfeed.ir/2020/05/The-Chainsmokers-Coldplay-Something-Just-Like-This-128.mp3",
     description: "Something Just Like This, The Chainsmokers",
+    date: "2024-01-01",
   },
   {
     id: 5,
@@ -36,6 +40,7 @@ export const podcastsEn: Podcast[] = [
     image: null,
     link: "https://ts2.tarafdari.com/contents/user548574/content-sound/thomas_rhett_-_look_what_god_gave_her.mp3",
     description: "Look What God Gave Her, Thomas Rhett",
+    date: "2024-01-01",
   },
   {
     id: 6,
@@ -43,6 +48,7 @@ export const podcastsEn: Podcast[] = [
     image: null,
     link: "https://ts2.tarafdari.com/contents/user405293/content-sound/god_s_country_-_blake_shelton.mp3",
     description: "God's Country, Blake Shelton",
+    date: "2024-01-01",
   },
 ];
 
@@ -51,43 +57,100 @@ export const videosEn: Video[] = [
     id: 1,
     title: "Nature Video 1",
     image: null,
-    link: "https://persian2.asset.aparat.com/aparat-video/7f2abff5c975c471fda60bb5016413c943932826-480p.mp4?wmsAuthSign=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ0b2tlbiI6ImNjYWNkZmE1MDRhZDdkNWRkOTVlMTRhZWY1NGNmZDhhIiwiZXhwIjoxNzA4NDMyOTgwLCJpc3MiOiJTYWJhIElkZWEgR1NJRyJ9.sDbWnaaLRBFYg5BIOn0kgHGtkkZl4Kn0hCggTcb0YGI",
+    link: "https://eramblog.com/videos/1655257672_1518264.mp4",
     description: "Nature Video 1, Description",
+    date: "2024-01-01",
   },
   {
     id: 2,
     title: "Nature Video 2",
     image: null,
-    link: "https://aspb10.asset.aparat.com/aparat-video/6366c626d23b39ba5aca7e89099e37506891122-720p.mp4?wmsAuthSign=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ0b2tlbiI6IjE4ZmFiNTI3YzMyMjcxOTc0MTc3ODVlMzcwNzNiMzJmIiwiZXhwIjoxNzA4NDMyOTY2LCJpc3MiOiJTYWJhIElkZWEgR1NJRyJ9.kFroVuLDT7T6TkUoSWmpXimvivL--WqkJQyt6QfeSPQ",
+    link: "https://eramblog.com/videos/1655257098_5232342.mp4",
     description: "Nature Video 2, Description",
+    date: "2024-01-01",
   },
   {
     id: 3,
     title: "Nature Video 3",
     image: null,
-    link: "https://persian3.asset.aparat.com/aparat-video/2e4c20c924662935f89d6d14d295fc6544366871-480p.mp4?wmsAuthSign=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ0b2tlbiI6ImEyYjU1NzlhNTBlMzY2YmU1ZGViMDA2OTkyNzlkZTY4IiwiZXhwIjoxNzA4NDMyOTc0LCJpc3MiOiJTYWJhIElkZWEgR1NJRyJ9.tiGwGeeT3y-3FC2lxBl05FAWkvVrn5bXyqk1jMK5QxA",
+    link: "https://eramblog.com/videos/1655257230_5950370.mp4",
     description: "Nature Video 3, Description",
+    date: "2024-01-01",
   },
   {
     id: 4,
     title: "Nature Video 4",
     image: null,
-    link: "https://aspb29.asset.aparat.com/aparat-video/96fb5db682b9e12df6b39de794bad57634949251-480p.mp4?wmsAuthSign=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ0b2tlbiI6Ijg1YzNiYTI1MjIzNDQ4MDcxOWIxZjAzZDU5MDY0MTk5IiwiZXhwIjoxNzA4NDMzNDE2LCJpc3MiOiJTYWJhIElkZWEgR1NJRyJ9.o853w_brLfur7w04Fgdq9Mh3Rtt1hA-kuEVtV6NgzvA",
+    link: "https://eramblog.com/videos/1655257501_6904612.mp4",
     description: "Nature Video 4, Description",
+    date: "2024-01-01",
   },
   {
     id: 5,
     title: "Nature Video 5",
     image: null,
-    link: "https://aspb35.asset.aparat.com/aparat-video/a37b8bb92a304c5b505e58ee0216564e40092228-480p.mp4?wmsAuthSign=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ0b2tlbiI6ImU3ZTQxNzM1ODIxNjUwOGU1M2JkOGIwYzIyNjNhYTVhIiwiZXhwIjoxNzA4NDMzNDE5LCJpc3MiOiJTYWJhIElkZWEgR1NJRyJ9.YiyyHlkXipmwQRDY-Ok0ONv9T9Mm3BtDkYbunenhPQ8",
+    link: "https://eramblog.com/videos/1655256805_9259462.mp4",
     description: "Nature Video 5, Description",
+    date: "2024-01-01",
   },
   {
     id: 6,
     title: "Nature Video 6",
     image: null,
-    link: "https://persian15.asset.aparat.com/aparat-video/3c185919f80662daab3f443f5c91e4a457371881-720p.mp4?wmsAuthSign=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ0b2tlbiI6IjY2OWY0OWE5YzkzOTgxNTgxYTBkNmZjYTM3MzVlZTNlIiwiZXhwIjoxNzA4NDMzNTU4LCJpc3MiOiJTYWJhIElkZWEgR1NJRyJ9.p-JU7izrw_gCHO1bI5E7vcTzEqBH8kNt_b_DlU9QvTE",
+    link: "https://eramblog.com/videos/1655257868_7410521.mp4",
     description: "Nature Video 6, Description",
+    date: "2024-01-01",
+  },
+];
+
+export const postsEn: Post[] = [
+  {
+    id: 1,
+    title: "Post Number 1",
+    description:
+      "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Egestas purus viverra accumsan in nisl nisi. Arcu cursus vitae congue mauris rhoncus aenean vel elit scelerisque. In egestas erat imperdiet sed euismod nisi porta lorem mollis. Morbi tristique senectus et netus. Mattis pellentesque id nibh tortor id aliquet lectus proin. Sapien faucibus et molestie ac feugiat sed lectus vestibulum. Ullamcorper velit sed ullamcorper morbi tincidunt ornare massa eget. Dictum varius duis at consectetur lorem. Nisi vitae suscipit tellus mauris a diam maecenas sed enim. Velit ut tortor pretium viverra suspendisse potenti nullam. Et molestie ac feugiat sed lectus. Non nisi est sit amet facilisis magna. Dignissim diam quis enim lobortis scelerisque fermentum. Odio ut enim blandit volutpat maecenas volutpat. Ornare lectus sit amet est placerat in egestas erat. Nisi vitae suscipit tellus mauris a diam maecenas sed. Placerat duis ultricies lacus sed turpis tincidunt id aliquet.",
+    image: null,
+    date: "2024-01-01",
+  },
+  {
+    id: 2,
+    title: "Post Number 2",
+    description:
+      "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Egestas purus viverra accumsan in nisl nisi. Arcu cursus vitae congue mauris rhoncus aenean vel elit scelerisque. In egestas erat imperdiet sed euismod nisi porta lorem mollis. Morbi tristique senectus et netus. Mattis pellentesque id nibh tortor id aliquet lectus proin. Sapien faucibus et molestie ac feugiat sed lectus vestibulum. Ullamcorper velit sed ullamcorper morbi tincidunt ornare massa eget. Dictum varius duis at consectetur lorem. Nisi vitae suscipit tellus mauris a diam maecenas sed enim. Velit ut tortor pretium viverra suspendisse potenti nullam. Et molestie ac feugiat sed lectus. Non nisi est sit amet facilisis magna. Dignissim diam quis enim lobortis scelerisque fermentum. Odio ut enim blandit volutpat maecenas volutpat. Ornare lectus sit amet est placerat in egestas erat. Nisi vitae suscipit tellus mauris a diam maecenas sed. Placerat duis ultricies lacus sed turpis tincidunt id aliquet.",
+    image: null,
+    date: "2024-01-02",
+  },
+  {
+    id: 3,
+    title: "Post Number 3",
+    description:
+      "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Egestas purus viverra accumsan in nisl nisi. Arcu cursus vitae congue mauris rhoncus aenean vel elit scelerisque. In egestas erat imperdiet sed euismod nisi porta lorem mollis. Morbi tristique senectus et netus. Mattis pellentesque id nibh tortor id aliquet lectus proin. Sapien faucibus et molestie ac feugiat sed lectus vestibulum. Ullamcorper velit sed ullamcorper morbi tincidunt ornare massa eget. Dictum varius duis at consectetur lorem. Nisi vitae suscipit tellus mauris a diam maecenas sed enim. Velit ut tortor pretium viverra suspendisse potenti nullam. Et molestie ac feugiat sed lectus. Non nisi est sit amet facilisis magna. Dignissim diam quis enim lobortis scelerisque fermentum. Odio ut enim blandit volutpat maecenas volutpat. Ornare lectus sit amet est placerat in egestas erat. Nisi vitae suscipit tellus mauris a diam maecenas sed. Placerat duis ultricies lacus sed turpis tincidunt id aliquet.",
+    image: null,
+    date: "2024-01-03",
+  },
+  {
+    id: 4,
+    title: "Post Number 4",
+    description:
+      "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Egestas purus viverra accumsan in nisl nisi. Arcu cursus vitae congue mauris rhoncus aenean vel elit scelerisque. In egestas erat imperdiet sed euismod nisi porta lorem mollis. Morbi tristique senectus et netus. Mattis pellentesque id nibh tortor id aliquet lectus proin. Sapien faucibus et molestie ac feugiat sed lectus vestibulum. Ullamcorper velit sed ullamcorper morbi tincidunt ornare massa eget. Dictum varius duis at consectetur lorem. Nisi vitae suscipit tellus mauris a diam maecenas sed enim. Velit ut tortor pretium viverra suspendisse potenti nullam. Et molestie ac feugiat sed lectus. Non nisi est sit amet facilisis magna. Dignissim diam quis enim lobortis scelerisque fermentum. Odio ut enim blandit volutpat maecenas volutpat. Ornare lectus sit amet est placerat in egestas erat. Nisi vitae suscipit tellus mauris a diam maecenas sed. Placerat duis ultricies lacus sed turpis tincidunt id aliquet.",
+    image: null,
+    date: "2024-01-04",
+  },
+  {
+    id: 5,
+    title: "Post Number 5",
+    description:
+      "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Egestas purus viverra accumsan in nisl nisi. Arcu cursus vitae congue mauris rhoncus aenean vel elit scelerisque. In egestas erat imperdiet sed euismod nisi porta lorem mollis. Morbi tristique senectus et netus. Mattis pellentesque id nibh tortor id aliquet lectus proin. Sapien faucibus et molestie ac feugiat sed lectus vestibulum. Ullamcorper velit sed ullamcorper morbi tincidunt ornare massa eget. Dictum varius duis at consectetur lorem. Nisi vitae suscipit tellus mauris a diam maecenas sed enim. Velit ut tortor pretium viverra suspendisse potenti nullam. Et molestie ac feugiat sed lectus. Non nisi est sit amet facilisis magna. Dignissim diam quis enim lobortis scelerisque fermentum. Odio ut enim blandit volutpat maecenas volutpat. Ornare lectus sit amet est placerat in egestas erat. Nisi vitae suscipit tellus mauris a diam maecenas sed. Placerat duis ultricies lacus sed turpis tincidunt id aliquet.",
+    image: null,
+    date: "2024-01-05",
+  },
+  {
+    id: 6,
+    title: "Post Number 6",
+    description:
+      "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Egestas purus viverra accumsan in nisl nisi. Arcu cursus vitae congue mauris rhoncus aenean vel elit scelerisque. In egestas erat imperdiet sed euismod nisi porta lorem mollis. Morbi tristique senectus et netus. Mattis pellentesque id nibh tortor id aliquet lectus proin. Sapien faucibus et molestie ac feugiat sed lectus vestibulum. Ullamcorper velit sed ullamcorper morbi tincidunt ornare massa eget. Dictum varius duis at consectetur lorem. Nisi vitae suscipit tellus mauris a diam maecenas sed enim. Velit ut tortor pretium viverra suspendisse potenti nullam. Et molestie ac feugiat sed lectus. Non nisi est sit amet facilisis magna. Dignissim diam quis enim lobortis scelerisque fermentum. Odio ut enim blandit volutpat maecenas volutpat. Ornare lectus sit amet est placerat in egestas erat. Nisi vitae suscipit tellus mauris a diam maecenas sed. Placerat duis ultricies lacus sed turpis tincidunt id aliquet.",
+    image: null,
+    date: "2024-01-06",
   },
 ];
 
@@ -100,6 +163,7 @@ export const podcastsFa: Podcast[] = [
     image: null,
     link: "https://dl.melomusic.ir/1401/11/18/Ebi%20-%201001%20shab.mp3",
     description: "هزار و یک شب، ابی",
+    date: "2024-01-01",
   },
   {
     id: 2,
@@ -107,6 +171,7 @@ export const podcastsFa: Podcast[] = [
     image: null,
     link: "https://dl.melomusic.ir/1401/06/20/Ebi%20-%20Mano%20Bebakhsh.mp3",
     description: "منو ببخش، ابی",
+    date: "2024-01-01",
   },
   {
     id: 3,
@@ -114,6 +179,7 @@ export const podcastsFa: Podcast[] = [
     image: null,
     link: "https://ts2.tarafdari.com/contents/user330550/content-sound/mohsen_chavoshi_-_maleka_128.mp3",
     description: "ملکا، محسن چاوشی",
+    date: "2024-01-01",
   },
   {
     id: 4,
@@ -121,6 +187,7 @@ export const podcastsFa: Podcast[] = [
     image: null,
     link: "https://files.musicfeed.ir/2020/05/The-Chainsmokers-Coldplay-Something-Just-Like-This-128.mp3",
     description: "Something Just Like This, The Chainsmokers",
+    date: "2024-01-01",
   },
   {
     id: 5,
@@ -128,6 +195,7 @@ export const podcastsFa: Podcast[] = [
     image: null,
     link: "https://ts2.tarafdari.com/contents/user548574/content-sound/thomas_rhett_-_look_what_god_gave_her.mp3",
     description: "Look What God Gave Her, Thomas Rhett",
+    date: "2024-01-01",
   },
   {
     id: 6,
@@ -135,6 +203,7 @@ export const podcastsFa: Podcast[] = [
     image: null,
     link: "https://ts2.tarafdari.com/contents/user405293/content-sound/god_s_country_-_blake_shelton.mp3",
     description: "God's Country, Blake Shelton",
+    date: "2024-01-01",
   },
 ];
 
@@ -143,43 +212,100 @@ export const videosFa: Video[] = [
     id: 1,
     title: "ویدیو طبیعت 1",
     image: null,
-    link: "https://persian2.asset.aparat.com/aparat-video/7f2abff5c975c471fda60bb5016413c943932826-480p.mp4?wmsAuthSign=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ0b2tlbiI6ImNjYWNkZmE1MDRhZDdkNWRkOTVlMTRhZWY1NGNmZDhhIiwiZXhwIjoxNzA4NDMyOTgwLCJpc3MiOiJTYWJhIElkZWEgR1NJRyJ9.sDbWnaaLRBFYg5BIOn0kgHGtkkZl4Kn0hCggTcb0YGI",
+    link: "https://eramblog.com/videos/1655257672_1518264.mp4",
     description: "ویدیو طبیعت 1، توضیحات",
+    date: "2024-01-01",
   },
   {
     id: 2,
     title: "ویدیو طبیعت 2",
     image: null,
-    link: "https://aspb10.asset.aparat.com/aparat-video/6366c626d23b39ba5aca7e89099e37506891122-720p.mp4?wmsAuthSign=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ0b2tlbiI6IjE4ZmFiNTI3YzMyMjcxOTc0MTc3ODVlMzcwNzNiMzJmIiwiZXhwIjoxNzA4NDMyOTY2LCJpc3MiOiJTYWJhIElkZWEgR1NJRyJ9.kFroVuLDT7T6TkUoSWmpXimvivL--WqkJQyt6QfeSPQ",
+    link: "https://eramblog.com/videos/1655257098_5232342.mp4",
     description: "ویدیو طبیعت 2، توضیحات",
+    date: "2024-01-01",
   },
   {
     id: 3,
     title: "ویدیو طبیعت 3",
     image: null,
-    link: "https://persian3.asset.aparat.com/aparat-video/2e4c20c924662935f89d6d14d295fc6544366871-480p.mp4?wmsAuthSign=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ0b2tlbiI6ImEyYjU1NzlhNTBlMzY2YmU1ZGViMDA2OTkyNzlkZTY4IiwiZXhwIjoxNzA4NDMyOTc0LCJpc3MiOiJTYWJhIElkZWEgR1NJRyJ9.tiGwGeeT3y-3FC2lxBl05FAWkvVrn5bXyqk1jMK5QxA",
+    link: "https://eramblog.com/videos/1655257230_5950370.mp4",
     description: "ویدیو طبیعت 3، توضیحات",
+    date: "2024-01-01",
   },
   {
     id: 4,
     title: "ویدیو طبیعت 4",
     image: null,
-    link: "https://aspb29.asset.aparat.com/aparat-video/96fb5db682b9e12df6b39de794bad57634949251-480p.mp4?wmsAuthSign=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ0b2tlbiI6Ijg1YzNiYTI1MjIzNDQ4MDcxOWIxZjAzZDU5MDY0MTk5IiwiZXhwIjoxNzA4NDMzNDE2LCJpc3MiOiJTYWJhIElkZWEgR1NJRyJ9.o853w_brLfur7w04Fgdq9Mh3Rtt1hA-kuEVtV6NgzvA",
+    link: "https://eramblog.com/videos/1655257501_6904612.mp4",
     description: "ویدیو طبیعت 4، توضیحات",
+    date: "2024-01-01",
   },
   {
     id: 5,
     title: "ویدیو طبیعت 5",
     image: null,
-    link: "https://aspb35.asset.aparat.com/aparat-video/a37b8bb92a304c5b505e58ee0216564e40092228-480p.mp4?wmsAuthSign=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ0b2tlbiI6ImU3ZTQxNzM1ODIxNjUwOGU1M2JkOGIwYzIyNjNhYTVhIiwiZXhwIjoxNzA4NDMzNDE5LCJpc3MiOiJTYWJhIElkZWEgR1NJRyJ9.YiyyHlkXipmwQRDY-Ok0ONv9T9Mm3BtDkYbunenhPQ8",
+    link: "https://eramblog.com/videos/1655256805_9259462.mp4",
     description: "ویدیو طبیعت 5، توضیحات",
+    date: "2024-01-01",
   },
   {
     id: 6,
     title: "ویدیو طبیعت 6",
     image: null,
-    link: "https://persian15.asset.aparat.com/aparat-video/3c185919f80662daab3f443f5c91e4a457371881-720p.mp4?wmsAuthSign=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ0b2tlbiI6IjY2OWY0OWE5YzkzOTgxNTgxYTBkNmZjYTM3MzVlZTNlIiwiZXhwIjoxNzA4NDMzNTU4LCJpc3MiOiJTYWJhIElkZWEgR1NJRyJ9.p-JU7izrw_gCHO1bI5E7vcTzEqBH8kNt_b_DlU9QvTE",
+    link: "https://eramblog.com/videos/1655257868_7410521.mp4",
     description: "ویدیو طبیعت 6، توضیحات",
+    date: "2024-01-01",
+  },
+];
+
+export const postsFa: Post[] = [
+  {
+    id: 1,
+    title: "پست شماره 1",
+    description:
+      "لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ، و با استفاده از طراحان گرافیک است، چاپگرها و متون بلکه روزنامه و مجله در ستون و سطرآنچنان که لازم است، و برای شرایط فعلی تکنولوژی مورد نیاز، و کاربردهای متنوع با هدف بهبود ابزارهای کاربردی می باشد، کتابهای زیادی در شصت و سه درصد گذشته حال و آینده، شناخت فراوان جامعه و متخصصان را می طلبد، تا با نرم افزارها شناخت بیشتری را برای طراحان رایانه ای علی الخصوص طراحان خلاقی، و فرهنگ پیشرو در زبان فارسی ایجاد کرد، در این صورت می توان امید داشت که تمام و دشواری موجود در ارائه راهکارها، و شرایط سخت تایپ به پایان رسد و زمان مورد نیاز شامل حروفچینی دستاوردهای اصلی، و جوابگوی سوالات پیوسته اهل دنیای موجود طراحی اساسا مورد استفاده قرار گیرد.",
+    image: null,
+    date: "2024-01-01",
+  },
+  {
+    id: 2,
+    title: "پست شماره 2",
+    description:
+      "لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ، و با استفاده از طراحان گرافیک است، چاپگرها و متون بلکه روزنامه و مجله در ستون و سطرآنچنان که لازم است، و برای شرایط فعلی تکنولوژی مورد نیاز، و کاربردهای متنوع با هدف بهبود ابزارهای کاربردی می باشد، کتابهای زیادی در شصت و سه درصد گذشته حال و آینده، شناخت فراوان جامعه و متخصصان را می طلبد، تا با نرم افزارها شناخت بیشتری را برای طراحان رایانه ای علی الخصوص طراحان خلاقی، و فرهنگ پیشرو در زبان فارسی ایجاد کرد، در این صورت می توان امید داشت که تمام و دشواری موجود در ارائه راهکارها، و شرایط سخت تایپ به پایان رسد و زمان مورد نیاز شامل حروفچینی دستاوردهای اصلی، و جوابگوی سوالات پیوسته اهل دنیای موجود طراحی اساسا مورد استفاده قرار گیرد.",
+    image: null,
+    date: "2024-01-02",
+  },
+  {
+    id: 3,
+    title: "پست شماره 3",
+    description:
+      "لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ، و با استفاده از طراحان گرافیک است، چاپگرها و متون بلکه روزنامه و مجله در ستون و سطرآنچنان که لازم است، و برای شرایط فعلی تکنولوژی مورد نیاز، و کاربردهای متنوع با هدف بهبود ابزارهای کاربردی می باشد، کتابهای زیادی در شصت و سه درصد گذشته حال و آینده، شناخت فراوان جامعه و متخصصان را می طلبد، تا با نرم افزارها شناخت بیشتری را برای طراحان رایانه ای علی الخصوص طراحان خلاقی، و فرهنگ پیشرو در زبان فارسی ایجاد کرد، در این صورت می توان امید داشت که تمام و دشواری موجود در ارائه راهکارها، و شرایط سخت تایپ به پایان رسد و زمان مورد نیاز شامل حروفچینی دستاوردهای اصلی، و جوابگوی سوالات پیوسته اهل دنیای موجود طراحی اساسا مورد استفاده قرار گیرد.",
+    image: null,
+    date: "2024-01-03",
+  },
+  {
+    id: 4,
+    title: "پست شماره 4",
+    description:
+      "لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ، و با استفاده از طراحان گرافیک است، چاپگرها و متون بلکه روزنامه و مجله در ستون و سطرآنچنان که لازم است، و برای شرایط فعلی تکنولوژی مورد نیاز، و کاربردهای متنوع با هدف بهبود ابزارهای کاربردی می باشد، کتابهای زیادی در شصت و سه درصد گذشته حال و آینده، شناخت فراوان جامعه و متخصصان را می طلبد، تا با نرم افزارها شناخت بیشتری را برای طراحان رایانه ای علی الخصوص طراحان خلاقی، و فرهنگ پیشرو در زبان فارسی ایجاد کرد، در این صورت می توان امید داشت که تمام و دشواری موجود در ارائه راهکارها، و شرایط سخت تایپ به پایان رسد و زمان مورد نیاز شامل حروفچینی دستاوردهای اصلی، و جوابگوی سوالات پیوسته اهل دنیای موجود طراحی اساسا مورد استفاده قرار گیرد.",
+    image: null,
+    date: "2024-01-04",
+  },
+  {
+    id: 5,
+    title: "پست شماره 5",
+    description:
+      "لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ، و با استفاده از طراحان گرافیک است، چاپگرها و متون بلکه روزنامه و مجله در ستون و سطرآنچنان که لازم است، و برای شرایط فعلی تکنولوژی مورد نیاز، و کاربردهای متنوع با هدف بهبود ابزارهای کاربردی می باشد، کتابهای زیادی در شصت و سه درصد گذشته حال و آینده، شناخت فراوان جامعه و متخصصان را می طلبد، تا با نرم افزارها شناخت بیشتری را برای طراحان رایانه ای علی الخصوص طراحان خلاقی، و فرهنگ پیشرو در زبان فارسی ایجاد کرد، در این صورت می توان امید داشت که تمام و دشواری موجود در ارائه راهکارها، و شرایط سخت تایپ به پایان رسد و زمان مورد نیاز شامل حروفچینی دستاوردهای اصلی، و جوابگوی سوالات پیوسته اهل دنیای موجود طراحی اساسا مورد استفاده قرار گیرد.",
+    image: null,
+    date: "2024-01-05",
+  },
+  {
+    id: 6,
+    title: "پست شماره 6",
+    description:
+      "لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ، و با استفاده از طراحان گرافیک است، چاپگرها و متون بلکه روزنامه و مجله در ستون و سطرآنچنان که لازم است، و برای شرایط فعلی تکنولوژی مورد نیاز، و کاربردهای متنوع با هدف بهبود ابزارهای کاربردی می باشد، کتابهای زیادی در شصت و سه درصد گذشته حال و آینده، شناخت فراوان جامعه و متخصصان را می طلبد، تا با نرم افزارها شناخت بیشتری را برای طراحان رایانه ای علی الخصوص طراحان خلاقی، و فرهنگ پیشرو در زبان فارسی ایجاد کرد، در این صورت می توان امید داشت که تمام و دشواری موجود در ارائه راهکارها، و شرایط سخت تایپ به پایان رسد و زمان مورد نیاز شامل حروفچینی دستاوردهای اصلی، و جوابگوی سوالات پیوسته اهل دنیای موجود طراحی اساسا مورد استفاده قرار گیرد.",
+    image: null,
+    date: "2024-01-06",
   },
 ];
 

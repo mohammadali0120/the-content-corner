@@ -359,8 +359,12 @@
           "latestPodcasts": {
             "listenToPodcast": "Listen to the podcast"
           },
-          "latestPosts": {},
-          "latestVideos": {}
+          "latestPosts": {
+            "readMore": "Read More"
+          },
+          "latestVideos": {
+            "watchingVideo": "Watching Video"
+          }
         }
       }
     },

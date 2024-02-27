@@ -49,13 +49,11 @@
                   : ''
               "
             >
-              <div class="w-full h-full flex items-center justify-center">
-                <NuxtLink
-                  :to="`?tab=${tab.value}`"
-                  class="font-bold lg:text-xl text-sm"
-                  >{{ tab.text }}</NuxtLink
-                >
-              </div>
+              <NuxtLink
+                :to="`?tab=${tab.value}`"
+                class="font-bold lg:text-xl text-sm w-full h-full flex items-center justify-center"
+                >{{ tab.text }}</NuxtLink
+              >
             </div>
           </li>
         </ul>
@@ -66,7 +64,7 @@
           mode="out-in"
           appear
         >
-          <MainHomeLatestPodcasts :podcasts="podcasts" />
+          <MainHomeLatestPodcasts :podcasts="podcasts as Podcast[]" />
         </Transition>
 
         <Transition
@@ -75,7 +73,7 @@
           mode="out-in"
           appear
         >
-          <MainHomeLatestPosts />
+          <MainHomeLatestPosts :posts="posts as Post[]" />
         </Transition>
 
         <Transition
@@ -84,7 +82,7 @@
           mode="out-in"
           appear
         >
-          <MainHomeLatestVideos />
+          <MainHomeLatestVideos :videos="videos as Video[]" />
         </Transition>
       </div>
     </div>
@@ -102,6 +100,8 @@
 </template>
 
 <script setup lang="ts">
+import type { Podcast, Post, Video } from "~/utilities/types";
+
 // interfaces & types & enums
 interface Tab {
   text: string;
@@ -142,6 +142,8 @@ const fetchCurrentTabFromI18n = () => {
 const { data: podcasts } = await useFetch(
   `/api/podcasts?locale=${locale.value}`
 );
+const { data: videos } = await useFetch(`/api/videos?locale=${locale.value}`);
+const { data: posts } = await useFetch(`/api/posts?locale=${locale.value}`);
 
 onMounted(() => {
   fetchCurrentTabFromI18n();

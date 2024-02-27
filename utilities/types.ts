@@ -31,6 +31,7 @@ export interface Podcast {
   image: null | string;
   description: string;
   link: string;
+  date: string;
 }
 export interface Video {
   id: number;
@@ -38,12 +39,15 @@ export interface Video {
   image: null | string;
   description: string;
   link: string;
+  date: string;
 }
 
 export interface Post {
   id: number;
   title: string;
+  image: null | string;
   description: string;
+  date: string;
 }
 export interface User {
   id: number;

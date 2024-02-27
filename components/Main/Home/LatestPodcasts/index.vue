@@ -1,10 +1,8 @@
 <template>
   <div class="w-full">
-    <ElementContentLoader
-      v-if="!props.podcasts || props.podcasts.length <= 0"
-    />
+    <ElementContentLoader v-if="props.podcasts.length <= 0" />
 
-    <ElementSwiper :swiper="swiperOptions">
+    <ElementSwiper v-else :swiper="swiperOptions">
       <template #default>
         <swiper-slide v-for="(podcast, index) in props.podcasts" :key="index">
           <div
@@ -84,10 +82,11 @@
 
 <script setup lang="ts">
 import { SwiperSlide } from "swiper/vue";
+import type { Podcast } from "~/utilities/types";
 
 // interfaces & types & enums
 interface Props {
-  podcasts: any;
+  podcasts: Podcast[];
 }
 
 // props
