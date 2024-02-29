@@ -31,6 +31,7 @@ export interface Podcast {
   image: null | string;
   description: string;
   link: string;
+  likes: number;
   date: string;
 }
 export interface Video {
@@ -39,6 +40,7 @@ export interface Video {
   image: null | string;
   description: string;
   link: string;
+  likes: number;
   date: string;
 }
 
@@ -47,6 +49,7 @@ export interface Post {
   title: string;
   image: null | string;
   description: string;
+  likes: number;
   date: string;
 }
 export interface User {
@@ -56,4 +59,8 @@ export interface User {
   email: string;
   password: string;
   token: string;
+}
+export interface Filter {
+  text: string;
+  value: string;
 }

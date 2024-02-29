@@ -6,7 +6,7 @@
           <h1
             class="lg:text-2xl text-base text-black dark:text-white group-hover:text-white group-hover:duration-500 font-bold"
           >
-            {{ $tm("components.pages.login.formTitle") }}
+            {{ $tm("components.pages.login.meta.title") }}
           </h1>
         </div>
         <form autocomplete="off" action="" @submit.prevent="onSubmit">
@@ -53,7 +53,6 @@ import { useToastMsg } from "~/composables/useUtils";
 
 // variables
 const { tm } = useI18n();
-const router = useRouter();
 const { values: formValues, handleSubmit, resetForm } = useForm();
 const form = ref<{ email: string; password: string }>({
   email: "",
@@ -65,11 +64,20 @@ const form = ref<{ email: string; password: string }>({
 
 // methods
 const onSubmit = handleSubmit(async () => {
-  const { data: myData } = await useFetch(
-    `/api/auth/login?email=${form.value.email}&password=${form.value.password}`
-  );
+  const response = await fetch("/api/auth/login", {
+    method: "POST",
+    headers: {
+      Accept: "application/json",
+      "Content-Type": "application/json",
+    },
+    body: JSON.stringify({
+      email: form.value.email,
+      password: form.value.password,
+    }),
+  });
+  const myData = await response.json();
 
-  if (myData.value) {
+  if (myData) {
     useToastMsg(tm("other.toasts.loggedInSuccessfuly"), "success");
 
     setTimeout(() => {
@@ -82,11 +90,11 @@ const onSubmit = handleSubmit(async () => {
 
 // hooks
 useHead({
-  title: tm("components.pages.login.title"),
+  title: tm("components.pages.login.meta.title"),
   meta: [
     {
-      name: tm("components.pages.login.name"),
-      content: tm("components.pages.login.content"),
+      name: tm("components.pages.login.meta.name"),
+      content: tm("components.pages.login.meta.content"),
     },
   ],
 });

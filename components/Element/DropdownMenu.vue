@@ -33,7 +33,7 @@
     </div>
     <Transition
       :name="
-        props.position && props.position === 'bottom'
+        props.position && props.position === 'top'
           ? 'slide-down'
           : 'slide-up'
       "
@@ -43,7 +43,7 @@
         class="w-full absolute z-10 left-0 lg:border-2 border rounded-md p-1"
         :class="[
           props.variant ? 'menu-' + props.variant : 'menu-default',
-          props.position && props.position === 'bottom'
+          props.position && props.position === 'top'
             ? `bottom-[100%] mb-1`
             : `top-[100%] mt-1`,
         ]"

@@ -196,7 +196,7 @@
                 :selected="getCurrentTheme"
                 :items="$tm('other.themes') as Theme[]"
                 variant="black"
-                position="bottom"
+                position="top"
                 @on-change-selected-item="
                   onChangeTheme($event.value as ThemeVariants)
                 "

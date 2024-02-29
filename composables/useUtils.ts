@@ -66,9 +66,9 @@ export const useToastMsg = (
   return toast[type](message);
 };
 
-export function reduceString(text: string, length: number): string {
+export const reduceString = (text: string, length: number): string => {
   if (text.length < length) {
     return text;
   }
   return text.substring(0, length) + "...";
-}
+};

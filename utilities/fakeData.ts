@@ -8,7 +8,8 @@ export const podcastsEn: Podcast[] = [
     image: null,
     link: "https://dl.melomusic.ir/1401/11/18/Ebi%20-%201001%20shab.mp3",
     description: "Hezar O Yek Shab, Ebi",
-    date: "2024-01-01",
+    likes: 1,
+    date: "2021-05-04",
   },
   {
     id: 2,
@@ -16,7 +17,8 @@ export const podcastsEn: Podcast[] = [
     image: null,
     link: "https://dl.melomusic.ir/1401/06/20/Ebi%20-%20Mano%20Bebakhsh.mp3",
     description: "Mano Bebakhsh, Ebi",
-    date: "2024-01-01",
+    likes: 23,
+    date: "2024-01-06",
   },
   {
     id: 3,
@@ -24,7 +26,8 @@ export const podcastsEn: Podcast[] = [
     image: null,
     link: "https://ts2.tarafdari.com/contents/user330550/content-sound/mohsen_chavoshi_-_maleka_128.mp3",
     description: "Maleka, Mohsen Chavoshi",
-    date: "2024-01-01",
+    likes: 3,
+    date: "2023-03-05",
   },
   {
     id: 4,
@@ -32,7 +35,8 @@ export const podcastsEn: Podcast[] = [
     image: null,
     link: "https://files.musicfeed.ir/2020/05/The-Chainsmokers-Coldplay-Something-Just-Like-This-128.mp3",
     description: "Something Just Like This, The Chainsmokers",
-    date: "2024-01-01",
+    likes: 43,
+    date: "2023-12-28",
   },
   {
     id: 5,
@@ -40,7 +44,8 @@ export const podcastsEn: Podcast[] = [
     image: null,
     link: "https://ts2.tarafdari.com/contents/user548574/content-sound/thomas_rhett_-_look_what_god_gave_her.mp3",
     description: "Look What God Gave Her, Thomas Rhett",
-    date: "2024-01-01",
+    likes: 5,
+    date: "2022-10-13",
   },
   {
     id: 6,
@@ -48,7 +53,8 @@ export const podcastsEn: Podcast[] = [
     image: null,
     link: "https://ts2.tarafdari.com/contents/user405293/content-sound/god_s_country_-_blake_shelton.mp3",
     description: "God's Country, Blake Shelton",
-    date: "2024-01-01",
+    likes: 6,
+    date: "2023-03-12",
   },
 ];
 
@@ -59,7 +65,8 @@ export const videosEn: Video[] = [
     image: null,
     link: "https://eramblog.com/videos/1655257672_1518264.mp4",
     description: "Nature Video 1, Description",
-    date: "2024-01-01",
+    likes: 1,
+    date: "2021-05-04",
   },
   {
     id: 2,
@@ -67,7 +74,8 @@ export const videosEn: Video[] = [
     image: null,
     link: "https://eramblog.com/videos/1655257098_5232342.mp4",
     description: "Nature Video 2, Description",
-    date: "2024-01-01",
+    likes: 23,
+    date: "2024-01-06",
   },
   {
     id: 3,
@@ -75,7 +83,8 @@ export const videosEn: Video[] = [
     image: null,
     link: "https://eramblog.com/videos/1655257230_5950370.mp4",
     description: "Nature Video 3, Description",
-    date: "2024-01-01",
+    likes: 3,
+    date: "2023-03-05",
   },
   {
     id: 4,
@@ -83,7 +92,8 @@ export const videosEn: Video[] = [
     image: null,
     link: "https://eramblog.com/videos/1655257501_6904612.mp4",
     description: "Nature Video 4, Description",
-    date: "2024-01-01",
+    likes: 43,
+    date: "2023-12-28",
   },
   {
     id: 5,
@@ -91,7 +101,8 @@ export const videosEn: Video[] = [
     image: null,
     link: "https://eramblog.com/videos/1655256805_9259462.mp4",
     description: "Nature Video 5, Description",
-    date: "2024-01-01",
+    likes: 5,
+    date: "2022-10-13",
   },
   {
     id: 6,
@@ -99,7 +110,8 @@ export const videosEn: Video[] = [
     image: null,
     link: "https://eramblog.com/videos/1655257868_7410521.mp4",
     description: "Nature Video 6, Description",
-    date: "2024-01-01",
+    likes: 6,
+    date: "2023-03-12",
   },
 ];
 
@@ -110,7 +122,8 @@ export const postsEn: Post[] = [
     description:
       "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Egestas purus viverra accumsan in nisl nisi. Arcu cursus vitae congue mauris rhoncus aenean vel elit scelerisque. In egestas erat imperdiet sed euismod nisi porta lorem mollis. Morbi tristique senectus et netus. Mattis pellentesque id nibh tortor id aliquet lectus proin. Sapien faucibus et molestie ac feugiat sed lectus vestibulum. Ullamcorper velit sed ullamcorper morbi tincidunt ornare massa eget. Dictum varius duis at consectetur lorem. Nisi vitae suscipit tellus mauris a diam maecenas sed enim. Velit ut tortor pretium viverra suspendisse potenti nullam. Et molestie ac feugiat sed lectus. Non nisi est sit amet facilisis magna. Dignissim diam quis enim lobortis scelerisque fermentum. Odio ut enim blandit volutpat maecenas volutpat. Ornare lectus sit amet est placerat in egestas erat. Nisi vitae suscipit tellus mauris a diam maecenas sed. Placerat duis ultricies lacus sed turpis tincidunt id aliquet.",
     image: null,
-    date: "2024-01-01",
+    likes: 1,
+    date: "2021-05-04",
   },
   {
     id: 2,
@@ -118,7 +131,8 @@ export const postsEn: Post[] = [
     description:
       "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Egestas purus viverra accumsan in nisl nisi. Arcu cursus vitae congue mauris rhoncus aenean vel elit scelerisque. In egestas erat imperdiet sed euismod nisi porta lorem mollis. Morbi tristique senectus et netus. Mattis pellentesque id nibh tortor id aliquet lectus proin. Sapien faucibus et molestie ac feugiat sed lectus vestibulum. Ullamcorper velit sed ullamcorper morbi tincidunt ornare massa eget. Dictum varius duis at consectetur lorem. Nisi vitae suscipit tellus mauris a diam maecenas sed enim. Velit ut tortor pretium viverra suspendisse potenti nullam. Et molestie ac feugiat sed lectus. Non nisi est sit amet facilisis magna. Dignissim diam quis enim lobortis scelerisque fermentum. Odio ut enim blandit volutpat maecenas volutpat. Ornare lectus sit amet est placerat in egestas erat. Nisi vitae suscipit tellus mauris a diam maecenas sed. Placerat duis ultricies lacus sed turpis tincidunt id aliquet.",
     image: null,
-    date: "2024-01-02",
+    likes: 23,
+    date: "2024-01-06",
   },
   {
     id: 3,
@@ -126,7 +140,8 @@ export const postsEn: Post[] = [
     description:
       "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Egestas purus viverra accumsan in nisl nisi. Arcu cursus vitae congue mauris rhoncus aenean vel elit scelerisque. In egestas erat imperdiet sed euismod nisi porta lorem mollis. Morbi tristique senectus et netus. Mattis pellentesque id nibh tortor id aliquet lectus proin. Sapien faucibus et molestie ac feugiat sed lectus vestibulum. Ullamcorper velit sed ullamcorper morbi tincidunt ornare massa eget. Dictum varius duis at consectetur lorem. Nisi vitae suscipit tellus mauris a diam maecenas sed enim. Velit ut tortor pretium viverra suspendisse potenti nullam. Et molestie ac feugiat sed lectus. Non nisi est sit amet facilisis magna. Dignissim diam quis enim lobortis scelerisque fermentum. Odio ut enim blandit volutpat maecenas volutpat. Ornare lectus sit amet est placerat in egestas erat. Nisi vitae suscipit tellus mauris a diam maecenas sed. Placerat duis ultricies lacus sed turpis tincidunt id aliquet.",
     image: null,
-    date: "2024-01-03",
+    likes: 3,
+    date: "2023-03-05",
   },
   {
     id: 4,
@@ -134,7 +149,8 @@ export const postsEn: Post[] = [
     description:
       "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Egestas purus viverra accumsan in nisl nisi. Arcu cursus vitae congue mauris rhoncus aenean vel elit scelerisque. In egestas erat imperdiet sed euismod nisi porta lorem mollis. Morbi tristique senectus et netus. Mattis pellentesque id nibh tortor id aliquet lectus proin. Sapien faucibus et molestie ac feugiat sed lectus vestibulum. Ullamcorper velit sed ullamcorper morbi tincidunt ornare massa eget. Dictum varius duis at consectetur lorem. Nisi vitae suscipit tellus mauris a diam maecenas sed enim. Velit ut tortor pretium viverra suspendisse potenti nullam. Et molestie ac feugiat sed lectus. Non nisi est sit amet facilisis magna. Dignissim diam quis enim lobortis scelerisque fermentum. Odio ut enim blandit volutpat maecenas volutpat. Ornare lectus sit amet est placerat in egestas erat. Nisi vitae suscipit tellus mauris a diam maecenas sed. Placerat duis ultricies lacus sed turpis tincidunt id aliquet.",
     image: null,
-    date: "2024-01-04",
+    likes: 43,
+    date: "2023-12-28",
   },
   {
     id: 5,
@@ -142,7 +158,8 @@ export const postsEn: Post[] = [
     description:
       "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Egestas purus viverra accumsan in nisl nisi. Arcu cursus vitae congue mauris rhoncus aenean vel elit scelerisque. In egestas erat imperdiet sed euismod nisi porta lorem mollis. Morbi tristique senectus et netus. Mattis pellentesque id nibh tortor id aliquet lectus proin. Sapien faucibus et molestie ac feugiat sed lectus vestibulum. Ullamcorper velit sed ullamcorper morbi tincidunt ornare massa eget. Dictum varius duis at consectetur lorem. Nisi vitae suscipit tellus mauris a diam maecenas sed enim. Velit ut tortor pretium viverra suspendisse potenti nullam. Et molestie ac feugiat sed lectus. Non nisi est sit amet facilisis magna. Dignissim diam quis enim lobortis scelerisque fermentum. Odio ut enim blandit volutpat maecenas volutpat. Ornare lectus sit amet est placerat in egestas erat. Nisi vitae suscipit tellus mauris a diam maecenas sed. Placerat duis ultricies lacus sed turpis tincidunt id aliquet.",
     image: null,
-    date: "2024-01-05",
+    likes: 5,
+    date: "2022-10-13",
   },
   {
     id: 6,
@@ -150,7 +167,8 @@ export const postsEn: Post[] = [
     description:
       "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Egestas purus viverra accumsan in nisl nisi. Arcu cursus vitae congue mauris rhoncus aenean vel elit scelerisque. In egestas erat imperdiet sed euismod nisi porta lorem mollis. Morbi tristique senectus et netus. Mattis pellentesque id nibh tortor id aliquet lectus proin. Sapien faucibus et molestie ac feugiat sed lectus vestibulum. Ullamcorper velit sed ullamcorper morbi tincidunt ornare massa eget. Dictum varius duis at consectetur lorem. Nisi vitae suscipit tellus mauris a diam maecenas sed enim. Velit ut tortor pretium viverra suspendisse potenti nullam. Et molestie ac feugiat sed lectus. Non nisi est sit amet facilisis magna. Dignissim diam quis enim lobortis scelerisque fermentum. Odio ut enim blandit volutpat maecenas volutpat. Ornare lectus sit amet est placerat in egestas erat. Nisi vitae suscipit tellus mauris a diam maecenas sed. Placerat duis ultricies lacus sed turpis tincidunt id aliquet.",
     image: null,
-    date: "2024-01-06",
+    likes: 6,
+    date: "2023-03-12",
   },
 ];
 
@@ -163,7 +181,8 @@ export const podcastsFa: Podcast[] = [
     image: null,
     link: "https://dl.melomusic.ir/1401/11/18/Ebi%20-%201001%20shab.mp3",
     description: "هزار و یک شب، ابی",
-    date: "2024-01-01",
+    likes: 1,
+    date: "2021-05-04",
   },
   {
     id: 2,
@@ -171,7 +190,8 @@ export const podcastsFa: Podcast[] = [
     image: null,
     link: "https://dl.melomusic.ir/1401/06/20/Ebi%20-%20Mano%20Bebakhsh.mp3",
     description: "منو ببخش، ابی",
-    date: "2024-01-01",
+    likes: 23,
+    date: "2024-01-06",
   },
   {
     id: 3,
@@ -179,7 +199,8 @@ export const podcastsFa: Podcast[] = [
     image: null,
     link: "https://ts2.tarafdari.com/contents/user330550/content-sound/mohsen_chavoshi_-_maleka_128.mp3",
     description: "ملکا، محسن چاوشی",
-    date: "2024-01-01",
+    likes: 3,
+    date: "2023-03-05",
   },
   {
     id: 4,
@@ -187,7 +208,8 @@ export const podcastsFa: Podcast[] = [
     image: null,
     link: "https://files.musicfeed.ir/2020/05/The-Chainsmokers-Coldplay-Something-Just-Like-This-128.mp3",
     description: "Something Just Like This, The Chainsmokers",
-    date: "2024-01-01",
+    likes: 43,
+    date: "2023-12-28",
   },
   {
     id: 5,
@@ -195,7 +217,8 @@ export const podcastsFa: Podcast[] = [
     image: null,
     link: "https://ts2.tarafdari.com/contents/user548574/content-sound/thomas_rhett_-_look_what_god_gave_her.mp3",
     description: "Look What God Gave Her, Thomas Rhett",
-    date: "2024-01-01",
+    likes: 5,
+    date: "2022-10-13",
   },
   {
     id: 6,
@@ -203,7 +226,8 @@ export const podcastsFa: Podcast[] = [
     image: null,
     link: "https://ts2.tarafdari.com/contents/user405293/content-sound/god_s_country_-_blake_shelton.mp3",
     description: "God's Country, Blake Shelton",
-    date: "2024-01-01",
+    likes: 6,
+    date: "2023-03-12",
   },
 ];
 
@@ -214,7 +238,8 @@ export const videosFa: Video[] = [
     image: null,
     link: "https://eramblog.com/videos/1655257672_1518264.mp4",
     description: "ویدیو طبیعت 1، توضیحات",
-    date: "2024-01-01",
+    likes: 1,
+    date: "2021-05-04",
   },
   {
     id: 2,
@@ -222,7 +247,8 @@ export const videosFa: Video[] = [
     image: null,
     link: "https://eramblog.com/videos/1655257098_5232342.mp4",
     description: "ویدیو طبیعت 2، توضیحات",
-    date: "2024-01-01",
+    likes: 23,
+    date: "2024-01-06",
   },
   {
     id: 3,
@@ -230,7 +256,8 @@ export const videosFa: Video[] = [
     image: null,
     link: "https://eramblog.com/videos/1655257230_5950370.mp4",
     description: "ویدیو طبیعت 3، توضیحات",
-    date: "2024-01-01",
+    likes: 3,
+    date: "2023-03-05",
   },
   {
     id: 4,
@@ -238,7 +265,8 @@ export const videosFa: Video[] = [
     image: null,
     link: "https://eramblog.com/videos/1655257501_6904612.mp4",
     description: "ویدیو طبیعت 4، توضیحات",
-    date: "2024-01-01",
+    likes: 43,
+    date: "2023-12-28",
   },
   {
     id: 5,
@@ -246,7 +274,8 @@ export const videosFa: Video[] = [
     image: null,
     link: "https://eramblog.com/videos/1655256805_9259462.mp4",
     description: "ویدیو طبیعت 5، توضیحات",
-    date: "2024-01-01",
+    likes: 5,
+    date: "2022-10-13",
   },
   {
     id: 6,
@@ -254,7 +283,8 @@ export const videosFa: Video[] = [
     image: null,
     link: "https://eramblog.com/videos/1655257868_7410521.mp4",
     description: "ویدیو طبیعت 6، توضیحات",
-    date: "2024-01-01",
+    likes: 6,
+    date: "2023-03-12",
   },
 ];
 
@@ -265,7 +295,8 @@ export const postsFa: Post[] = [
     description:
       "لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ، و با استفاده از طراحان گرافیک است، چاپگرها و متون بلکه روزنامه و مجله در ستون و سطرآنچنان که لازم است، و برای شرایط فعلی تکنولوژی مورد نیاز، و کاربردهای متنوع با هدف بهبود ابزارهای کاربردی می باشد، کتابهای زیادی در شصت و سه درصد گذشته حال و آینده، شناخت فراوان جامعه و متخصصان را می طلبد، تا با نرم افزارها شناخت بیشتری را برای طراحان رایانه ای علی الخصوص طراحان خلاقی، و فرهنگ پیشرو در زبان فارسی ایجاد کرد، در این صورت می توان امید داشت که تمام و دشواری موجود در ارائه راهکارها، و شرایط سخت تایپ به پایان رسد و زمان مورد نیاز شامل حروفچینی دستاوردهای اصلی، و جوابگوی سوالات پیوسته اهل دنیای موجود طراحی اساسا مورد استفاده قرار گیرد.",
     image: null,
-    date: "2024-01-01",
+    likes: 1,
+    date: "2021-05-04",
   },
   {
     id: 2,
@@ -273,7 +304,8 @@ export const postsFa: Post[] = [
     description:
       "لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ، و با استفاده از طراحان گرافیک است، چاپگرها و متون بلکه روزنامه و مجله در ستون و سطرآنچنان که لازم است، و برای شرایط فعلی تکنولوژی مورد نیاز، و کاربردهای متنوع با هدف بهبود ابزارهای کاربردی می باشد، کتابهای زیادی در شصت و سه درصد گذشته حال و آینده، شناخت فراوان جامعه و متخصصان را می طلبد، تا با نرم افزارها شناخت بیشتری را برای طراحان رایانه ای علی الخصوص طراحان خلاقی، و فرهنگ پیشرو در زبان فارسی ایجاد کرد، در این صورت می توان امید داشت که تمام و دشواری موجود در ارائه راهکارها، و شرایط سخت تایپ به پایان رسد و زمان مورد نیاز شامل حروفچینی دستاوردهای اصلی، و جوابگوی سوالات پیوسته اهل دنیای موجود طراحی اساسا مورد استفاده قرار گیرد.",
     image: null,
-    date: "2024-01-02",
+    likes: 23,
+    date: "2024-01-06",
   },
   {
     id: 3,
@@ -281,7 +313,8 @@ export const postsFa: Post[] = [
     description:
       "لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ، و با استفاده از طراحان گرافیک است، چاپگرها و متون بلکه روزنامه و مجله در ستون و سطرآنچنان که لازم است، و برای شرایط فعلی تکنولوژی مورد نیاز، و کاربردهای متنوع با هدف بهبود ابزارهای کاربردی می باشد، کتابهای زیادی در شصت و سه درصد گذشته حال و آینده، شناخت فراوان جامعه و متخصصان را می طلبد، تا با نرم افزارها شناخت بیشتری را برای طراحان رایانه ای علی الخصوص طراحان خلاقی، و فرهنگ پیشرو در زبان فارسی ایجاد کرد، در این صورت می توان امید داشت که تمام و دشواری موجود در ارائه راهکارها، و شرایط سخت تایپ به پایان رسد و زمان مورد نیاز شامل حروفچینی دستاوردهای اصلی، و جوابگوی سوالات پیوسته اهل دنیای موجود طراحی اساسا مورد استفاده قرار گیرد.",
     image: null,
-    date: "2024-01-03",
+    likes: 3,
+    date: "2023-03-05",
   },
   {
     id: 4,
@@ -289,7 +322,8 @@ export const postsFa: Post[] = [
     description:
       "لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ، و با استفاده از طراحان گرافیک است، چاپگرها و متون بلکه روزنامه و مجله در ستون و سطرآنچنان که لازم است، و برای شرایط فعلی تکنولوژی مورد نیاز، و کاربردهای متنوع با هدف بهبود ابزارهای کاربردی می باشد، کتابهای زیادی در شصت و سه درصد گذشته حال و آینده، شناخت فراوان جامعه و متخصصان را می طلبد، تا با نرم افزارها شناخت بیشتری را برای طراحان رایانه ای علی الخصوص طراحان خلاقی، و فرهنگ پیشرو در زبان فارسی ایجاد کرد، در این صورت می توان امید داشت که تمام و دشواری موجود در ارائه راهکارها، و شرایط سخت تایپ به پایان رسد و زمان مورد نیاز شامل حروفچینی دستاوردهای اصلی، و جوابگوی سوالات پیوسته اهل دنیای موجود طراحی اساسا مورد استفاده قرار گیرد.",
     image: null,
-    date: "2024-01-04",
+    likes: 43,
+    date: "2023-12-28",
   },
   {
     id: 5,
@@ -297,7 +331,8 @@ export const postsFa: Post[] = [
     description:
       "لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ، و با استفاده از طراحان گرافیک است، چاپگرها و متون بلکه روزنامه و مجله در ستون و سطرآنچنان که لازم است، و برای شرایط فعلی تکنولوژی مورد نیاز، و کاربردهای متنوع با هدف بهبود ابزارهای کاربردی می باشد، کتابهای زیادی در شصت و سه درصد گذشته حال و آینده، شناخت فراوان جامعه و متخصصان را می طلبد، تا با نرم افزارها شناخت بیشتری را برای طراحان رایانه ای علی الخصوص طراحان خلاقی، و فرهنگ پیشرو در زبان فارسی ایجاد کرد، در این صورت می توان امید داشت که تمام و دشواری موجود در ارائه راهکارها، و شرایط سخت تایپ به پایان رسد و زمان مورد نیاز شامل حروفچینی دستاوردهای اصلی، و جوابگوی سوالات پیوسته اهل دنیای موجود طراحی اساسا مورد استفاده قرار گیرد.",
     image: null,
-    date: "2024-01-05",
+    likes: 5,
+    date: "2022-10-13",
   },
   {
     id: 6,
@@ -305,7 +340,8 @@ export const postsFa: Post[] = [
     description:
       "لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ، و با استفاده از طراحان گرافیک است، چاپگرها و متون بلکه روزنامه و مجله در ستون و سطرآنچنان که لازم است، و برای شرایط فعلی تکنولوژی مورد نیاز، و کاربردهای متنوع با هدف بهبود ابزارهای کاربردی می باشد، کتابهای زیادی در شصت و سه درصد گذشته حال و آینده، شناخت فراوان جامعه و متخصصان را می طلبد، تا با نرم افزارها شناخت بیشتری را برای طراحان رایانه ای علی الخصوص طراحان خلاقی، و فرهنگ پیشرو در زبان فارسی ایجاد کرد، در این صورت می توان امید داشت که تمام و دشواری موجود در ارائه راهکارها، و شرایط سخت تایپ به پایان رسد و زمان مورد نیاز شامل حروفچینی دستاوردهای اصلی، و جوابگوی سوالات پیوسته اهل دنیای موجود طراحی اساسا مورد استفاده قرار گیرد.",
     image: null,
-    date: "2024-01-06",
+    likes: 6,
+    date: "2023-03-12",
   },
 ];
 

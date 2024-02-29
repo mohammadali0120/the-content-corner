@@ -3,10 +3,10 @@ import { users } from "~/utilities/fakeData";
 import { User } from "~/utilities/types";
 
 export default defineEventHandler(async (event) => {
-  const query = await getQuery(event);
+  const { email, password } = await readBody(event);
 
   const data: User | undefined = users.find((user: User) => {
-    return user.email === query.email && user.password === query.password;
+    return user.email === email && user.password === password;
   });
 
   if (!data) {

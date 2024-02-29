@@ -35,7 +35,7 @@
                 :to="`${$tm('other.links.posts')}/${post.id}`"
                 class="text-blue-500"
                 >{{
-                  $tm("components.default.home.latestPosts.readMore")
+                  $tm("labels.readMore")
                 }}</NuxtLink
               >
             </div>

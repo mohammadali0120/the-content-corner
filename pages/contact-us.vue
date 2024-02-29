@@ -6,7 +6,7 @@
           <h1
             class="lg:text-2xl text-base text-black dark:text-white group-hover:text-white group-hover:duration-500 font-bold"
           >
-            {{ $tm("components.pages.contactUs.formTitle") }}
+            {{ $tm("components.pages.contactUs.meta.title") }}
           </h1>
         </div>
         <form autocomplete="off" action="" @submit.prevent="onSubmit">
@@ -78,11 +78,11 @@ const onSubmit = handleSubmit(() => {
 
 // hooks
 useHead({
-  title: tm("components.pages.contactUs.title"),
+  title: tm("components.pages.contactUs.meta.title"),
   meta: [
     {
-      name: tm("components.pages.contactUs.name"),
-      content: tm("components.pages.contactUs.content"),
+      name: tm("components.pages.contactUs.meta.name"),
+      content: tm("components.pages.contactUs.meta.content"),
     },
   ],
 });

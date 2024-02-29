@@ -138,6 +138,7 @@
                         :selected="getCurrentLanguageFromI18n"
                         :items="$tm('other.languages') as Language[]"
                         variant="black"
+                        position="top"
                         @on-change-selected-item="
                           onChangeSelectedLanguage($event as Language)
                         "
@@ -152,6 +153,7 @@
                         :selected="getCurrentTheme"
                         :items="$tm('other.themes') as Theme[]"
                         variant="black"
+                        position="top"
                         @on-change-selected-item="
                           onChangeTheme($event.value as ThemeVariants)
                         "

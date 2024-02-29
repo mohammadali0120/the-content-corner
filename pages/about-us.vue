@@ -20,11 +20,11 @@ const { tm } = useI18n();
 
 // hooks
 useHead({
-  title: tm("components.pages.aboutUs.title"),
+  title: tm("components.pages.aboutUs.meta.title"),
   meta: [
     {
-      name: tm("components.pages.aboutUs.name"),
-      content: tm("components.pages.aboutUs.content"),
+      name: tm("components.pages.aboutUs.meta.name"),
+      content: tm("components.pages.aboutUs.meta.content"),
     },
   ],
 });

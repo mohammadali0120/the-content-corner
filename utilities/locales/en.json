@@ -19,12 +19,19 @@
       "mobile": "{_field_} is not valid"
     },
     "labels": {
-      "inputLabel": "Input Label",
       "fullName": "Fullname",
       "email": "Email",
       "description": "Description",
       "number": "Number",
-      "password": "Password"
+      "password": "Password",
+      "videos": "Videos",
+      "video": "Video",
+      "posts": "Posts",
+      "post": "Post",
+      "podcasts": "Podcasts",
+      "podcast": "Podcast",
+      "readMore": "Read More",
+      "watchingVideo": "Watching Video"
     },
     "toasts": {},
     "components": {
@@ -116,11 +123,12 @@
       },
       "pages": {
         "home": {
-          "title": "Home",
-          "name": "description",
-          "content": "Home Page",
-          "description": "Home page description",
-
+          "meta": {
+            "title": "Home",
+            "name": "description",
+            "content": "Home Page",
+            "description": "Home page description"
+          },
           "latestContent": {
             "title": "Our Latest Content",
             "tabs": [
@@ -131,11 +139,13 @@
           }
         },
         "contactUs": {
-          "title": "Contact Us",
-          "name": "description",
-          "content": "Contact Us Page",
-          "description": "Contact Us page description",
-          "formTitle": "Please fill out the form below to send us a ticket",
+          "meta": {
+            "title": "Contact Us",
+            "name": "description",
+            "content": "Contact Us Page",
+            "description": "Contact Us page description"
+          },
+          "title": "Please fill out the form below to send us a ticket",
           "inputs": {
             "fullName": {
               "rules": "required|min:3"
@@ -149,35 +159,48 @@
           }
         },
         "aboutUs": {
-          "title": "About Us",
-          "name": "description",
-          "content": "About Us Page",
-          "description": "About Us description"
+          "meta": {
+            "title": "About Us",
+            "name": "description",
+            "content": "About Us Page",
+            "description": "About Us description"
+          }
         },
         "posts": {
-          "title": "Posts",
-          "name": "description",
-          "content": "Posts Page",
-          "description": "Posts description"
+          "meta": {
+            "title": "Posts",
+            "name": "description",
+            "content": "Posts Page",
+            "description": "Posts description"
+          },
+          "title": "Posts"
         },
         "videos": {
-          "title": "Videos",
-          "name": "description",
-          "content": "Videos Page",
-          "description": "Videos description"
+          "meta": {
+            "title": "Videos",
+            "name": "description",
+            "content": "Videos Page",
+            "description": "Videos description"
+          },
+          "title": "Videos"
         },
         "podcasts": {
-          "title": "Podcasts",
-          "name": "description",
-          "content": "Podcasts Page",
-          "description": "Podcasts description"
+          "meta": {
+            "title": "Podcasts",
+            "name": "description",
+            "content": "Podcasts Page",
+            "description": "Podcasts description"
+          },
+          "title": "Podcasts"
         },
         "login": {
-          "title": "Login",
-          "name": "description",
-          "content": "Login Page",
-          "description": "Login page description",
-          "formTitle": "Please fill out the form below to login",
+          "meta": {
+            "title": "Login",
+            "name": "description",
+            "content": "Login Page",
+            "description": "Login page description"
+          },
+          "title": "Please fill out the form below to login",
           "inputs": {
             "email": {
               "rules": "required|email"
@@ -359,16 +382,20 @@
           "latestPodcasts": {
             "listenToPodcast": "Listen to the podcast"
           },
-          "latestPosts": {
-            "readMore": "Read More"
-          },
-          "latestVideos": {
-            "watchingVideo": "Watching Video"
-          }
+          "latestPosts": {},
+          "latestVideos": {}
         }
       }
     },
     "other": {
+      "filters": {
+        "title": "Filter {_text_}",
+        "items": [
+          { "text": "Newest", "value": "newest" },
+          { "text": "Oldest", "value": "oldest" },
+          { "text": "Most Popular", "value": "most-popular" }
+        ]
+      },
       "languages": [
         {
           "text": "English",

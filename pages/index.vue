@@ -150,11 +150,11 @@ onMounted(() => {
 });
 
 useHead({
-  title: tm("components.pages.home.title"),
+  title: tm("components.pages.home.meta.title"),
   meta: [
     {
-      name: tm("components.pages.home.name"),
-      content: tm("components.pages.home.content"),
+      name: tm("components.pages.home.meta.name"),
+      content: tm("components.pages.home.meta.content"),
     },
   ],
 });

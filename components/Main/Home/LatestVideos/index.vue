@@ -35,7 +35,7 @@
                 :to="`${$tm('other.links.videos')}/${video.id}`"
                 class="text-blue-500"
                 >{{
-                  $tm("components.default.home.latestVideos.watchingVideo")
+                  $tm("labels.watchingVideo")
                 }}</NuxtLink
               >
             </div>
