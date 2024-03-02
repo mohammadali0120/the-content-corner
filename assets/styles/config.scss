@@ -40,3 +40,44 @@ input::-webkit-inner-spin-button {
 input[type="number"] {
   -moz-appearance: textfield;
 }
+
+// Config vue toastification classes
+.Vue-Toastification__container {
+  width: 280px;
+  min-width: 280px;
+  max-width: 280px;
+  top: 1rem;
+  @apply ltr:left-2 ltr:right-[unset] rtl:right-2 rtl:left-[unset];
+
+  @media (min-width: 992px) {
+    width: 360px;
+    min-width: 360px;
+    max-width: 360px;
+  }
+  @media (min-width: 992px) {
+    width: 400px;
+    min-width: 400px;
+    max-width: 400px;
+  }
+
+  .Vue-Toastification__toast {
+    width: 100%;
+    min-width: 100%;
+    max-width: 100%;
+    border-radius: 8px;
+    min-height: 16px;
+    padding: 16px 14px;
+
+    @media (max-width: 600px) {
+      min-height: 14px;
+      padding: 14px 12px;
+    }
+
+    &-body {
+      @media (min-width: 992px) {
+        font-size: 12px;
+      }
+      font-size: 10px;
+    }
+  }
+}

@@ -19,9 +19,20 @@
       "mobile": "{_field_} معتبر نیست"
     },
     "labels": {
-      "inputLabel": "عنوان فیلد"
+      "fullName": "نام و نام خانوادگی",
+      "email": "ایمیل",
+      "description": "توضیحات",
+      "number": "شماره",
+      "password": "رمز",
+      "videos": "ویدیو ها",
+      "video": "ویدیو",
+      "posts": "پست ها",
+      "post": "پست",
+      "podcasts": "پادکست ها",
+      "podcast": "پادکست",
+      "readMore": "ادامه مطلب",
+      "watchingVideo": "تماشای ویدیو"
     },
-    "toasts": {},
     "components": {
       "layouts": {
         "header": {
@@ -30,14 +41,389 @@
             { "text": "پست ها", "link": "/fa/posts" },
             { "text": "پادکست ها", "link": "/fa/podcasts" },
             { "text": "ویدیو ها", "link": "/fa/videos" },
-            { "text": "درباره ما", "link": "/fa/about-us" }
-          ]
+            { "text": "درباره ما", "link": "/fa/about-us" },
+            { "text": "تماس با ما", "link": "/fa/contact-us" }
+          ],
+          "login": { "text": "ورود", "link": "/fa/login" }
+        },
+        "footer": {
+          "header": {
+            "firstSection": {
+              "title": "یک نقل قول آسان دریافت کنید",
+              "subtitle": "امروز برای میزبانی وب ثبت نام کنید!"
+            },
+            "secondSection": {
+              "title": "شروع فقط از",
+              "subtitle": { "text": "$4.50", "duration": "/ماه" }
+            },
+            "link": { "text": "شروع کنید", "link": "#" }
+          },
+          "siteInfo": {
+            "title": "The Content Corner",
+            "description": "لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ، و با استفاده از طراحان گرافیک است، چاپگرها و متون بلکه روزنامه و مجله در ستون و سطرآنچنان که لازم است",
+            "socialMedia": [
+              {
+                "icon": { "prefix": "fa-brands", "value": "fa-facebook-f" },
+                "link": "#"
+              },
+              {
+                "icon": { "prefix": "fa-brands", "value": "fa-x-twitter" },
+                "link": "#"
+              },
+              {
+                "icon": { "prefix": "fa-brands", "value": "fa-instagram" },
+                "link": "#"
+              }
+            ]
+          },
+          "usefullLinks": {
+            "title": "لینک های مفید",
+            "links": [
+              { "text": "سرورها", "link": "#" },
+              { "text": "هاست ویندوز", "link": "#" },
+              { "text": "هاست ابری", "link": "#" },
+              { "text": "سرورهای لینوکس", "link": "#" },
+              { "text": "سرورر های ویندوز", "link": "#" },
+              { "text": "سرور های سیستم عامل", "link": "#" }
+            ]
+          },
+          "navigational": {
+            "title": "ناوبری",
+            "links": [
+              { "text": "خانه", "link": "/fa" },
+              { "text": "پست ها", "link": "/fa/posts" },
+              { "text": "پادکست ها", "link": "/fa/podcasts" },
+              { "text": "ویدیو ها", "link": "/fa/videos" },
+              { "text": "درباره ما", "link": "/fa/about-us" },
+              { "text": "تماس با ما", "link": "/fa/contact-us" }
+            ]
+          },
+          "office": {
+            "title": "دفتر",
+            "items": [
+              {
+                "text": "ایالات متحده آمریکا، کالیفرنیا، سانفرانسیسکو، خیابان 203",
+                "icon": { "prefix": "fa-solid", "value": "fa-location-dot" }
+              },
+              {
+                "text": "+1 392 3929 210",
+                "icon": { "prefix": "fa-solid", "value": "fa-phone" }
+              },
+              {
+                "text": "info@example.com",
+                "icon": { "prefix": "fa-solid", "value": "fa-envelope" }
+              }
+            ]
+          },
+          "copyright": {
+            "text": "تمامی حقوق ©{_date_} محفوظ است"
+          }
         }
       },
-      "pages": {},
-      "default": {}
+      "pages": {
+        "home": {
+          "meta": {
+            "title": "خانه",
+            "name": "توضیحات",
+            "content": "خانه",
+            "description": "توضیحات خانه"
+          },
+          "latestContent": {
+            "title": "آخرین مطالب ما",
+            "tabs": [
+              { "text": "پادکست ها", "value": "podcasts" },
+              { "text": "ویدیو ها", "value": "videos" },
+              { "text": "پست ها", "value": "posts" }
+            ]
+          }
+        },
+        "contactUs": {
+          "meta": {
+            "title": "تماس با ما",
+            "name": "توضیحات",
+            "content": "صفحه تماس با ما",
+            "description": "توضیحات صفحه تماس با ما"
+          },
+          "title": "لطفا فرم زیر را برای ارسال تیکت پر کنید",
+          "inputs": {
+            "fullName": {
+              "rules": "required|min:3"
+            },
+            "email": {
+              "rules": "required|email"
+            },
+            "description": {
+              "rules": "required|min:8"
+            }
+          },
+          "btn": "ارسال"
+        },
+        "aboutUs": {
+          "meta": {
+            "title": "درباره ما",
+            "name": "توضیحات",
+            "content": "صفحه درباره ما",
+            "description": "توضیحات صفحه درباره ما"
+          },
+          "title": "درباره ما",
+          "description": "لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ، و با استفاده از طراحان گرافیک است، چاپگرها و متون بلکه روزنامه و مجله در ستون و سطرآنچنان که لازم است، و برای شرایط فعلی تکنولوژی مورد نیاز، و کاربردهای متنوع با هدف بهبود ابزارهای کاربردی می باشد، کتابهای زیادی در شصت و سه درصد گذشته حال و آینده، شناخت فراوان جامعه و متخصصان را می طلبد، تا با نرم افزارها شناخت بیشتری را برای طراحان رایانه ای علی الخصوص طراحان خلاقی، و فرهنگ پیشرو در زبان فارسی ایجاد کرد، در این صورت می توان امید داشت که تمام و دشواری موجود در ارائه راهکارها، و شرایط سخت تایپ به پایان رسد و زمان مورد نیاز شامل حروفچینی دستاوردهای اصلی، و جوابگوی سوالات پیوسته اهل دنیای موجود طراحی اساسا مورد استفاده قرار گیرد.",
+          "information": {
+            "title": "اطلاعات ما",
+            "items": [
+              {
+                "title": "نشانی",
+                "text": "ایالات متحده آمریکا، کالیفرنیا، سانفرانسیسکو، خیابان 203"
+              },
+              { "title": "شماره تماس", "text": "+1 392 3929 210" },
+              { "title": "ایمیل", "text": "info@example.com" }
+            ],
+            "socialMedia": [
+              {
+                "icon": { "prefix": "fa-brands", "value": "fa-facebook-f" },
+                "link": "#"
+              },
+              {
+                "icon": { "prefix": "fa-brands", "value": "fa-x-twitter" },
+                "link": "#"
+              },
+              {
+                "icon": { "prefix": "fa-brands", "value": "fa-instagram" },
+                "link": "#"
+              }
+            ]
+          }
+        },
+        "posts": {
+          "meta": {
+            "title": "پست ها",
+            "name": "توضیحات",
+            "content": "صفحه پست ها",
+            "description": "توضیحات صفحه پست ها"
+          },
+          "title": "پست ها"
+        },
+        "videos": {
+          "meta": {
+            "title": "ویدیو ها",
+            "name": "توضیحات",
+            "content": "صفحه ویدیو ها",
+            "description": "توضیحات صفحه ویدیو ها"
+          },
+          "title": "ویدیو ها"
+        },
+        "podcasts": {
+          "meta": {
+            "title": "پادکست ها",
+            "name": "توضیحات",
+            "content": "صفحه پادکست ها",
+            "description": "توضیحات صفحه پادکست ها"
+          },
+          "title": "پادکست ها"
+        },
+        "login": {
+          "meta": {
+            "title": "ورود",
+            "name": "توضیحات",
+            "content": "صفحه ورود",
+            "description": "توضحیات صفحه ورود"
+          },
+          "title": "لطفا فرم زیر را برای وارد شدن به سایت پر کنید",
+          "inputs": {
+            "email": {
+              "rules": "required|email"
+            },
+            "password": {
+              "rules": "required|password"
+            }
+          },
+          "btn": "ارسال"
+        }
+      },
+      "default": {
+        "home": {
+          "information": {
+            "title": "صفحه اصلی",
+            "subtitles": {
+              "first": "پست ها،",
+              "second": "پادکست ها،",
+              "third": "ویدیو ها"
+            },
+            "text": "لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ، و با استفاده از طراحان گرافیک است، چاپگرها و متون بلکه روزنامه و مجله در ستون و سطرآنچنان که لازم است",
+            "link": { "text": "در تماس باشید", "link": "/fa" },
+            "searchDomain": {
+              "firstSection": {
+                "title": "نام دامنه خود را جستجو کنید",
+                "subtitle": "رودخانه کوچکی به نام دودن از کنار آنها می گذرد"
+              },
+              "secondSection": {
+                "inputPlaceholder": "نام دامنه خود را وارد کنید...",
+                "selectbox": [
+                  { "text": ".com", "price": "9.9", "priceType": "$" },
+                  { "text": ".net", "price": "8.9", "priceType": "$" },
+                  { "text": ".org", "price": "7.9", "priceType": "$" },
+                  { "text": ".shop", "price": "6.9", "priceType": "$" }
+                ],
+                "btn": "جستجو"
+              }
+            }
+          },
+          "whyChooseUs": {
+            "title": "چرا باید ما را انتخاب کنید",
+            "subtitle": "لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ، و با استفاده از طراحان گرافیک است",
+            "cards": [
+              {
+                "title": "سرور فوق العاده سریع",
+                "icon": "cloud",
+                "body": "لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ، و با استفاده از طراحان گرافیک است"
+              },
+              {
+                "title": "پشتیبان گیری روزانه",
+                "icon": "server",
+                "body": "لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ، و با استفاده از طراحان گرافیک است"
+              },
+              {
+                "title": "خدمات فنی",
+                "icon": "customer-service",
+                "body": "لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ، و با استفاده از طراحان گرافیک است"
+              },
+              {
+                "title": "ایمن و قابل اعتماد",
+                "icon": "life-insurance",
+                "body": "لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ، و با استفاده از طراحان گرافیک است"
+              },
+              {
+                "title": "کنترل DNS",
+                "icon": "cloud-service",
+                "body": "لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ، و با استفاده از طراحان گرافیک است"
+              },
+              {
+                "title": "پشتیبانی 24/7",
+                "icon": "cogwheel",
+                "body": "لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ، و با استفاده از طراحان گرافیک است"
+              }
+            ]
+          },
+          "trustedOnUs": {
+            "title": "میزبانی بیش از 12000 وب سایت قابل اعتماد",
+            "items": [
+              { "text": "نصب CMS", "value": "12000" },
+              { "text": "جوایز برنده شده", "value": "100" },
+              { "text": "دامنه های ثبت شده", "value": "10000" },
+              { "text": "مشتریان رضایتمند", "value": "9000" }
+            ]
+          },
+          "ourMainServices": {
+            "title": "خدمات اصلی ما",
+            "description": "لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ، و با استفاده از طراحان گرافیک است، چاپگرها و متون بلکه روزنامه و مجله در ستون و سطرآنچنان که لازم است",
+            "cards": [
+              {
+                "title": "سرور فوق العاده سریع",
+                "icon": "cloud-service",
+                "body": "لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ، و با استفاده از طراحان گرافیک است"
+              },
+              {
+                "title": "پشتیبان گیری روزانه",
+                "icon": "cloud",
+                "body": "لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ، و با استفاده از طراحان گرافیک است"
+              },
+              {
+                "title": "خدمات فنی",
+                "icon": "server",
+                "body": "لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ، و با استفاده از طراحان گرافیک است"
+              },
+              {
+                "title": "ایمن و قابل اعتماد",
+                "icon": "life-insurance",
+                "body": "لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ، و با استفاده از طراحان گرافیک است"
+              }
+            ]
+          },
+          "ourBestPricing": {
+            "title": "بهترین قیمت ما",
+            "cards": [
+              {
+                "type": "رایگان",
+                "priceType": "$",
+                "price": "0",
+                "duration": "ماه",
+                "featureText1": "100% رایگان. برای همیشه",
+                "featureText2": "از تمام ویژگی ها لذت ببرید",
+                "featureText3": "همه ی ویژگی ها",
+                "features": [
+                  { "text": "150", "volumeType": "GB", "type": "پهنای باند" },
+                  { "text": "100", "volumeType": "GB", "type": "فضای ذخیره" },
+                  { "text": "$1.00 / ", "volumeType": "GB", "type": "بیش از" }
+                ],
+                "btn": { "text": "انتخاب پلن", "link": "/fa" }
+              },
+              {
+                "type": "استارت آپ",
+                "priceType": "$",
+                "price": "19",
+                "duration": "ماه",
+                "featureText1": "تمام ویژگی ها گنجانده شده است",
+                "featureText2": "از تمام ویژگی ها لذت ببرید",
+                "featureText3": "همه ی ویژگی ها",
+                "features": [
+                  { "text": "450", "volumeType": "GB", "type": "پهنای باند" },
+                  { "text": "400", "volumeType": "GB", "type": "فضای ذخیره" },
+                  { "text": "$2.00 / ", "volumeType": "GB", "type": "بیش از" }
+                ],
+                "btn": { "text": "انتخاب پلن", "link": "/fa" }
+              },
+              {
+                "type": "ویژه",
+                "priceType": "$",
+                "price": "49",
+                "duration": "ماه",
+                "featureText1": "تمام ویژگی ها گنجانده شده است",
+                "featureText2": "از تمام ویژگی ها لذت ببرید",
+                "featureText3": "همه ی ویژگی ها",
+                "features": [
+                  { "text": "250", "volumeType": "GB", "type": "پهنای باند" },
+                  { "text": "200", "volumeType": "GB", "type": "فضای ذخیره" },
+                  { "text": "$5.00 / ", "volumeType": "GB", "type": "بیش از" }
+                ],
+                "btn": { "text": "انتخاب پلن", "link": "/fa" }
+              },
+              {
+                "type": "پیشرفته",
+                "priceType": "$",
+                "price": "99",
+                "duration": "ماه",
+                "featureText1": "تمام ویژگی ها گنجانده شده است",
+                "featureText2": "از تمام ویژگی ها لذت ببرید",
+                "featureText3": "همه ی ویژگی ها",
+                "features": [
+                  { "text": "450", "volumeType": "GB", "type": "پهنای باند" },
+                  { "text": "400", "volumeType": "GB", "type": "فضای ذخیره" },
+                  {
+                    "text": "$20.00 / ",
+                    "volumeType": "GB",
+                    "type": "بیش از"
+                  }
+                ],
+                "btn": { "text": "انتخاب پلن", "link": "/fa" }
+              }
+            ]
+          },
+          "latestPodcasts": {
+            "listenToPodcast": "به پادکست گوش دهید"
+          },
+          "latestPosts": {},
+          "latestVideos": {}
+        }
+      }
     },
     "other": {
+      "filters": {
+        "title": "فیلتر {_text_}",
+        "items": [
+          { "text": "جدیدتری", "value": "newest" },
+          { "text": "قدیمی ترین", "value": "oldest" },
+          { "text": "محبوب ترین ها", "value": "most-popular" }
+        ]
+      },
       "languages": [
         {
           "text": "انگلیسی",
@@ -70,7 +456,20 @@
           "value": "light",
           "icon": { "prefix": "fa-solid", "value": "fa-sun" }
         }
-      ]
+      ],
+      "links": {
+        "home": "/fa",
+        "aboutUs": "/fa/about-us",
+        "contactUs": "/fa/contact-us",
+        "videos": "/fa/videos",
+        "podcasts": "/fa/podcasts",
+        "posts": "/fa/posts"
+      },
+      "toasts": {
+        "loggedInSuccessfuly": "شما با موفیت وارد سایت شدید",
+        "credentialsDoesNotMatch": "مقادیر وارد شده معتبر نیست",
+        "unauthorized": "شما به این صفحه دسترسی ندارید، لطفا ابتدا وارد شوید"
+      }
     }
   }
 }

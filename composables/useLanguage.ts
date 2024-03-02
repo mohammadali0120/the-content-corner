@@ -21,6 +21,10 @@ export default () => {
     language: AvailableLanguageCodes,
     loading: boolean = true
   ) => {
+    if (localeProperties.value.code === language) {
+      return;
+    }
+
     setLocale(language);
     setLocaleCookie(language);
     switchLocalePath(language);

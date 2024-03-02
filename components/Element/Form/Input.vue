@@ -7,6 +7,7 @@
         :id="props.name"
         ref="inputRef"
         class="w-full h-full px-2 rounded-md"
+        :style="{ direction: props.direction }"
         :type="props.type ? props.type : 'text'"
         v-model="input"
         @input="onInput"
@@ -26,10 +27,11 @@
 
           <span
             v-show="inputIsFocused"
-            class="block w-full h-2 absolute -bottom-2"
-            :class="
-              inputIsFocused ? 'bg-white dark:bg-gray-900' : 'bg-transparent'
-            "
+            class="block w-full h-2 absolute"
+            :class="[
+              locale === 'en' ? ' -bottom-2' : '-bottom-1',
+              inputIsFocused ? 'bg-white dark:bg-gray-900' : 'bg-transparent',
+            ]"
           ></span>
         </label>
       </div>
@@ -49,6 +51,7 @@ interface Props {
   type?: string;
   label: string;
   rules: string;
+  direction?: "rtl" | "ltr";
 }
 interface Emit {
   (e: "onInput", payload: string): void;
@@ -60,6 +63,7 @@ const props = defineProps<Props>();
 const emit = defineEmits<Emit>();
 
 // variables
+const { locale } = useI18n();
 const {
   value: input,
   errorMessage,

@@ -33,7 +33,6 @@
       "readMore": "Read More",
       "watchingVideo": "Watching Video"
     },
-    "toasts": {},
     "components": {
       "layouts": {
         "header": {
@@ -62,7 +61,7 @@
           "siteInfo": {
             "title": "The Content Corner",
             "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Sint debitis doloremque similique ut rem eos libero veritatis nisi, repellat, in tempore, totam distinctio atque dolor aut voluptate? Voluptatibus, eius? Consequatur.",
-            "links": [
+            "socialMedia": [
               {
                 "icon": { "prefix": "fa-brands", "value": "fa-facebook-f" },
                 "link": "#"
@@ -78,7 +77,7 @@
             ]
           },
           "usefullLinks": {
-            "title": "Unseful Links",
+            "title": "Useful Links",
             "links": [
               { "text": "Servers", "link": "#" },
               { "text": "Windows Hosting", "link": "#" },
@@ -107,11 +106,11 @@
                 "icon": { "prefix": "fa-solid", "value": "fa-location-dot" }
               },
               {
-                "text": "+2 392 3929 210",
+                "text": "+1 392 3929 210",
                 "icon": { "prefix": "fa-solid", "value": "fa-phone" }
               },
               {
-                "text": "info@yourdomain.com",
+                "text": "info@example.com",
                 "icon": { "prefix": "fa-solid", "value": "fa-envelope" }
               }
             ]
@@ -156,7 +155,8 @@
             "description": {
               "rules": "required|min:8"
             }
-          }
+          },
+          "btn": "Send"
         },
         "aboutUs": {
           "meta": {
@@ -164,6 +164,33 @@
             "name": "description",
             "content": "About Us Page",
             "description": "About Us description"
+          },
+          "title": "About Us",
+          "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Egestas purus viverra accumsan in nisl nisi. Arcu cursus vitae congue mauris rhoncus aenean vel elit scelerisque. In egestas erat imperdiet sed euismod nisi porta lorem mollis. Morbi tristique senectus et netus. Mattis pellentesque id nibh tortor id aliquet lectus proin. Sapien faucibus et molestie ac feugiat sed lectus vestibulum. Ullamcorper velit sed ullamcorper morbi tincidunt ornare massa eget. Dictum varius duis at consectetur lorem. Nisi vitae suscipit tellus mauris a diam maecenas sed enim. Velit ut tortor pretium viverra suspendisse potenti nullam. Et molestie ac feugiat sed lectus. Non nisi est sit amet facilisis magna. Dignissim diam quis enim lobortis scelerisque fermentum. Odio ut enim blandit volutpat maecenas volutpat. Ornare lectus sit amet est placerat in egestas erat. Nisi vitae suscipit tellus mauris a diam maecenas sed. Placerat duis ultricies lacus sed turpis tincidunt id aliquet.",
+          "information": {
+            "title": "Our Information",
+            "items": [
+              {
+                "title": "Address",
+                "text": "203 Fake St. Mountain View, San Francisco, California, USA"
+              },
+              { "title": "Phone", "text": "+1 392 3929 210" },
+              { "title": "Email", "text": "info@example.com" }
+            ],
+            "socialMedia": [
+              {
+                "icon": { "prefix": "fa-brands", "value": "fa-facebook-f" },
+                "link": "#"
+              },
+              {
+                "icon": { "prefix": "fa-brands", "value": "fa-x-twitter" },
+                "link": "#"
+              },
+              {
+                "icon": { "prefix": "fa-brands", "value": "fa-instagram" },
+                "link": "#"
+              }
+            ]
           }
         },
         "posts": {
@@ -208,7 +235,8 @@
             "password": {
               "rules": "required|password"
             }
-          }
+          },
+          "btn": "Send"
         }
       },
       "default": {

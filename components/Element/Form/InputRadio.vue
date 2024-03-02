@@ -57,7 +57,6 @@ onMounted(() => {
 </script>
 
 <style lang="scss" scoped>
-// media queries
 .input-radio:checked,
 .input-radio:not(:checked) {
   position: absolute;
@@ -79,24 +78,20 @@ label {
   content: "";
   position: absolute;
   top: 0;
-  width: 20px;
-  height: 20px;
   border-radius: 100%;
   border: 1px solid #a3a9ac;
-  @apply ltr:right-0 rtl:left-0;
+  @apply lg:w-5 lg:h-5 w-3.5 h-3.5 ltr:right-0 rtl:left-0;
 }
 
 .input-radio:checked + label:after,
 .input-radio:not(:checked) + label:after {
   content: "";
-  width: 12px;
-  height: 12px;
   position: absolute;
   top: 4px;
   border-radius: 100%;
   -webkit-transition: all 0.2s ease;
   transition: all 0.2s ease;
-  @apply bg-gray-600 dark:bg-gray-400 ltr:right-1 rtl:left-1;
+  @apply lg:w-3 lg:h-3 w-1.5 h-1.5 bg-gray-600 dark:bg-gray-400 ltr:right-1 rtl:left-1;
 }
 
 .input-radio:not(:checked) + label:after {

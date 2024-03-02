@@ -26,8 +26,11 @@
 
           <span
             v-show="inputIsFocused"
-            class="block w-full h-2 absolute -bottom-2"
-            :class="inputIsFocused ? 'bg-white dark:bg-gray-900' : 'bg-transparent'"
+            class="block w-full h-2 absolute"
+            :class="[
+              locale === 'en' ? ' -bottom-2' : '-bottom-1',
+              inputIsFocused ? 'bg-white dark:bg-gray-900' : 'bg-transparent',
+            ]"
           ></span>
         </label>
       </div>
@@ -57,6 +60,7 @@ const props = defineProps<Props>();
 const emit = defineEmits<Emit>();
 
 // variables
+const { locale } = useI18n();
 const {
   value: input,
   errorMessage,

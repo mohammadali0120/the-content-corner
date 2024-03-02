@@ -194,6 +194,7 @@
 </template>
 
 <script setup lang="ts">
+import { useToast } from "vue-toastification";
 import type {
   Link,
   Language,
@@ -276,8 +277,12 @@ const onVerticalScrollbar = (element: any, amount: number) => {
   }
 };
 const onChangeSelectedLanguage = (language: Language) => {
+  const toast = useToast();
+
   onChangeLanguage(language.value as AvailableLanguageCodes);
   onChangeFontFamily(language.value as AvailableLanguageCodes);
+  
+  toast.clear();
 };
 
 // hooks

@@ -12,7 +12,7 @@
               </h4>
             </div>
             <div class="lg:mb-0 mb-3">
-              <h1 class="lg:text-3xl text-xl font-extrabold dark:text-white">
+              <h1 class="lg:text-2xl text-xl font-extrabold dark:text-white">
                 {{
                   $tm("components.layouts.footer.header.firstSection.subtitle")
                 }}
@@ -29,7 +29,7 @@
             </div>
             <div class="flex items-center lg:justify-normal justify-between">
               <div class="flex items-center">
-                <h1 class="lg:text-3xl text-xl font-extrabold dark:text-white">
+                <h1 class="lg:text-2xl text-xl font-extrabold dark:text-white">
                   {{
                     $tm(
                       "components.layouts.footer.header.secondSection.subtitle.text"
@@ -65,7 +65,7 @@
               <div class="lg:p-6 p-3 rounded-md bg-baseYellow-500">
                 <div class="lg:mb-6 mb-3">
                   <h1
-                    class="lg:text-3xl text-xl font-extrabold dark:text-white"
+                    class="lg:text-2xl text-xl font-extrabold dark:text-white text-center"
                   >
                     {{ $tm("components.layouts.footer.siteInfo.title") }}
                   </h1>
@@ -78,11 +78,14 @@
                 <ul class="flex items-center lg:-mx-4 -mx-2">
                   <li
                     v-for="(item, index) in $tm(
-                      'components.layouts.footer.siteInfo.links'
+                      'components.layouts.footer.siteInfo.socialMedia'
                     )"
                     :key="index"
                   >
-                    <a :href="item.link" class="inline-block lg:mx-4 mx-2">
+                    <a
+                      :href="item.link"
+                      class="flex items-center justify-center lg:w-10 lg:h-10 bg-baseYellow-300 rounded-full transition-all duration-500 hover:bg-baseYellow-700 lg:mx-4 mx-2"
+                    >
                       <div class="lg:w-6 lg:h-6 w-4 h-4">
                         <ElementIcon :icon="item.icon" variant="white" />
                       </div>
@@ -95,7 +98,7 @@
           <div class="lg:w-1/4 w-full lg:mb-0 mb-8">
             <div class="lg:pe-16">
               <div class="lg:mb-6 mb-3">
-                <h1 class="lg:text-3xl text-xl font-extrabold dark:text-white">
+                <h1 class="lg:text-2xl text-xl font-extrabold dark:text-white">
                   {{ $tm("components.layouts.footer.usefullLinks.title") }}
                 </h1>
               </div>
@@ -126,7 +129,7 @@
           <div class="lg:w-1/4 w-full lg:mb-0 mb-8">
             <div class="lg:pe-16">
               <div class="lg:mb-6 mb-3">
-                <h1 class="lg:text-3xl text-xl font-extrabold dark:text-white">
+                <h1 class="lg:text-2xl text-xl font-extrabold dark:text-white">
                   {{ $tm("components.layouts.footer.navigational.title") }}
                 </h1>
               </div>
@@ -157,7 +160,7 @@
           <div class="lg:w-1/4 w-full">
             <div class="lg:pe-16">
               <div class="lg:mb-6 mb-3">
-                <h1 class="lg:text-3xl text-xl font-extrabold dark:text-white">
+                <h1 class="lg:text-2xl text-xl font-extrabold dark:text-white">
                   {{ $tm("components.layouts.footer.office.title") }}
                 </h1>
               </div>
