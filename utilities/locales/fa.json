@@ -123,10 +123,10 @@
       "pages": {
         "home": {
           "meta": {
-            "title": "خانه",
+            "title": "صفحه اصلی",
             "name": "توضیحات",
-            "content": "خانه",
-            "description": "توضیحات خانه"
+            "content": "صفحه اصلی",
+            "description": "توضیحات صفحه اصلی"
           },
           "latestContent": {
             "title": "آخرین مطالب ما",
