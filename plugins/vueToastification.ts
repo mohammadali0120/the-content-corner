@@ -1,10 +1,11 @@
 import type { PluginOptions } from "vue-toastification";
 import Toast, { POSITION } from "vue-toastification";
 import "vue-toastification/dist/index.css";
+import { ToastDuration } from "~/composables/states";
 
 export default defineNuxtPlugin((nuxtApp: any) => {
   const options: PluginOptions = {
-    timeout: 4000,
+    timeout: ToastDuration,
     closeOnClick: true,
     pauseOnFocusLoss: true,
     pauseOnHover: true,

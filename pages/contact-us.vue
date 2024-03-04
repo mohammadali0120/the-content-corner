@@ -49,6 +49,7 @@
 
 <script setup lang="ts">
 import { useForm } from "vee-validate";
+import { ToastDuration } from "~/composables/states";
 
 // interfaces & types & enums
 
@@ -75,7 +76,7 @@ const onSubmit = handleSubmit(() => {
 
   setTimeout(() => {
     router.push(tm("brand.link"));
-  }, 4000);
+  }, ToastDuration);
 });
 
 // hooks
