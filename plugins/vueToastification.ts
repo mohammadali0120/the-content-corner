@@ -21,8 +21,6 @@ export default defineNuxtPlugin((nuxtApp: any) => {
   watch(
     () => nuxtApp.$i18n.locale.value,
     () => {
-      console.log(nuxtApp.$i18n.locale.value);
-
       if (nuxtApp.$i18n.locale.value === "en") {
         options.position = POSITION.TOP_LEFT;
         options.rtl = false;

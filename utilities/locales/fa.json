@@ -468,7 +468,8 @@
       "toasts": {
         "loggedInSuccessfuly": "شما با موفیت وارد سایت شدید",
         "credentialsDoesNotMatch": "مقادیر وارد شده معتبر نیست",
-        "unauthorized": "شما به این صفحه دسترسی ندارید، لطفا ابتدا وارد شوید"
+        "unauthorized": "شما به این صفحه دسترسی ندارید، لطفا ابتدا وارد شوید",
+        "ticketSentSuccessfuly": "تیکت با موفقیت ارسال شد"
       }
     }
   }

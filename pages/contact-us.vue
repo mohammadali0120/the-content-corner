@@ -58,6 +58,7 @@ import { useForm } from "vee-validate";
 
 // variables
 const { tm } = useI18n();
+const router = useRouter();
 const { values: formValues, handleSubmit, resetForm } = useForm();
 const form = ref<{ fullName: string; email: string; description: string }>({
   fullName: "",
@@ -70,7 +71,11 @@ const form = ref<{ fullName: string; email: string; description: string }>({
 
 // methods
 const onSubmit = handleSubmit(() => {
-  console.log("submited", form.value);
+  useToastMsg(tm("other.toasts.ticketSentSuccessfuly"), "success");
+
+  setTimeout(() => {
+    router.push(tm("brand.link"));
+  }, 4000);
 });
 
 // hooks
