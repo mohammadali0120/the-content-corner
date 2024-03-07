@@ -2,11 +2,36 @@
   <div class="lg:py-8 py-2">
     <div class="container lg:px-4 px-2">
       <div class="lg:mb-8 mb-4">
-        <h1
-          class="lg:text-2xl text-base text-black dark:text-white group-hover:text-white group-hover:duration-500 font-bold"
-        >
+        <h1 class="lg:text-2xl text-base text-black dark:text-white font-bold">
           {{ $tm("components.pages.login.title") }}
         </h1>
+      </div>
+      <div class="lg:mb-4 mb-2">
+        <div class="lg:mb-4 mb-2">
+          <h3 class="lg:text-base text-black dark:text-white font-bold">
+            {{ $tm("components.pages.login.sampleInformation.title") }}
+          </h3>
+        </div>
+        <ul>
+          <li class="flex items-center lg:mb-2 mb-1">
+            <div
+              class="lg:w-2 lg:h-2 w-1 h-1 rounded-full bg-gray-300 dark:bg-white lg:me-2 me-1"
+            ></div>
+            <strong class="inline-block lg:me-2 me-1"
+              >{{ $tm("labels.email") }}:</strong
+            >
+            <span>mohammadali.khaksar.79@gmail.com</span>
+          </li>
+          <li class="flex items-center">
+            <div
+              class="lg:w-2 lg:h-2 w-1 h-1 rounded-full bg-gray-300 dark:bg-white lg:me-2 me-1"
+            ></div>
+            <strong class="inline-block lg:me-2 me-1"
+              >{{ $tm("labels.password") }}:</strong
+            >
+            <span>A123456789b</span>
+          </li>
+        </ul>
       </div>
       <form autocomplete="off" action="" @submit.prevent="onSubmit">
         <div class="w-full lg:mb-6 mb-3">
@@ -14,6 +39,7 @@
             name="email"
             label="email"
             direction="ltr"
+            initial-value="mohammadali.khaksar.79@gmail.com"
             :rules="$tm('components.pages.login.inputs.email.rules')"
             @on-input="form.email = $event"
           />
@@ -24,6 +50,7 @@
             label="password"
             type="password"
             direction="ltr"
+            initial-value="A123456789b"
             :rules="$tm('components.pages.login.inputs.password.rules')"
             @on-input="form.password = $event"
           />

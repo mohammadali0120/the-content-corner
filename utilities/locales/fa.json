@@ -236,7 +236,10 @@
               "rules": "required|password"
             }
           },
-          "btn": "ارسال"
+          "btn": "ارسال",
+          "sampleInformation": {
+            "title": "Sample User Information:"
+          }
         }
       },
       "default": {

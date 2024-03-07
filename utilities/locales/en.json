@@ -236,7 +236,10 @@
               "rules": "required|password"
             }
           },
-          "btn": "Send"
+          "btn": "Send",
+          "sampleInformation": {
+            "title": "Sample User Information:"
+          }
         }
       },
       "default": {
