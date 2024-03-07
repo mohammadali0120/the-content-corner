@@ -3,7 +3,7 @@
     <div class="container lg:px-4 px-2">
       <div class="lg:mb-8 mb-4">
         <h1
-          class="lg:text-2xl text-base text-black dark:text-white group-hover:text-white group-hover:duration-500 font-bold"
+          class="lg:text-2xl text-base text-black dark:text-white font-bold"
         >
           {{ $tm("components.pages.contactUs.title") }}
         </h1>

@@ -15,7 +15,7 @@
             <div class="lg:mb-8 mb-4">
               <div class="lg:mb-4 mb-2">
                 <h1
-                  class="lg:text-2xl text-base text-black dark:text-white group-hover:text-white group-hover:duration-500 font-bold"
+                  class="lg:text-2xl text-base text-black dark:text-white font-bold"
                 >
                   {{ $tm("components.pages.aboutUs.title") }}
                 </h1>
@@ -29,7 +29,7 @@
             <div>
               <div class="lg:mb-4 mb-2">
                 <h1
-                  class="lg:text-2xl text-base text-black dark:text-white group-hover:text-white group-hover:duration-500 font-bold"
+                  class="lg:text-2xl text-base text-black dark:text-white font-bold"
                 >
                   {{ $tm("components.pages.aboutUs.information.title") }}
                 </h1>
