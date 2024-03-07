@@ -69,11 +69,11 @@ watch(
 
 // hooks
 onMounted(() => {
-  // const animateBoxes = document.querySelectorAll(
-  //   ".trusted-on-us-counter-animate-box"
-  // ) as any;
+  const animateBoxes = document.querySelectorAll(
+    ".trusted-on-us-counter-animate-box"
+  ) as any;
 
-  // isIntersectionEnteredIntoView(animateBoxes[0]);
+  isIntersectionEnteredIntoView(animateBoxes[0]);
 });
 </script>
 <style scoped lang="scss"></style>
