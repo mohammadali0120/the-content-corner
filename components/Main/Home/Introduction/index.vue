@@ -2,7 +2,7 @@
   <div>
     <div class="flex flex-wrap lg:flex-row flex-col-reverse lg:mb-8 mb-4">
       <div
-        class="lg:w-4/12 w-full animate__animated animate__fadeInLeft"
+        class="lg:w-4/12 w-full animate__animated"
       >
         <div class="lg:mb-4 mb-2">
           <h3

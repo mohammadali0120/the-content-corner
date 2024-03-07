@@ -59,23 +59,23 @@ const { isIntersected, isIntersectionEnteredIntoView } =
 
 // hooks
 onMounted(() => {
-  const animateBoxes = document.querySelectorAll(
-    ".why-choose-us-animate-box"
-  ) as any;
+  // const animateBoxes = document.querySelectorAll(
+  //   ".why-choose-us-animate-box"
+  // ) as any;
 
-  const animateBoxItems = document.querySelectorAll(
-    ".why-choose-us-animate-box-item"
-  ) as any;
+  // const animateBoxItems = document.querySelectorAll(
+  //   ".why-choose-us-animate-box-item"
+  // ) as any;
 
-  isIntersectionEnteredIntoView(animateBoxes[0], ["animate__fadeInDown"]);
+  // isIntersectionEnteredIntoView(animateBoxes[0], ["animate__fadeInDown"]);
 
-  animateBoxItems.forEach((item: HTMLLIElement, index: number) => {
-    if (isEven(index)) {
-      isIntersectionEnteredIntoView(item, ["animate__fadeInLeft"]);
-    } else {
-      isIntersectionEnteredIntoView(item, ["animate__fadeInRight"]);
-    }
-  });
+  // animateBoxItems.forEach((item: HTMLLIElement, index: number) => {
+  //   if (isEven(index)) {
+  //     isIntersectionEnteredIntoView(item, ["animate__fadeInLeft"]);
+  //   } else {
+  //     isIntersectionEnteredIntoView(item, ["animate__fadeInRight"]);
+  //   }
+  // });
 });
 </script>
 <style scoped lang="scss"></style>

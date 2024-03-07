@@ -115,12 +115,12 @@ const { isIntersected, isIntersectionEnteredIntoView } =
 // hooks
 
 onMounted(() => {
-  const animateBoxes = document.querySelectorAll(
-    ".search-domain-animate-box"
-  ) as any;
+  // const animateBoxes = document.querySelectorAll(
+  //   ".search-domain-animate-box"
+  // ) as any;
 
-  isIntersectionEnteredIntoView(animateBoxes[0], ["animate__fadeInDown"]);
-  isIntersectionEnteredIntoView(animateBoxes[1], ["animate__fadeInUp"]);
+  // isIntersectionEnteredIntoView(animateBoxes[0], ["animate__fadeInDown"]);
+  // isIntersectionEnteredIntoView(animateBoxes[1], ["animate__fadeInUp"]);
 });
 </script>
 <style scoped lang="scss"></style>

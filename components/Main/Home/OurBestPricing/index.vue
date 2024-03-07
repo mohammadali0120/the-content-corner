@@ -78,11 +78,11 @@ watch(
 
 // hooks
 onMounted(() => {
-  const animateBoxes = document.querySelectorAll(
-    ".our-best-pricing-animate-box"
-  ) as any;
+  // const animateBoxes = document.querySelectorAll(
+  //   ".our-best-pricing-animate-box"
+  // ) as any;
 
-  isIntersectionEnteredIntoView(animateBoxes[0], ["animate__fadeInDown"]);
+  // isIntersectionEnteredIntoView(animateBoxes[0], ["animate__fadeInDown"]);
 });
 </script>
 <style scoped lang="scss"></style>
