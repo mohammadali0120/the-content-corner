@@ -6,7 +6,7 @@
           {{ $tm("components.pages.login.title") }}
         </h1>
       </div>
-      <div class="lg:mb-4 mb-2">
+      <div class="lg:mb-16 mb-8">
         <div class="lg:mb-4 mb-2">
           <h3 class="lg:text-base text-black dark:text-white font-bold">
             {{ $tm("components.pages.login.sampleInformation.title") }}

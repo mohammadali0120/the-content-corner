@@ -29,7 +29,7 @@
             v-show="inputIsFocused"
             class="block w-full h-2 absolute"
             :class="[
-              locale === 'en' ? ' -bottom-2' : '-bottom-1',
+              locale === 'en' ? 'lg:-bottom-2 -bottom-1.5' : '-bottom-1',
               inputIsFocused ? 'bg-white dark:bg-gray-900' : 'bg-transparent',
             ]"
           ></span>
