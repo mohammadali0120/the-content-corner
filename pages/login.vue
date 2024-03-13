@@ -20,7 +20,7 @@
             <strong class="inline-block lg:me-2 me-1"
               >{{ $tm("labels.email") }}:</strong
             >
-            <span>mohammadali.khaksar.79@gmail.com</span>
+            <span>mohammadali.khaksar@gmail.com</span>
           </li>
           <li class="flex items-center">
             <div
@@ -39,7 +39,6 @@
             name="email"
             label="email"
             direction="ltr"
-            initial-value="mohammadali.khaksar.79@gmail.com"
             :rules="$tm('components.pages.login.inputs.email.rules')"
             @on-input="form.email = $event"
           />
@@ -50,7 +49,6 @@
             label="password"
             type="password"
             direction="ltr"
-            initial-value="A123456789b"
             :rules="$tm('components.pages.login.inputs.password.rules')"
             @on-input="form.password = $event"
           />

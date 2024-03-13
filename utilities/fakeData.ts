@@ -353,7 +353,7 @@ export const users: User[] = [
     id: 1,
     fullNameEn: "Mohammadali Khaksar",
     fullNameFa: "محمدعلی خاکسار",
-    email: "mohammadali.khaksar.79@gmail.com",
+    email: "mohammadali.khaksar@gmail.com",
     password: "A123456789b",
     token: "1Z3ZZdoe2voAFOjMfuvsrAdIU6jUmEiL",
   },
