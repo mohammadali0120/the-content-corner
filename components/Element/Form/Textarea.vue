@@ -6,7 +6,7 @@
       <textarea
         :id="props.name"
         ref="textareaRef"
-        class="w-full h-full p-2 rounded-md"
+        class="w-full h-full lg:p-4 p-2 rounded-md"
         type="text"
         v-model="input"
         @input="onInput"
