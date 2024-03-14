@@ -9,7 +9,7 @@
         </h1>
       </div>
       <form autocomplete="off" action="" @submit.prevent="onSubmit">
-        <div class="w-full lg:mb-6 mb-3">
+        <div class="w-full lg:mb-8 mb-6">
           <ElementFormInput
             name="fullName"
             label="fullName"
@@ -17,7 +17,7 @@
             @on-input="form.fullName = $event"
           />
         </div>
-        <div class="w-full lg:mb-6 mb-3">
+        <div class="w-full lg:mb-8 mb-6">
           <ElementFormInput
             name="email"
             label="email"
@@ -26,7 +26,7 @@
             @on-input="form.email = $event"
           />
         </div>
-        <div class="w-full lg:mb-6 mb-3">
+        <div class="w-full lg:mb-8 mb-6">
           <ElementFormTextarea
             name="description"
             label="description"

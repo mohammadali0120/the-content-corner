@@ -6,7 +6,7 @@
       <input
         :id="props.name"
         ref="inputRef"
-        class="w-full h-full px-2 rounded-md"
+        class="w-full h-full lg:px-4 px-2 rounded-md"
         :style="{ direction: props.direction }"
         :type="props.type ? props.type : 'text'"
         v-model="input"
@@ -15,24 +15,15 @@
       />
       <div
         @click="onFocusInput"
-        class="w-fit lg:px-4 px-2 text-black dark:text-white absolute transform font-bold transition-all duration-500"
+        class="w-fit lg:mx-4 mx-2 text-black dark:text-white absolute transform font-bold transition-all duration-500 lg:border-b-4 border-b-2"
         :class="
           inputIsFocused
-            ? 'bg-transparent -translate-y-full top-0'
-            : 'bg-white dark:bg-gray-900 top-1/2 -translate-y-1/2'
+            ? 'bg-transparent -translate-y-full top-0 border-white dark:border-gray-900'
+            : 'bg-white dark:bg-gray-900 top-1/2 -translate-y-1/2 border-transparent'
         "
       >
         <label :for="props.name" class="relative px-2"
           >{{ $tm(`labels.${props.label}`) }}
-
-          <span
-            v-show="inputIsFocused"
-            class="block w-full h-2 absolute"
-            :class="[
-              locale === 'en' ? 'lg:-bottom-2 -bottom-1.5' : '-bottom-1',
-              inputIsFocused ? 'bg-white dark:bg-gray-900' : 'bg-transparent',
-            ]"
-          ></span>
         </label>
       </div>
     </div>

@@ -5,7 +5,7 @@
     >
       <textarea
         :id="props.name"
-        ref="inputRef"
+        ref="textareaRef"
         class="w-full h-full p-2 rounded-md"
         type="text"
         v-model="input"
@@ -14,24 +14,15 @@
       ></textarea>
       <div
         @click="onFocusInput"
-        class="w-fit lg:px-4 px-2 text-black dark:text-white absolute font-bold transition-all duration-500"
+        class="w-fit lg:mx-4 mx-2 text-black dark:text-white absolute transform font-bold transition-all duration-500 lg:border-b-4 border-b-2"
         :class="
           inputIsFocused
-            ? 'bg-transparent -top-5'
-            : 'bg-white dark:bg-gray-900 top-2'
+            ? 'bg-transparent lg:-top-6 -top-[18px] border-white dark:border-gray-900'
+            : 'bg-white dark:bg-gray-900 top-2 border-transparent'
         "
       >
         <label :for="props.name" class="relative px-2"
           >{{ $tm(`labels.${props.label}`) }}
-
-          <span
-            v-show="inputIsFocused"
-            class="block w-full h-2 absolute"
-            :class="[
-              locale === 'en' ? 'lg:-bottom-2 -bottom-1.5' : '-bottom-1',
-              inputIsFocused ? 'bg-white dark:bg-gray-900' : 'bg-transparent',
-            ]"
-          ></span>
         </label>
       </div>
     </div>
@@ -60,13 +51,12 @@ const props = defineProps<Props>();
 const emit = defineEmits<Emit>();
 
 // variables
-const { locale } = useI18n();
 const {
   value: input,
   errorMessage,
   meta,
 }: any = useField(props.name, props.rules, { label: props.label });
-const inputRef = ref<HTMLTextAreaElement | null>(null);
+const textareaRef = ref<HTMLTextAreaElement | null>(null);
 const textareaElementRef = ref<HTMLDivElement | null>(null);
 const inputIsFocused = ref<boolean>(false);
 
@@ -76,7 +66,7 @@ const inputIsFocused = ref<boolean>(false);
 
 // methods
 const onFocusInput = () => {
-  inputRef.value?.focus();
+  textareaRef.value?.focus();
 
   inputIsFocused.value = true;
 };
