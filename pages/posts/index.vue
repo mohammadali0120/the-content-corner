@@ -112,6 +112,11 @@ watch(selectedFilter, async () => {
 // methods
 
 // hooks
+const { data: myData } = await useFetch(
+  `/api/posts?locale=${locale.value}`
+);
+posts.value = myData.value;
+
 useHead({
   title: tm("components.pages.posts.meta.title"),
   meta: [

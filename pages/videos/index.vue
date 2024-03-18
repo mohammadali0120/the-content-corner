@@ -64,11 +64,7 @@
                       <NuxtLink
                         :to="`${$tm('other.links.videos')}/${video.id}`"
                         class="text-blue-500"
-                        >{{
-                          $tm(
-                            "labels.watchingVideo"
-                          )
-                        }}</NuxtLink
+                        >{{ $tm("labels.watchingVideo") }}</NuxtLink
                       >
                     </div>
                   </div>
@@ -112,6 +108,10 @@ watch(selectedFilter, async () => {
 // methods
 
 // hooks
+const { data: myData } = await useFetch(
+  `/api/videos?locale=${locale.value}`
+);
+videos.value = myData.value;
 
 useHead({
   title: tm("components.pages.videos.meta.title"),
